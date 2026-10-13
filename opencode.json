@@ -1,0 +1,28 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "eon": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "EON Cloud Brain (free)",
+      "options": {
+        "baseURL": "https://cloud-brain.eon-sovereign.workers.dev/v1",
+        "apiKey": "eon-cloud"
+      },
+      "models": {
+        "deepseek-chat": { "name": "deepseek-chat" }
+      }
+    }
+  },
+  "mcp": {
+    "eon": {
+      "type": "remote",
+      "url": "https://eon-mcp.eon-sovereign.workers.dev/mcp"
+    }
+  },
+  "permission": {
+    "bash": "allow",
+    "edit": "allow",
+    "write": "allow",
+    "webfetch": "allow"
+  }
+}
