@@ -1,0 +1,5 @@
+{"task": "boolean_expressions.json", "idx": 2, "want": "False", "got": "True", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 1, "want": "True", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 0, "want": "False", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 3, "want": "False", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 4, "want": "True", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}

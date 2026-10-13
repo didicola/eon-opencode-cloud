@@ -1,0 +1,140 @@
+{
+ "updated": "2026-10-13T21:33:03.083759+00:00",
+ "template_id": "bbh-v1-frozen-20261011",
+ "lane": "ghost_ask",
+ "n": 5,
+ "hits": 0,
+ "score_pct": 0.0,
+ "per_task": {
+  "boolean_expressions.json": {
+   "n": 5,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "causal_judgement.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "date_understanding.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "disambiguation_qa.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "formal_fallacies.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "geometric_shapes.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "hyperbaton.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "logical_deduction_five_objects.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "logical_deduction_seven_objects.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "logical_deduction_three_objects.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "movie_recommendation.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "multistep_arithmetic_two.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "navigate.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "object_counting.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "penguins_in_a_table.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "reasoning_about_colored_objects.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "ruin_names.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "salient_translation_error_detection.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "snarks.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "sports_understanding.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "temporal_sequences.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "tracking_shuffled_objects_five_objects.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "tracking_shuffled_objects_seven_objects.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "tracking_shuffled_objects_three_objects.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "web_of_lies.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  },
+  "word_sorting.json": {
+   "n": 0,
+   "hits": 0,
+   "pct": 0.0
+  }
+ }
+}
