@@ -1,0 +1,41 @@
+name: opencode-cloud
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Task for the cloud opencode agent"
+        required: true
+        type: string
+  # schedule: disabled until proven — add later e.g. hourly self-maintenance
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install opencode
+        run: npm install -g opencode-ai
+      - name: Run task
+        env:
+          OPENCODE_PERMISSION: '{"bash":"allow","edit":"allow","write":"allow","webfetch":"allow"}'
+        run: |
+          mkdir -p out
+          opencode run --model eon/deepseek-chat "${{ inputs.task }}" 2>&1 | tee out/result.txt || true
+          {
+            echo "## cloud-opencode run"
+            echo '```'
+            tail -n 200 out/result.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: opencode-out
+          path: out/
