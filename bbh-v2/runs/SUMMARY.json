@@ -1,15 +1,15 @@
 {
- "updated": "2026-10-13T21:33:03.083759+00:00",
+ "updated": "2026-10-14T12:44:17.811755+00:00",
  "template_id": "bbh-v1-frozen-20261011",
  "lane": "ghost_ask",
- "n": 5,
- "hits": 0,
- "score_pct": 0.0,
+ "n": 155,
+ "hits": 120,
+ "score_pct": 77.42,
  "per_task": {
   "boolean_expressions.json": {
-   "n": 5,
-   "hits": 0,
-   "pct": 0.0
+   "n": 155,
+   "hits": 120,
+   "pct": 77.4
   },
   "causal_judgement.json": {
    "n": 0,
