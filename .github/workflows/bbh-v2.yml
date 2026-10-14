@@ -16,14 +16,14 @@ permissions:
 jobs:
   bbh:
     runs-on: ubuntu-latest
-    timeout-minutes: 280
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - name: run batch
         env:
           EON_ADM: ${{ secrets.EON_ADM }}
         run: |
-          python3 bbh-v2/bbh-v2-cloud.py --batch "${{ github.event.inputs.batch || '400' }}"
+          python3 bbh-v2/bbh-v2-cloud.py --batch "${{ github.event.inputs.batch || '150' }}"
       - name: commit results
         run: |
           git config user.name "bbh-bot"
