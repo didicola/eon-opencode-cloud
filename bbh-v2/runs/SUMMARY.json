@@ -1,20 +1,20 @@
 {
- "updated": "2026-10-14T12:44:17.811755+00:00",
+ "updated": "2026-10-14T19:07:24.205716+00:00",
  "template_id": "bbh-v1-frozen-20261011",
  "lane": "ghost_ask",
- "n": 155,
- "hits": 120,
- "score_pct": 77.42,
+ "n": 305,
+ "hits": 195,
+ "score_pct": 63.93,
  "per_task": {
   "boolean_expressions.json": {
-   "n": 155,
-   "hits": 120,
-   "pct": 77.4
+   "n": 250,
+   "hits": 194,
+   "pct": 77.6
   },
   "causal_judgement.json": {
-   "n": 0,
-   "hits": 0,
-   "pct": 0.0
+   "n": 55,
+   "hits": 1,
+   "pct": 1.8
   },
   "date_understanding.json": {
    "n": 0,

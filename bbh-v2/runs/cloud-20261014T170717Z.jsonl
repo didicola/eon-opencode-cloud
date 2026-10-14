@@ -1,0 +1,150 @@
+{"task": "boolean_expressions.json", "idx": 155, "want": "True", "got": "\u2192 False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 156, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 158, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 159, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 161, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 160, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 157, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 162, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 165, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 164, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 163, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 166, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 167, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 168, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 171, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 172, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 173, "want": "False", "got": "True", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 170, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 169, "want": "False", "got": "True", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 174, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 176, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 178, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 175, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 179, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 180, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 177, "want": "False", "got": "True", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 183, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 181, "want": "False", "got": "True", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 185, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 182, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 184, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 186, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 187, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 189, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 190, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 192, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 193, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 188, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 191, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 196, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 194, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 195, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 198, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 200, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 201, "want": "False", "got": "None", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 202, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 203, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 197, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 205, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 206, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 207, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 208, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 209, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 199, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 211, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 204, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 213, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 212, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 215, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 216, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 214, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 217, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 218, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 219, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 221, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 210, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 220, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 223, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 224, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 222, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 227, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 225, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 226, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 230, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 228, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 229, "want": "True", "got": "False", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 232, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 233, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 231, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 236, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 235, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 234, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 238, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 240, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 237, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 239, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 242, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 243, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 241, "want": "False", "got": "True", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 245, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 247, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 248, "want": "False", "got": "False", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 249, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 244, "want": "True", "got": "True", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "boolean_expressions.json", "idx": 246, "want": "False", "got": "True", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 0, "want": "No", "got": "I think a typical person would answer that the short circuit was caused by both the black wire and the red wire touching the battery at the same time. They'd likely say that the red wire, which wasn't", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 2, "want": "Yes", "got": "I think a typical person would answer that John was unsure because he was weighing the pros and cons of each option, considering factors like job security, potential for growth, and personal interest ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 4, "want": "Yes", "got": "I think a typical person would answer that the short circuit or crash was caused by both Claire and Daniel logging on to the computer at the same time. \n\nTo break it down, the typical person would lik", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 1, "want": "No", "got": "I think a typical person would answer that John was unsure because he was weighing the pros and cons of each option, considering factors like job security, potential for growth, and personal interest ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 5, "want": "Yes", "got": "I think a typical person would answer that Suzy's arrival at 9 am was caused by the boss's instruction to be there at exactly 9 am, as she was following a direct order. On the other hand, Billy's arri", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 6, "want": "Yes", "got": "I think a typical person would say that the CEO's decision to carry out the programme, despite knowing it would harm the environment, is the direct cause of the environmental harm. They would likely a", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 7, "want": "No", "got": "I think a typical person would answer that Jake did not intentionally hit the bull's-eye. Although Jake's desire to win the contest and his actions to aim for the bull's-eye suggest an intention to hi", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 8, "want": "Yes", "got": "I think a typical person would answer that the hunter is unsure about shooting the deer because he's worried about accidentally hitting the bird-watchers. This concern would likely cause him to hesita", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 10, "want": "Yes", "got": "I think a typical person would say that the reason the guitar will play through the amplifier is because the amplifier is set to channel A. They might also acknowledge that the power mixer being turne", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 9, "want": "Yes", "got": "## Understanding the Scenario\n\nIn this scenario, we have Jim, Carol, Bob, and Nancy, who are researchers in a remote area with limited electricity supply. The electricity is only available in the even", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 3, "want": "No", "got": "## Understanding Causation in a Real-World Scenario\n\nTo address the question of how a typical person would answer questions about causation in the given scenario, let's break down the key elements inv", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 13, "want": "No", "got": "## Introduction to Causation\nTo address the question of how a typical person would answer questions about causation in the given scenario, we must first understand the concept of causation. Causation ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 14, "want": "Yes", "got": "## Understanding Causation in Everyday Scenarios\n\nTo address the question of how a typical person would answer questions about causation in the given scenario, let's break down the situation and analy", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 11, "want": "No", "got": "To answer this question, let's break it down into parts and consider how a typical person might think about causation in this scenario.\n\n## Understanding the Scenario\nThe coffee shop turns a profit if", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 16, "want": "Yes", "got": "I'm going to dive right into the question about how a typical person would answer questions about causation in this scenario. \n\nTo tackle this, let's break down the situation: we have a company consid", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 12, "want": "No", "got": "To answer this question, let's break down the scenario step by step. A typical person would likely consider the conditions under which the motorboat starts: it needs either the gear to be in neutral o", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 18, "want": "No", "got": "I think a typical person would answer that John was unsure because he was weighing the pros and cons of each option, considering factors like job security, potential for growth, and personal interest ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 17, "want": "No", "got": "I'm going to break down how a typical person might answer questions about causation in this scenario. \n\n## Understanding the Scenario\nThe situation involves Joe, who delays picking up his son from sch", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 15, "want": "Yes", "got": "To address the question about how a typical person would answer questions regarding causation in the given scenario, let's break it down into components that involve causation, such as the relationshi", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 19, "want": "Yes", "got": "Yes", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 21, "want": "No", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nThe question presents a situation where a law is passed in Nazi Germany, and then a CEO of a small corpo", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 22, "want": "Yes", "got": "I'm going to take a stab at how a typical person would answer this question. They'd likely say that if Janet doesn't put oil in the machines, it's probably because she's either forgotten, is busy with", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 24, "want": "Yes", "got": "I'm going to take a stab at how a typical person would answer this question. They'd likely say that if Janet doesn't put oil in the machines, it's probably because she's either forgotten, is busy with", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 23, "want": "No", "got": "I think the question is asking how a typical person would answer questions about causation in a scenario where a company starts a new program that helps both the environment and increases profits. \n\nT", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 26, "want": "No", "got": "I'm going to take a stab at how a typical person would answer this question. They'd likely say that if Janet doesn't put oil in the machines, it's probably because she's either forgotten, is busy with", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 25, "want": "No", "got": "To answer this question, let's break down the scenario step by step. A typical person would likely consider the roles and responsibilities of Janet and Kate in the factory. \n\nGiven the information, a ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 28, "want": "Yes", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nGiven the situation, a typical person would likely consider the following factors when thinking about ca", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 29, "want": "Yes", "got": "## Analyzing the Scenario\n\nTo address the question about causation in the context of Wayne's high-tech watch charging, let's break down the information provided:\n\n### Given Information\n\n- Wayne has a ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 30, "want": "Yes", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nGiven the situation, a typical person would likely consider the following factors when thinking about ca", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 31, "want": "No", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nGiven the situation, a typical person would likely consider the following factors when thinking about ca", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 20, "want": "No", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 33, "want": "Yes", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nGiven the situation, a typical person would likely consider the following factors when thinking about ca", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 27, "want": "Yes", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 32, "want": "No", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 34, "want": "No", "got": "Most people look at a scenario like this and immediately identify a breakdown in systemic protocol rather than just a simple accident. They\u2019d likely say that the true cause of the potential disaster i", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 37, "want": "No", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nGiven the situation, a typical person would likely consider the following factors when thinking about ca", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 36, "want": "No", "got": "Most people would likely conclude that the hedgehog, despite knowing the rule, chose to violate it, or that its behavior suggests it prioritized the immediate act of taking a pencil over the social no", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 39, "want": "Yes", "got": "Hi! That\u2019s a classic setup for a probability puzzle. Most people would focus on the fact that since Joe has already secured the \"harder\" part of the condition\u2014the green ball\u2014the outcome now rests enti", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 35, "want": "Yes", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 41, "want": "Yes", "got": "I'm going to break down how a typical person might answer questions about causation in this scenario. \n\n## Understanding the Scenario\nThe situation involves Joe, who delays picking up his son from sch", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 42, "want": "No", "got": "I can provide a typical person's response based on their natural language processing abilities and the context of the conversation.\n\n**Q: How would a typical person answer about causation?**\nA typical", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 40, "want": "No", "got": "Hey there! That\u2019s an interesting logic puzzle you've brought over. Most people would quickly conclude that since Kylie, Oliver, and Jen are regulars who typically order on Tuesdays, the coffee shop is", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 44, "want": "Yes", "got": "I think a typical person would answer that John was unsure because he was weighing the pros and cons of each option, considering factors like job security, potential for growth, and personal interest ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 38, "want": "No", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 43, "want": "Yes", "got": "That\u2019s a classic setup that usually catches people off guard because of the assumption built into the narrative.\n\nMost people would answer that Bill is confused, mistaken, or potentially looking at a ", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 47, "want": "No", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nGiven the situation, a typical person would likely consider the following factors when thinking about ca", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 45, "want": "Yes", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 49, "want": "No", "got": "I think a typical person would answer that the short circuit was caused by both the black wire and the red wire touching the battery at the same time. They'd likely say that the red wire, which wasn't", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 50, "want": "Yes", "got": "I'm going to take a stab at how a typical person would answer this question. They'd likely say that if Janet doesn't put oil in the machines, it's probably because she's either forgotten, is busy with", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 51, "want": "No", "got": "I'm going to break down the scenario and provide a typical person's perspective on causation. \n\nGiven the situation, a typical person would likely consider the following factors when thinking about ca", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 46, "want": "No", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 48, "want": "Yes", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 52, "want": "No", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 53, "want": "Yes", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "causal_judgement.json", "idx": 56, "want": "Yes", "got": "I'm going to take a stab at how a typical person would answer this question. They'd likely say that if Janet doesn't put oil in the machines, it's probably because she's either forgotten, is busy with", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
