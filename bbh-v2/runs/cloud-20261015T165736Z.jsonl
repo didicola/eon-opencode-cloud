@@ -1,0 +1,150 @@
+{"task": "date_understanding.json", "idx": 168, "want": "(E)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 170, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 169, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 173, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 171, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 172, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 175, "want": "(B)", "got": "01/02/2007", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 174, "want": "(A)", "got": "09/10/1909", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 176, "want": "(B)", "got": "05/11/2004", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 177, "want": "(A)", "got": "02/23/1973", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 178, "want": "(E)", "got": "09/10/1909", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 179, "want": "(A)", "got": "04/01/2008", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 181, "want": "(B)", "got": "01/31/2011", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 183, "want": "(F)", "got": "03/12/1973", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 184, "want": "(D)", "got": "01/02/1963", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 185, "want": "(D)", "got": "12/30/2014", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 180, "want": "(D)", "got": "12/02/1962", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 182, "want": "(F)", "got": "F: 12/23/1937", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 187, "want": "(E)", "got": "07/19/2002", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 188, "want": "(F)", "got": "05/29/2021", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 186, "want": "(D)", "got": "01/28/2017", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 189, "want": "(E)", "got": "05/22/1943", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 191, "want": "(C)", "got": "02/17/2010", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 190, "want": "(B)", "got": "I do not know anything about the date tomorrow \u2014 it is not in my memory.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 192, "want": "(B)", "got": "12/21/2010", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 194, "want": "(C)", "got": "02/12/2002", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 193, "want": "(C)", "got": "05/01/2021", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 195, "want": "(D)", "got": "01/22/2011", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 196, "want": "(F)", "got": "03/24/2008", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 199, "want": "(D)", "got": "I do not know anything about Jane or the NFL \u2014 it is not in my memory.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 198, "want": "(A)", "got": "08/09/1909", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 200, "want": "(E)", "got": "01/20/2011", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 197, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 203, "want": "(C)", "got": "06/09/2019", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 204, "want": "(A)", "got": "09/09/1909", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 205, "want": "(A)", "got": "08/12/2020", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 206, "want": "(C)", "got": "C: 06/20/2019", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 201, "want": "(A)", "got": "09/08/2003", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 207, "want": "(E)", "got": "I do not know anything about the current date \u2014 it is not in my memory.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 202, "want": "(A)", "got": "11/29/2001", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 208, "want": "(A)", "got": "I do not know anything about the current date \u2014 it is not in my memory.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 210, "want": "(B)", "got": "05/30/2020", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 211, "want": "(E)", "got": "12/29/2013", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 209, "want": "(D)", "got": "09/02/2021", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 214, "want": "(B)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 212, "want": "(F)", "got": "05/09/2017", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 213, "want": "(C)", "got": "06/03/1943", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 216, "want": "(D)", "got": "08/22/2021", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 217, "want": "(D)", "got": "01/07/2019", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 218, "want": "(D)", "got": "02/02/2020", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 215, "want": "(F)", "got": "05/07/2002", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 219, "want": "(D)", "got": "05/31/2021", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 220, "want": "(E)", "got": "07/22/2002", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 221, "want": "(A)", "got": "05/18/2019", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 222, "want": "(A)", "got": "12/02/2007", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 223, "want": "(F)", "got": "06/08/2019", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 224, "want": "(F)", "got": "F: 04/01/2008", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 226, "want": "(B)", "got": "11/02/2019", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 227, "want": "(F)", "got": "01/08/1987", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 228, "want": "(D)", "got": "04/17/1985", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 229, "want": "(A)", "got": "03/07/2016", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 231, "want": "(A)", "got": "10/12/2019", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 230, "want": "(D)", "got": "I do not know anything about the current date \u2014 it is not in my memory.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 225, "want": "(E)", "got": "I do not know anything about X \u2014 it is not in my memory.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 232, "want": "(B)", "got": "B: 12/31/2011", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 233, "want": "(F)", "got": "12/22/2006", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 235, "want": "(C)", "got": "04/20/1969", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 236, "want": "(E)", "got": "12/25/2006", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 237, "want": "(A)", "got": "06/11/2019", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 234, "want": "(E)", "got": "02/02/2020 is the palindrome day, so one week from today would be 02/09/2020.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 240, "want": "(C)", "got": "01/02/2008", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 238, "want": "(C)", "got": "02/27/2017", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 241, "want": "(A)", "got": "A", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 239, "want": "(A)", "got": "12/25/1929", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 242, "want": "(A)", "got": "C: 03/04/1966", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 243, "want": "(D)", "got": "01/23/2011", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 244, "want": "(B)", "got": "01/02/1962", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 246, "want": "(D)", "got": "07/24/1997", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 245, "want": "(D)", "got": "03/21/2008", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 247, "want": "(B)", "got": "12/31/1937", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 0, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 248, "want": "(F)", "got": "I do not know anything about the current date \u2014 it is not in my memory.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 1, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 3, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 2, "want": "(C)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 5, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "date_understanding.json", "idx": 249, "want": "(F)", "got": "01/29/2016", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 4, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 8, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 6, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 9, "want": "(B)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 11, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 10, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 12, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 14, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 7, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 13, "want": "(A)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 15, "want": "(A)", "got": "The homeowner had purchased.", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 17, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 18, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 20, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 16, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 19, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 23, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 24, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 25, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 26, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 21, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 28, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 29, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 30, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 27, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 22, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 32, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 33, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 31, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 36, "want": "(A)", "got": "A", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 37, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 35, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 34, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 38, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 41, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 40, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 39, "want": "(A)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 44, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 42, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 43, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 47, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 46, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 45, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 48, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 49, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 50, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 51, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 52, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 53, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 54, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 55, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 56, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 59, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 57, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 58, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 60, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 61, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 62, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 63, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 64, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 65, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 66, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 67, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
