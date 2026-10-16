@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-16T08:02:43.658107+00:00",
+ "updated": "2026-10-16T18:48:35.052215+00:00",
  "template_id": "bbh-v1-frozen-20261011",
  "lane": "ghost_ask",
- "n": 905,
- "hits": 432,
- "score_pct": 47.73,
+ "n": 1055,
+ "hits": 482,
+ "score_pct": 45.69,
  "per_task": {
   "boolean_expressions.json": {
    "n": 250,
@@ -22,14 +22,14 @@
    "pct": 47.2
   },
   "disambiguation_qa.json": {
-   "n": 218,
-   "hits": 118,
-   "pct": 54.1
+   "n": 250,
+   "hits": 141,
+   "pct": 56.4
   },
   "formal_fallacies.json": {
-   "n": 0,
-   "hits": 0,
-   "pct": 0.0
+   "n": 118,
+   "hits": 27,
+   "pct": 22.9
   },
   "geometric_shapes.json": {
    "n": 0,
