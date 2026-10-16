@@ -1,0 +1,150 @@
+{"task": "disambiguation_qa.json", "idx": 69, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 70, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 68, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 72, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 71, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 73, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 74, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 76, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 75, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 77, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 78, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 79, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 80, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 82, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 81, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 84, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 83, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 85, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 88, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 86, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 87, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 90, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 89, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 91, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 94, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 92, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 93, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 95, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 97, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 96, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 99, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 98, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 100, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 102, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 104, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 101, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 103, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 105, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 106, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 107, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 110, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 109, "want": "(B)", "got": "(B) It was the customer's car", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 112, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 111, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 113, "want": "(B)", "got": "(B) Asked the janitor", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 108, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 114, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 117, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 115, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 116, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 118, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 119, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 120, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 123, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 122, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 121, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 126, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 124, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 125, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 128, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 129, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 130, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 131, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 132, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 133, "want": "(B)", "got": "(C)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 134, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 136, "want": "(B)", "got": "(C)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 135, "want": "(C)", "got": "(C)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 137, "want": "(C)", "got": "(C)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 138, "want": "(B)", "got": "(C)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 139, "want": "(B)", "got": "(C)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 140, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 127, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 143, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 142, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 141, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 145, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 146, "want": "(B)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 144, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 147, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 148, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 149, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 150, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 151, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 152, "want": "(A)", "got": "A", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 154, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 156, "want": "(A)", "got": "A", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 153, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 155, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 158, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 159, "want": "(A)", "got": "A", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 160, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 161, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 162, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 163, "want": "(C)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 157, "want": "(C)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 165, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 164, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 166, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 168, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 170, "want": "(B)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 167, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 169, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 171, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 173, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 172, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 174, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 175, "want": "(B)", "got": "(B) Gave the carpenter a blueprint", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 176, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 177, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 178, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 180, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 181, "want": "(A)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 179, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 182, "want": "(B)", "got": "(B) The specialist is an expert", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 184, "want": "(B)", "got": "(B) Told the salesperson a fake story", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 183, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 186, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 185, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 189, "want": "(C)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 190, "want": "(B)", "got": "(C) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 188, "want": "(A)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 192, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 193, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 187, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 195, "want": "(A)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 196, "want": "(B)", "got": "A: Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 194, "want": "(C)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 197, "want": "(C)", "got": "A: C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 199, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 198, "want": "(C)", "got": "Ambiguous", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 200, "want": "(B)", "got": "Requested designer", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 201, "want": "(C)", "got": "A: C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 202, "want": "(C)", "got": "Ambiguous", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 203, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 204, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 205, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 206, "want": "(B)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 207, "want": "(B)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 208, "want": "(A)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 209, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 210, "want": "(C)", "got": "(C)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 211, "want": "(B)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 213, "want": "(C)", "got": "C", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 191, "want": "(B)", "got": "(D) Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 215, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 214, "want": "(B)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 212, "want": "(A)", "got": "C", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 216, "want": "(B)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "disambiguation_qa.json", "idx": 217, "want": "(B)", "got": "Ambiguous", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
