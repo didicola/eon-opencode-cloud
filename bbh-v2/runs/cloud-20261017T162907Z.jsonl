@@ -1,0 +1,150 @@
+{"task": "geometric_shapes.json", "idx": 19, "want": "(B)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 18, "want": "(K)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 20, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 21, "want": "(F)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 23, "want": "(C)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 24, "want": "(F)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 25, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 26, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 27, "want": "(B)", "got": "(B) heptagon", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 28, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 29, "want": "(K)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 31, "want": "(G)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 32, "want": "(I)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 33, "want": "(K)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 34, "want": "(C)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 30, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 22, "want": "(G)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 36, "want": "(B)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 35, "want": "(I)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 38, "want": "(I)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 40, "want": "(F)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 41, "want": "(D)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 42, "want": "(I)", "got": "(I) sector", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 43, "want": "(E)", "got": "(E) line", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 44, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 45, "want": "(K)", "got": "(A) circle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 37, "want": "(J)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 39, "want": "(E)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 48, "want": "(B)", "got": "(C) hexagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 47, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 50, "want": "(B)", "got": "(C) hexagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 49, "want": "(G)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 46, "want": "(K)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 52, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 51, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 53, "want": "(G)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 54, "want": "(B)", "got": "(B) heptagon", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 56, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 57, "want": "(B)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 58, "want": "(D)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 60, "want": "(D)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 61, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 55, "want": "(E)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 59, "want": "(K)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 62, "want": "(I)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 65, "want": "(K)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 63, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 64, "want": "(J)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 66, "want": "(K)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 67, "want": "(C)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 68, "want": "(E)", "got": "(E) line", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 69, "want": "(I)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 70, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 72, "want": "(K)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 74, "want": "(E)", "got": "(E) line", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 75, "want": "(E)", "got": "(E) line", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 76, "want": "(I)", "got": "(I) sector", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 77, "want": "(D)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 78, "want": "(I)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 73, "want": "(E)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 71, "want": "(K)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 79, "want": "(E)", "got": "(E) line", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 80, "want": "(K)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 81, "want": "(F)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 84, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 83, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 86, "want": "(I)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 87, "want": "(K)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 88, "want": "(F)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 85, "want": "(E)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 89, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 91, "want": "(B)", "got": "(C) hexagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 90, "want": "(G)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 82, "want": "(C)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 93, "want": "(K)", "got": "(K) trapezoid", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 94, "want": "(G)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 95, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 92, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 96, "want": "(F)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 97, "want": "(G)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 98, "want": "(K)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 99, "want": "(F)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 101, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 102, "want": "(C)", "got": "(F) octagon", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 103, "want": "(B)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 104, "want": "(K)", "got": "(A) circle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 100, "want": "(F)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 106, "want": "(D)", "got": "pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 105, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 107, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 109, "want": "(K)", "got": "(A) circle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 111, "want": "(K)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 112, "want": "(B)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 110, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 108, "want": "(B)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 114, "want": "(I)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 115, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 117, "want": "(F)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 113, "want": "(B)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 119, "want": "(E)", "got": "(E) line", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 118, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 116, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 120, "want": "(K)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 122, "want": "(G)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 124, "want": "(K)", "got": "(K) ellipse", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 125, "want": "(C)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 126, "want": "(B)", "got": "(C) hexagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 127, "want": "(D)", "got": "(G) pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 123, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 128, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 129, "want": "(C)", "got": "(D)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 130, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 132, "want": "(E)", "got": "(E) line", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 133, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 134, "want": "(K)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 131, "want": "(F)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 121, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 135, "want": "(I)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 136, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 137, "want": "(J)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 140, "want": "(D)", "got": "(D)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 139, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 138, "want": "(F)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 143, "want": "(B)", "got": "(B) heptagon", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 142, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 144, "want": "(B)", "got": "(C) hexagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 145, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 146, "want": "(C)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 147, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 148, "want": "(C)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 150, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 151, "want": "(I)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 152, "want": "(B)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 153, "want": "(C)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 141, "want": "(E)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 155, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 149, "want": "(I)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 157, "want": "(D)", "got": "(D)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 158, "want": "(C)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 159, "want": "(F)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 156, "want": "(D)", "got": "pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 154, "want": "(J)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 162, "want": "(F)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 160, "want": "(J)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 161, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 163, "want": "(K)", "got": "(D)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 164, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 166, "want": "(C)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 168, "want": "(F)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 167, "want": "(F)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
