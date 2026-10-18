@@ -1,0 +1,150 @@
+{"task": "hyperbaton.json", "idx": 63, "want": "(B)", "got": "(B) lovely old silver monkey", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 70, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 66, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 71, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 72, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 73, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 74, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 75, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 76, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 77, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 79, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 78, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 80, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 82, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 83, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 81, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 86, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 85, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 84, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 87, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 89, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 88, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 92, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 90, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 91, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 94, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 93, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 95, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 97, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 98, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 96, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 100, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 99, "want": "(A)", "got": "(A) nice enormous blue Bangladeshi dog", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 101, "want": "(A)", "got": "(A) brand-new circular Pakistani surfboard", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 102, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 105, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 104, "want": "(B)", "got": "(B) repulsive normal-size old-fashioned green cardboard surfboard", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 106, "want": "(A)", "got": "(A) repulsive old-fashioned rectangular green Japanese exercise ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 103, "want": "(A)", "got": "(A) archaic square orange wool dog", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 109, "want": "(B)", "got": "(B) new green Turkish walking sock", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 110, "want": "(A)", "got": "(A) little black driving ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 107, "want": "(B)", "got": "(B) tiny archaic rubber smoking ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 108, "want": "(B)", "got": "(B) good large red chair", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 113, "want": "(B)", "got": "(B) little rectangular orange American shoe", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 111, "want": "(A)", "got": "(A) lovely archaic cardboard cat", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 114, "want": "(B)", "got": "(B) awful black typing computer", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 115, "want": "(B)", "got": "(B) ancient pyramidal pink Indian paper ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 116, "want": "(A)", "got": "(A) mysterious ancient Indonesian paper cat", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 117, "want": "(A)", "got": "(A) big brand-new orange fiberglass snorkeling knife", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 112, "want": "(B)", "got": "(B) terrible large brand-new cat", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 120, "want": "(B)", "got": "(B) old fiberglass surfboard", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 121, "want": "(B)", "got": "(B) good massive Thai cardboard sweater", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 122, "want": "(B)", "got": "(B) tiny Thai fiberglass eating car", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 118, "want": "(A)", "got": "(A) obnoxious midsize wood computer", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 119, "want": "(A)", "got": "(A) mysterious little Bangladeshi silver baby", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 123, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 124, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 126, "want": "(A)", "got": "(A) brand-new square black wool eating motorcycle", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 125, "want": "(A)", "got": "(A) good rubber cat", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 128, "want": "(B)", "got": "(B) massive square sweater", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 127, "want": "(B)", "got": "(B) ancient spherical gray glass hiking shoe", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 131, "want": "(A)", "got": "(A) wonderful large triangular Bangladeshi eating computer", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 130, "want": "(B)", "got": "(B) awful square Japanese silver motorcycle", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 129, "want": "(A)", "got": "(A) Mexican paper baby", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 133, "want": "(B)", "got": "(B) large orange Iranian iron computer", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 132, "want": "(A)", "got": "(A) good ancient square Indian motorcycle", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 134, "want": "(B)", "got": "(B) lovely archaic pyramidal brown Nigerian fiberglass motorcycle", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 137, "want": "(A)", "got": "(A) good huge old black Iranian wood walking chair", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 136, "want": "(B)", "got": "(B) large old Pakistani snorkeling ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 139, "want": "(B)", "got": "(B) obnoxious new spherical Turkish silver dog", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 140, "want": "(A)", "got": "(A) brand-new grey paper sweater", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 141, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 142, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 143, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 144, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 145, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 146, "want": "(A)", "got": "(A) silly grey silver chair", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 147, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 135, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 149, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 138, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 150, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 152, "want": "(A)", "got": "A", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 153, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 154, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 155, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 156, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 157, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 151, "want": "(A)", "got": "A: (A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 158, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 160, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 161, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 162, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 163, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 148, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 159, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 166, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 167, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 168, "want": "(B)", "got": "(B) nice small circular eating chair", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 169, "want": "(B)", "got": "(B) huge new tan Indian dog", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 170, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 171, "want": "(A)", "got": "A: (A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 172, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 173, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 164, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 174, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 165, "want": "(A)", "got": "(A) red Ethiopian match", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 176, "want": "(B)", "got": "(B) awful huge tan wool car", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 175, "want": "(A)", "got": "(A) mysterious massive brown Nigerian fiberglass whittling ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 178, "want": "(B)", "got": "(B) lovely brand-new rectangular exercise dog", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 177, "want": "(B)", "got": "(B) ridiculous tiny archaic prismlike Thai cardboard sock", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 180, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 179, "want": "(B)", "got": "(B) blue plastic smoking ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 182, "want": "(B)", "got": "(B) little old green snorkeling sweater", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 184, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 181, "want": "(B)", "got": "(B) normal-size archaic green Brazilian typing car", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 186, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 187, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 185, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 188, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 189, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 183, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 192, "want": "(B)", "got": "(B) small brand-new circular car", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 191, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 190, "want": "(A)", "got": "(A) awful small paper ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 194, "want": "(B)", "got": "(B) lovely gray German ship", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 193, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 195, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 197, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 196, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 200, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 198, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 199, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 201, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 203, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 204, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 202, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 206, "want": "(A)", "got": "(A) lovely little archaic prismlike black smoking motorcycle", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 207, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 205, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 208, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 210, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 211, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 212, "want": "(A)", "got": "(A) repulsive prismlike glass shoe", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 209, "want": "(A)", "got": "(A) lovely pink shoe", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 213, "want": "(B)", "got": "(B) enormous circular Thai wool driving dog", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 214, "want": "(B)", "got": "(B) ancient spherical black cardboard hiking match", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 215, "want": "(B)", "got": "(B) prismlike brown silver hiking shoe", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 216, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 217, "want": "(B)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
