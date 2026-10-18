@@ -1,0 +1,150 @@
+{"task": "geometric_shapes.json", "idx": 169, "want": "(I)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 165, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 170, "want": "(I)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 171, "want": "(F)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 172, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 174, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 173, "want": "(F)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 177, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 176, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 178, "want": "(G)", "got": "pentagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 179, "want": "(C)", "got": "(B) heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 181, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 180, "want": "(I)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 183, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 184, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 175, "want": "(D)", "got": "(D) kite", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 186, "want": "(C)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 187, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 182, "want": "(K)", "got": "The path draws a kite. \n\nD", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 189, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 188, "want": "(I)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 190, "want": "(F)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 185, "want": "(F)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 193, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 192, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 191, "want": "(F)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 195, "want": "(F)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 194, "want": "(K)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 197, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 199, "want": "(K)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 200, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 198, "want": "(I)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 196, "want": "(D)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 203, "want": "(K)", "got": "A circle.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 204, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 202, "want": "(J)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 201, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 206, "want": "(F)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 205, "want": "(B)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 208, "want": "(I)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 210, "want": "(I)", "got": "J", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 207, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 212, "want": "(B)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 213, "want": "(D)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 214, "want": "(F)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 209, "want": "(G)", "got": "(J) triangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 216, "want": "(I)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 215, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 218, "want": "(J)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 219, "want": "(J)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 220, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 221, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 211, "want": "(K)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 217, "want": "(G)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 224, "want": "(K)", "got": "(H) rectangle", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 225, "want": "(C)", "got": "heptagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 226, "want": "(K)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 227, "want": "(J)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 228, "want": "(B)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 229, "want": "(J)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 223, "want": "(K)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 222, "want": "(D)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 232, "want": "(E)", "got": "E", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 230, "want": "(I)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 234, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 233, "want": "(C)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 236, "want": "(F)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 235, "want": "(G)", "got": "D", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 231, "want": "(J)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 237, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 238, "want": "(K)", "got": "H", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 241, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 242, "want": "(K)", "got": "A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 243, "want": "(G)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 240, "want": "(F)", "got": "H", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 244, "want": "(B)", "got": "(B) heptagon", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 239, "want": "(G)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 245, "want": "(I)", "got": "(F) octagon", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 246, "want": "(I)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 247, "want": "(K)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 248, "want": "(I)", "got": "(G)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "geometric_shapes.json", "idx": 249, "want": "(I)", "got": "(D) kite", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 0, "want": "(A)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 2, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 3, "want": "(B)", "got": "(B) cloth smoking rectangular motorcycle", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 1, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 4, "want": "(A)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 5, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 6, "want": "(B)", "got": "A: A", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 7, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 10, "want": "(A)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 8, "want": "(A)", "got": "(A)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 11, "want": "(A)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 9, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 13, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 12, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 16, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 14, "want": "(A)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 15, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 19, "want": "(A)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 17, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 20, "want": "(A)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 18, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 22, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 21, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 23, "want": "(B)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 24, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 25, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 26, "want": "(A)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 27, "want": "(A)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 29, "want": "(B)", "got": "old-fashioned", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 30, "want": "(B)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 28, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 31, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 34, "want": "(B)", "got": "(B) midsize prismlike orange iron snorkeling knife", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 35, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 36, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 37, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 32, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 33, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 40, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 41, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 42, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 43, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 44, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 45, "want": "(A)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 38, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 47, "want": "(B)", "got": "A: B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 39, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 48, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 49, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 46, "want": "(B)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 50, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 52, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 53, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 51, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 55, "want": "(A)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 57, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 58, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 54, "want": "(A)", "got": "My edge brain is at daily capacity \u2014 I've queued your question; my local brain will answer when it syncs.", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 56, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 59, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 60, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 61, "want": "(B)", "got": "(B)", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 64, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 65, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 62, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 67, "want": "(A)", "got": "B", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 68, "want": "(B)", "got": "B", "ok": true, "err": null, "ms": 0, "runner": "cloud"}
+{"task": "hyperbaton.json", "idx": 69, "want": "(A)", "got": "(B)", "ok": false, "err": null, "ms": 0, "runner": "cloud"}
