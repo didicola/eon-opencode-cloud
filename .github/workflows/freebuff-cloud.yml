@@ -1,0 +1,92 @@
+name: freebuff-cloud
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Task for the freebuff cloud agent"
+        required: true
+        type: string
+      repo_url:
+        description: "Optional: git repo to clone into the workdir first"
+        required: false
+        default: ""
+        type: string
+      max_minutes:
+        description: "Max minutes for the freebuff turn"
+        required: false
+        default: "30"
+        type: string
+  # schedule: disabled until proven on real tasks — arm later for 24/7.
+
+concurrency:
+  group: freebuff-cloud
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  freebuff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install freebuff CLI (official npm launcher)
+        run: |
+          set -e
+          npm install -g freebuff@0.2.30 || (sleep 5 && npm install -g freebuff@0.2.30)
+          which freebuff
+          freebuff --version
+
+      - name: Seed auth if provided
+        env:
+          FB_CREDS_B64: ${{ secrets.FREEBUFF_CREDS_B64 }}
+        run: |
+          mkdir -p "$HOME/.config/manicode"
+          if [ -n "${FB_CREDS_B64:-}" ]; then
+            printf '%s' "$FB_CREDS_B64" | base64 -d > "$HOME/.config/manicode/credentials.json"
+            chmod 600 "$HOME/.config/manicode/credentials.json"
+            echo "auth: credentials.json seeded ($(wc -c < "$HOME/.config/manicode/credentials.json") bytes)"
+          else
+            echo "auth: none (secret FREEBUFF_CREDS_B64 not set) — anonymous mode, login gate may appear"
+          fi
+
+      - name: Prepare workdir
+        env:
+          FB_REPO: ${{ inputs.repo_url }}
+        run: |
+          mkdir -p work
+          if [ -n "${FB_REPO:-}" ]; then git clone --depth 1 "$FB_REPO" work; fi
+          ls -la work | head -20 || true
+
+      - name: Run freebuff task (cloud, zero-local)
+        env:
+          FB_TASK: ${{ inputs.task }}
+          FB_MAX: ${{ inputs.max_minutes }}
+          CODEBUFF_API_KEY: ${{ secrets.FREEBUFF_API_KEY }}
+        run: |
+          set +e
+          mkdir -p out
+          python3 freebuff/run_freebuff.py --task "$FB_TASK" --cwd work --max-minutes "${FB_MAX:-30}" --out-prefix out/freebuff
+          EC=$?
+          echo "driver_exit=$EC" | tee -a out/summary.txt
+          {
+            echo "## freebuff-cloud run"
+            echo "- task: \`$(echo "$FB_TASK" | head -c 300)\`"
+            echo "- driver exit: $EC (0=ran, 4=login required, 3=timeout)"
+            echo '```'
+            tail -n 150 out/freebuff.txt 2>/dev/null || echo "(no transcript captured)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: freebuff-out
+          path: out/
