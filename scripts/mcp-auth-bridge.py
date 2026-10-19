@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """mcp-auth-bridge.py — streamable-HTTP MCP bridge.
 
-Listens on 127.0.0.1:8788 and forwards to the EON MCP server, injecting the
-admin token as the `auth` argument of every tools/call. The token stays in
-this process's env only: agent CLIs (Claude Code, Codex, ...) register this
-bridge as their MCP server and never see the secret.
+Listens on 127.0.0.1:8788 and forwards to the EON MCP server. Two jobs:
+  1. inject the admin token as the `auth` argument of every tools/call
+     (clients never see the secret), and
+  2. strip the `auth` field from tools/list schemas so agents do not stop to
+     ask for a token they should never need.
 """
 import json, os, sys
 import urllib.request, urllib.error
@@ -17,7 +18,6 @@ UA = "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131.0 Mobile Saf
 
 
 def inject(obj):
-    """Add auth to tools/call arguments (works for single messages and batches)."""
     if isinstance(obj, list):
         return [inject(x) for x in obj]
     if not isinstance(obj, dict):
@@ -25,9 +25,57 @@ def inject(obj):
     if obj.get("method") == "tools/call":
         params = obj.setdefault("params", {})
         args = params.setdefault("arguments", {})
-        if TOKEN:
-            args.setdefault("auth", TOKEN)
+        if TOKEN and not args.get("auth"):
+            args["auth"] = TOKEN
     return obj
+
+
+def strip_auth(payload):
+    """Remove the auth property/requirement from tools/list schemas."""
+    try:
+        result = payload.get("result")
+        if not isinstance(result, dict):
+            return payload
+        tools = result.get("tools")
+        if not isinstance(tools, list):
+            return payload
+        for t in tools:
+            for key in ("inputSchema", "input_schema"):
+                sch = t.get(key)
+                if isinstance(sch, dict):
+                    props = sch.get("properties")
+                    if isinstance(props, dict):
+                        props.pop("auth", None)
+                    req = sch.get("required")
+                    if isinstance(req, list):
+                        sch["required"] = [x for x in req if x != "auth"]
+        return payload
+    except Exception:
+        return payload
+
+
+def process_response(data: bytes, ctype: str) -> bytes:
+    try:
+        text = data.decode(errors="replace")
+    except Exception:
+        return data
+    if "text/event-stream" in (ctype or ""):
+        out = []
+        for line in text.splitlines():
+            if line.startswith("data:"):
+                raw = line[5:].strip()
+                try:
+                    obj = strip_auth(json.loads(raw))
+                    out.append("data: " + json.dumps(obj, separators=(",", ":")))
+                except Exception:
+                    out.append(line)
+            else:
+                out.append(line)
+        return ("\n".join(out) + "\n").encode()
+    try:
+        return json.dumps(strip_auth(json.loads(text))).encode()
+    except Exception:
+        return data
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -60,6 +108,7 @@ class Handler(BaseHTTPRequestHandler):
         except Exception:
             body = raw
         code, data, ctype, sid = self._forward(body)
+        data = process_response(data, ctype)
         self.send_response(code)
         self.send_header("Content-Type", ctype or "application/json")
         if sid:
@@ -72,7 +121,6 @@ class Handler(BaseHTTPRequestHandler):
             pass
 
     def do_GET(self):
-        # The MCP spec allows a GET notification stream; agents do not need it.
         self.send_response(405)
         self.send_header("Content-Length", "0")
         self.end_headers()
