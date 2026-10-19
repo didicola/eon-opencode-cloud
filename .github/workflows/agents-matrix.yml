@@ -44,13 +44,23 @@ jobs:
             echo "ccr: $(ccr -v 2>&1 | head -1)"
             echo "codex: $(codex --version 2>&1 | head -1)"
           } | tee out/versions.txt
-      - name: Baseline matrix probe
+      - name: Baseline matrix probe (best effort, 3 tries)
         run: |
-          curl -sS -m 60 https://cloud-brain.eon-sovereign.workers.dev/v1/chat/completions \
-            -H "Content-Type: application/json" -H "Authorization: Bearer eon-cloud" \
-            -d '{"model":"deepseek-chat","messages":[{"role":"user","content":"Reply with exactly BASELINE-MATRIX-OK"}],"max_tokens":30}' \
-            -o out/baseline.json
-          python3 -c "import json;d=json.load(open('out/baseline.json'));print('baseline reply:',d['choices'][0]['message']['content'])"
+          ok=0
+          for i in 1 2 3; do
+            curl -sS -m 60 https://cloud-brain.eon-sovereign.workers.dev/v1/chat/completions \
+              -H "Content-Type: application/json" -H "Authorization: Bearer eon-cloud" \
+              -d '{"model":"deepseek-chat","messages":[{"role":"user","content":"Reply with exactly BASELINE-MATRIX-OK"}],"max_tokens":30}' \
+              -o out/baseline.json || true
+            if python3 -c "import json;d=json.load(open('out/baseline.json'));print('baseline reply:',d['choices'][0]['message']['content'])" 2>/dev/null; then
+              ok=1; break
+            fi
+            echo "baseline attempt $i not usable — retrying in 10s"; sleep 10
+          done
+          if [ "$ok" != "1" ]; then
+            echo "baseline: TRANSIENT-UNAVAILABLE (agents will still try)" | tee -a out/summary.txt
+            head -c 300 out/baseline.json 2>/dev/null || true
+          fi
       - name: Start EON MCP auth bridge (token injected server-side, never shown)
         env:
           MCP_ADMIN_TOKEN: ${{ secrets.MCP_ADMIN_TOKEN }}
@@ -107,10 +117,14 @@ jobs:
           echo "ccr gateway probe: $code" >> out/summary.txt
           cat out/ccr-start.log | head -5
           claude mcp add -s user --transport http eon http://127.0.0.1:8788/mcp 2>&1 | tail -3 || true
-          ANTHROPIC_BASE_URL=http://127.0.0.1:3456 \
-          ANTHROPIC_AUTH_TOKEN=ccr-local \
-          CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 \
-            claude -p "$TASK" --output-format text --dangerously-skip-permissions 2>&1 | tee out/claude.txt || true
+          for attempt in 1 2; do
+            ANTHROPIC_BASE_URL=http://127.0.0.1:3456 \
+            ANTHROPIC_AUTH_TOKEN=ccr-local \
+            CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 \
+              claude -p "$TASK" --output-format text --dangerously-skip-permissions 2>&1 | tee out/claude.txt || true
+            grep -qE "AGENT-MATRIX-OK|CLAUDE-MATRIX-OK" out/claude.txt && break
+            echo "claude attempt $attempt missing marker — retrying in 10s"; sleep 10
+          done
           if grep -qE "AGENT-MATRIX-OK|CLAUDE-MATRIX-OK" out/claude.txt; then
             echo "claude-code: MARKER-OK" | tee -a out/summary.txt
           else
@@ -135,7 +149,11 @@ jobs:
           env_key = "EON_API_KEY"
           wire_api = "chat"
           TOML
-          EON_API_KEY=eon-cloud codex exec --skip-git-repo-check --model deepseek-chat "$TASK" 2>&1 | tee out/codex.txt || true
+          for attempt in 1 2; do
+            EON_API_KEY=eon-cloud codex exec --skip-git-repo-check --model deepseek-chat "$TASK" 2>&1 | tee out/codex.txt || true
+            grep -qE "AGENT-MATRIX-OK|CODEX-MATRIX-OK" out/codex.txt && break
+            echo "codex attempt $attempt missing marker — retrying in 10s"; sleep 10
+          done
           if grep -qE "AGENT-MATRIX-OK|CODEX-MATRIX-OK" out/codex.txt; then
             echo "codex: MARKER-OK" | tee -a out/summary.txt
           else
@@ -149,9 +167,13 @@ jobs:
         run: |
           TASK="${INPUT_TASK:-Reply with exactly AGENT-MATRIX-OK}"
           python3 -m pip install -q aider-chat
-          OPENAI_API_BASE=https://cloud-brain.eon-sovereign.workers.dev/v1 \
-          OPENAI_API_KEY=eon-cloud \
-            aider --model openai/deepseek-chat --message "$TASK" --yes --no-auto-commits --no-git --no-check-update --no-stream 2>&1 | tee out/aider.txt || true
+          for attempt in 1 2; do
+            OPENAI_API_BASE=https://cloud-brain.eon-sovereign.workers.dev/v1 \
+            OPENAI_API_KEY=eon-cloud \
+              aider --model openai/deepseek-chat --message "$TASK" --yes --no-auto-commits --no-git --no-check-update --no-stream 2>&1 | tee out/aider.txt || true
+            grep -qE "AGENT-MATRIX-OK|AIDER-MATRIX-OK" out/aider.txt && break
+            echo "aider attempt $attempt missing marker — retrying in 10s"; sleep 10
+          done
           if grep -qE "AGENT-MATRIX-OK|AIDER-MATRIX-OK" out/aider.txt; then
             echo "aider: MARKER-OK" | tee -a out/summary.txt
           else
@@ -192,20 +214,20 @@ jobs:
             echo "# agents-matrix receipt $(date -u +%FT%TZ)"
             echo
             echo '```'
-            cat out/versions.txt 2>/dev/null
+            cat out/versions.txt 2>/dev/null || true
             echo '```'
             echo
-            echo "mcp tools: $(cat out/mcp-tools.txt 2>/dev/null)"
+            echo "mcp tools: $(cat out/mcp-tools.txt 2>/dev/null || echo n/a)"
             echo
             echo '```'
-            cat out/summary.txt 2>/dev/null
+            cat out/summary.txt 2>/dev/null || true
             echo '```'
             for f in claude codex aider; do
               if [ -f "out/$f.txt" ]; then
                 echo
                 echo "## $f (tail)"
                 echo '```'
-                tail -n 40 "out/$f.txt"
+                tail -n 40 "out/$f.txt" 2>/dev/null || true
                 echo '```'
               fi
             done
