@@ -122,10 +122,10 @@ jobs:
             ANTHROPIC_AUTH_TOKEN=ccr-local \
             CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 \
               claude -p "$TASK" --output-format text --dangerously-skip-permissions 2>&1 | tee out/claude.txt || true
-            grep -qE "AGENT-MATRIX-OK|CLAUDE-MATRIX-OK" out/claude.txt && break
+            grep -qE "AGENT-MATRIX-OK|CLAUDE-MATRIX-OK|MCP-MEM-OK" out/claude.txt && break
             echo "claude attempt $attempt missing marker — retrying in 10s"; sleep 10
           done
-          if grep -qE "AGENT-MATRIX-OK|CLAUDE-MATRIX-OK" out/claude.txt; then
+          if grep -qE "AGENT-MATRIX-OK|CLAUDE-MATRIX-OK|MCP-MEM-OK" out/claude.txt; then
             echo "claude-code: MARKER-OK" | tee -a out/summary.txt
           else
             echo "claude-code: NO-MARKER" | tee -a out/summary.txt
