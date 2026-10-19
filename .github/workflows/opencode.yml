@@ -6,11 +6,17 @@ on:
         description: "Task for the cloud opencode agent"
         required: true
         type: string
-  # schedule: disabled until proven — add later e.g. hourly self-maintenance
+  schedule:
+    # Hourly cloud self-maintenance. Public repo => free minutes, zero locals needed.
+    # GitHub may throttle high-frequency crons; the concurrency group keeps runs serialized.
+    - cron: "17 * * * *"
+concurrency:
+  group: opencode-cloud
+  cancel-in-progress: false
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 120
     permissions:
       contents: write
       issues: write
@@ -22,18 +28,47 @@ jobs:
           node-version: "22"
       - name: Install opencode
         run: npm install -g opencode-ai
+      - name: Admin snapshot (token stays in env; never printed, never in model prompt)
+        env:
+          MCP_ADMIN_TOKEN: ${{ secrets.MCP_ADMIN_TOKEN }}
+        run: |
+          mkdir -p out selfmaintenance
+          if [ -n "${MCP_ADMIN_TOKEN:-}" ]; then
+            bash scripts/eon-admin.sh > out/admin.json 2>out/admin.err || true
+          else
+            echo '{"ok":false,"note":"MCP_ADMIN_TOKEN secret not set"}' > out/admin.json
+          fi
+          echo "admin snapshot bytes: $(wc -c < out/admin.json)"
       - name: Run task
         env:
           OPENCODE_PERMISSION: '{"bash":"allow","edit":"allow","write":"allow","webfetch":"allow"}'
+          INPUT_TASK: ${{ inputs.task }}
         run: |
-          mkdir -p out
-          opencode run --model eon/deepseek-chat "${{ inputs.task }}" 2>&1 | tee out/result.txt || true
+          TASK="$(cat <<'EOF'
+          Cloud self-maintenance cycle. Read out/admin.json (a fleet snapshot produced outside your context). Then curl these public endpoints with curl and a short timeout: https://cloud-brain.eon-sovereign.workers.dev/v1/models and https://eon-agi.eon-sovereign.workers.dev/health. Write a concise markdown report to selfmaintenance/report.md: one status line per lane (cloud-brain API, AGI engine, fleet nodes seen in admin.json), any DOWN items, and exactly one recommended action. Maximum 40 lines. Do NOT modify product code or workflows and NEVER print secrets.
+          EOF
+          )"
+          if [ -n "${INPUT_TASK:-}" ]; then TASK="$INPUT_TASK"; fi
+          echo "task: ${TASK:0:140}..."
+          opencode run --model eon/deepseek-chat "$TASK" 2>&1 | tee out/result.txt || true
           {
             echo "## cloud-opencode run"
             echo '```'
             tail -n 200 out/result.txt
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit self-maintenance receipt
+        if: always()
+        run: |
+          git config user.name "eon-cloud-agent"
+          git config user.email "eon-cloud-agent@users.noreply.github.com"
+          git add selfmaintenance 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no receipt changes"
+          else
+            git commit -m "selfmaintenance $(date -u +%FT%TZ)"
+            git push
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
