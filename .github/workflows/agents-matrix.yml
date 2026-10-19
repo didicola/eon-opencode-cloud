@@ -195,7 +195,7 @@ jobs:
                   + " | " + summary[:500])
           body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
                              "params": {"name": "ghost_remember",
-                                        "arguments": {"auth": tok, "text": text, "pin": False}}}).encode()
+                                        "arguments": {"auth": tok, "text": text, "pin": True}}}).encode()
           req = urllib.request.Request("https://eon-mcp.eon-sovereign.workers.dev/mcp", data=body, method="POST")
           req.add_header("Content-Type", "application/json")
           req.add_header("Accept", "application/json, text/event-stream")
