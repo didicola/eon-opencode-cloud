@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """
-EON freebuff-cloud runner (GitHub Actions).
+EON freebuff-cloud runner (GitHub Actions).  driver v2 — 2026-10-19
 
 Drives the freebuff CLI TUI inside a PTY:
-  - verifies the CLI runs
   - launches `freebuff --trust-agents` in the work directory
-  - waits for boot, types the task, presses Enter
+  - waits for boot, types the task in small chunks (avoids dropped chars)
+  - submits with Enter, then RE-SUBMITS on a schedule (the TUI can drop the
+    first Enter while it is still finishing boot/model-load; proven on the
+    phone 2026-10-19: burst = message submitted + agent answered)
+  - stops retrying early once screen activity indicates submission
   - captures the full transcript (raw + cleaned ANSI)
   - classifies the outcome
 
@@ -34,6 +37,11 @@ ANSI_OSC = re.compile(rb'\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)')
 ANSI_CSI = re.compile(rb'\x1b\[[0-9;?]*[ -/]*[@-~]')
 ANSI_2C = re.compile(rb'\x1b[()][A-Za-z0-9]')
 
+# Submit schedule: seconds after typing finishes for each Enter attempt.
+# Spaced >=6s apart so a stray Enter only ever hits an empty/processing composer.
+CR_SCHEDULE = [1.5, 8.0, 16.0, 26.0, 38.0, 52.0, 68.0]
+SUBMIT_ACTIVITY_BYTES = 200   # growth right after a CR => something started
+
 
 def clean(raw: bytes) -> str:
     s = ANSI_OSC.sub(b'', raw)
@@ -48,8 +56,8 @@ def main() -> int:
     ap.add_argument('--cwd', default='work')
     ap.add_argument('--out-prefix', default='out/freebuff')
     ap.add_argument('--max-minutes', type=float, default=30.0)
-    ap.add_argument('--boot-seconds', type=float, default=30.0)
-    ap.add_argument('--idle-seconds', type=float, default=120.0)
+    ap.add_argument('--boot-seconds', type=float, default=40.0)
+    ap.add_argument('--idle-seconds', type=float, default=150.0)
     ap.add_argument('--cols', type=int, default=160)
     ap.add_argument('--rows', type=int, default=50)
     args = ap.parse_args()
@@ -89,6 +97,13 @@ def main() -> int:
     raw_fh = open(args.out_prefix + '.raw', 'wb')
     buf = bytearray()
     typed_at = None
+    cr_idx = 0
+    cr_attempts = 0
+    submitted_signal = False
+    check_at = None
+    bytes_at_cr = 0
+    first_cr_growth = None
+    total_in = 0
     last_change = time.time()
     last_len = -1
     deadline = t0 + args.max_minutes * 60.0
@@ -114,13 +129,37 @@ def main() -> int:
             raw_fh.write(data)
             raw_fh.flush()
             buf.extend(data)
+            total_in += len(data)
             if len(buf) > 4_000_000:
                 del buf[:2_000_000]
+
+        # --- boot -> type task in chunks ---
         if typed_at is None and now - t0 >= args.boot_seconds:
-            os.write(fd, task.encode('utf-8', 'replace') + b'\r')
-            typed_at = now
-            last_change = now
-        elif typed_at is not None and now - typed_at > 5:
+            tb = task.encode('utf-8', 'replace')
+            for i in range(0, len(tb), 64):
+                os.write(fd, tb[i:i + 64])
+                time.sleep(0.12)
+            typed_at = time.time()
+            last_change = typed_at
+            # next checks: after each CR, look for activity within 5s
+        # --- submit attempts on schedule ---
+        if typed_at is not None and cr_idx < len(CR_SCHEDULE) and now - typed_at >= CR_SCHEDULE[cr_idx]:
+            if not submitted_signal:
+                os.write(fd, b'\r')
+                cr_attempts += 1
+                bytes_at_cr = total_in
+                check_at = now + 5.0
+            cr_idx += 1
+        # --- after-CR activity check ---
+        if check_at is not None and now >= check_at:
+            growth = total_in - bytes_at_cr
+            if first_cr_growth is None:
+                first_cr_growth = growth
+            if growth >= SUBMIT_ACTIVITY_BYTES:
+                submitted_signal = True
+            check_at = None
+        # --- idle detection (only once submission plausibly done) ---
+        if typed_at is not None and (submitted_signal or now - typed_at > CR_SCHEDULE[-1] + 10):
             cl = len(clean(bytes(buf[-200000:])))
             if cl != last_len:
                 last_len = cl
@@ -133,7 +172,10 @@ def main() -> int:
     try:
         with open(args.out_prefix + '.txt', 'w') as f:
             f.write('=== freebuff-cloud transcript (cleaned) ===\n')
-            f.write('task: %s\nreason: %s\n\n' % (task[:500], reason))
+            f.write('task: %s\nreason: %s\n' % (task[:500], reason))
+            f.write('telemetry: cr_attempts=%d submitted_signal=%s first_cr_growth=%s total_in=%d\n'
+                    % (cr_attempts, submitted_signal, first_cr_growth, total_in))
+            f.write('\n')
             f.write(tail)
     except Exception as e:
         print('WARN: transcript write failed:', e)
@@ -148,6 +190,8 @@ def main() -> int:
         verdict, code = 'inconclusive', 3
 
     print('== freebuff-cloud verdict: %s (reason=%s, exit=%d)' % (verdict, reason, code))
+    print('== telemetry: cr_attempts=%d submitted_signal=%s first_cr_growth=%s' %
+          (cr_attempts, submitted_signal, first_cr_growth))
     print('== transcript tail ==')
     print(tail[-12000:])
 
