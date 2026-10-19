@@ -66,7 +66,10 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Mcp-Session-Id", sid)
         self.send_header("Content-Length", str(len(data)))
         self.end_headers()
-        self.wfile.write(data)
+        try:
+            self.wfile.write(data)
+        except Exception:
+            pass
 
     def do_GET(self):
         # The MCP spec allows a GET notification stream; agents do not need it.
