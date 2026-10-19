@@ -1,0 +1,221 @@
+name: agents-matrix
+on:
+  workflow_dispatch:
+    inputs:
+      agent:
+        description: "Which agent to prove"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - claude-code
+          - codex
+          - aider
+      task:
+        description: "Task text"
+        required: true
+        default: "Reply with exactly AGENT-MATRIX-OK"
+        type: string
+  schedule:
+    # Daily proof that every agent lane still runs on the matrix (free minutes).
+    - cron: "43 6 * * *"
+concurrency:
+  group: agents-matrix
+  cancel-in-progress: false
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install agent CLIs
+        run: |
+          npm install -g @anthropic-ai/claude-code @musistudio/claude-code-router @openai/codex
+          mkdir -p out agents
+          { echo "claude: $(claude --version 2>&1 | head -1)"
+            echo "ccr: $(ccr --version 2>&1 | head -1)"
+            echo "codex: $(codex --version 2>&1 | head -1)"
+          } | tee out/versions.txt
+      - name: Baseline matrix probe
+        run: |
+          curl -sS -m 60 https://cloud-brain.eon-sovereign.workers.dev/v1/chat/completions \
+            -H "Content-Type: application/json" -H "Authorization: Bearer eon-cloud" \
+            -d '{"model":"deepseek-chat","messages":[{"role":"user","content":"Reply with exactly BASELINE-MATRIX-OK"}],"max_tokens":30}' \
+            -o out/baseline.json
+          python3 -c "import json;d=json.load(open('out/baseline.json'));print('baseline reply:',d['choices'][0]['message']['content'])"
+      - name: Start EON MCP auth bridge (token injected server-side, never shown)
+        env:
+          MCP_ADMIN_TOKEN: ${{ secrets.MCP_ADMIN_TOKEN }}
+        run: |
+          nohup python3 scripts/mcp-auth-bridge.py > out/bridge.log 2>&1 &
+          sleep 2
+          curl -sS -m 30 -X POST http://127.0.0.1:8788/mcp \
+            -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+            -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}' -o out/mcp-list.json || true
+          python3 - <<'PY'
+          import json, os, re
+          raw = open('out/mcp-list.json').read() if os.path.exists('out/mcp-list.json') else ''
+          m = re.search(r'\{.*\}', raw, re.S)
+          n = len(json.loads(m.group(0)).get('result', {}).get('tools', [])) if m else 0
+          print('mcp tools via bridge:', n)
+          open('out/mcp-tools.txt', 'w').write(str(n))
+          PY
+      - name: Claude Code on matrix (claude-code-router)
+        if: ${{ github.event_name == 'schedule' || inputs.agent == 'all' || inputs.agent == 'claude-code' }}
+        env:
+          INPUT_TASK: ${{ inputs.task }}
+        run: |
+          TASK="${INPUT_TASK:-Reply with exactly AGENT-MATRIX-OK}"
+          mkdir -p ~/.claude-code-router
+          cat > ~/.claude-code-router/config.json <<'JSON'
+          {
+            "LOG": true,
+            "API_TIMEOUT_MS": 600000,
+            "Providers": [
+              {
+                "name": "eon",
+                "api_base_url": "https://cloud-brain.eon-sovereign.workers.dev/v1/chat/completions",
+                "api_key": "eon-cloud",
+                "models": ["deepseek-chat"]
+              }
+            ],
+            "Router": {
+              "default": "eon,deepseek-chat",
+              "background": "eon,deepseek-chat",
+              "think": "eon,deepseek-chat",
+              "longContext": "eon,deepseek-chat",
+              "longContextThreshold": 60000
+            }
+          }
+          JSON
+          (ccr start || npx -y @musistudio/claude-code-router@3.1.3 start) > out/ccr-start.log 2>&1 &
+          for i in $(seq 1 40); do
+            code=$(curl -s -m 2 -o /dev/null -w '%{http_code}' http://127.0.0.1:3456/ || true)
+            [ "$code" != "000" ] && break
+            sleep 1
+          done
+          echo "ccr port probe: ${code:-none}"
+          claude mcp add -s user --transport http eon http://127.0.0.1:8788/mcp 2>&1 | tail -3 || true
+          ANTHROPIC_BASE_URL=http://127.0.0.1:3456 \
+          ANTHROPIC_AUTH_TOKEN=ccr-local \
+          CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 \
+            claude -p "$TASK" --output-format text --dangerously-skip-permissions 2>&1 | tee out/claude.txt || true
+          if grep -qE "AGENT-MATRIX-OK|CLAUDE-MATRIX-OK" out/claude.txt; then
+            echo "claude-code: MARKER-OK" | tee -a out/summary.txt
+          else
+            echo "claude-code: NO-MARKER" | tee -a out/summary.txt
+          fi
+      - name: Codex CLI on matrix
+        if: ${{ github.event_name == 'schedule' || inputs.agent == 'all' || inputs.agent == 'codex' }}
+        env:
+          INPUT_TASK: ${{ inputs.task }}
+        run: |
+          TASK="${INPUT_TASK:-Reply with exactly AGENT-MATRIX-OK}"
+          mkdir -p ~/.codex
+          cat > ~/.codex/config.toml <<'TOML'
+          model = "deepseek-chat"
+          model_provider = "eon"
+          approval_policy = "never"
+          sandbox_mode = "read-only"
+
+          [model_providers.eon]
+          name = "EON Cloud Brain"
+          base_url = "https://cloud-brain.eon-sovereign.workers.dev/v1"
+          env_key = "EON_API_KEY"
+          wire_api = "chat"
+          TOML
+          EON_API_KEY=eon-cloud codex exec --skip-git-repo-check --model deepseek-chat "$TASK" 2>&1 | tee out/codex.txt || true
+          if grep -qE "AGENT-MATRIX-OK|CODEX-MATRIX-OK" out/codex.txt; then
+            echo "codex: MARKER-OK" | tee -a out/summary.txt
+          else
+            echo "codex: NO-MARKER" | tee -a out/summary.txt
+          fi
+      - name: Aider on matrix (best effort)
+        if: ${{ github.event_name == 'schedule' || inputs.agent == 'all' || inputs.agent == 'aider' }}
+        continue-on-error: true
+        env:
+          INPUT_TASK: ${{ inputs.task }}
+        run: |
+          TASK="${INPUT_TASK:-Reply with exactly AGENT-MATRIX-OK}"
+          python3 -m pip install -q aider-chat
+          OPENAI_API_BASE=https://cloud-brain.eon-sovereign.workers.dev/v1 \
+          OPENAI_API_KEY=eon-cloud \
+            aider --model openai/deepseek-chat --message "$TASK" --yes --no-auto-commits --no-git --no-check-update --no-stream 2>&1 | tee out/aider.txt || true
+          if grep -qE "AGENT-MATRIX-OK|AIDER-MATRIX-OK" out/aider.txt; then
+            echo "aider: MARKER-OK" | tee -a out/summary.txt
+          else
+            echo "aider: NO-MARKER" | tee -a out/summary.txt
+          fi
+      - name: Write memory (EON ghost pin)
+        if: always()
+        env:
+          MCP_ADMIN_TOKEN: ${{ secrets.MCP_ADMIN_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          tok = os.environ.get("MCP_ADMIN_TOKEN", "")
+          try:
+              summary = open('out/summary.txt').read().strip()
+          except Exception:
+              summary = 'no-summary'
+          text = ("AGENTS-MATRIX " + __import__('time').strftime('%Y-%m-%dT%H:%MZ', __import__('time').gmtime())
+                  + " | " + summary[:500])
+          body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/call",
+                             "params": {"name": "ghost_remember",
+                                        "arguments": {"auth": tok, "text": text, "pin": False}}}).encode()
+          req = urllib.request.Request("https://eon-mcp.eon-sovereign.workers.dev/mcp", data=body, method="POST")
+          req.add_header("Content-Type", "application/json")
+          req.add_header("Accept", "application/json, text/event-stream")
+          req.add_header("User-Agent", "Mozilla/5.0 (Linux; Android 14)")
+          try:
+              with urllib.request.urlopen(req, timeout=60) as x:
+                  print("memory pin:", x.status, x.read()[:200])
+          except Exception as e:
+              print("memory pin ERR:", str(e)[:150])
+          PY
+      - name: Write receipt + commit
+        if: always()
+        run: |
+          mkdir -p agents
+          {
+            echo "# agents-matrix receipt $(date -u +%FT%TZ)"
+            echo
+            echo '```'
+            cat out/versions.txt 2>/dev/null
+            echo '```'
+            echo
+            echo "mcp tools: $(cat out/mcp-tools.txt 2>/dev/null)"
+            echo
+            echo '```'
+            cat out/summary.txt 2>/dev/null
+            echo '```'
+            for f in claude codex aider; do
+              if [ -f "out/$f.txt" ]; then
+                echo
+                echo "## $f (tail)"
+                echo '```'
+                tail -n 40 "out/$f.txt"
+                echo '```'
+              fi
+            done
+          } > "agents/RECEIPT-$(date -u +%Y%m%d).md"
+          git config user.name "eon-agents"
+          git config user.email "eon-agents@users.noreply.github.com"
+          git add agents
+          if git diff --cached --quiet; then
+            echo "no receipt changes"
+          else
+            git commit -m "agents-matrix receipt $(date -u +%FT%TZ)"
+            git push
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: agents-matrix-out
+          path: out/
