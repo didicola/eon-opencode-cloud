@@ -17,7 +17,8 @@ on:
         required: false
         default: "30"
         type: string
-  # schedule: disabled until proven on real tasks — arm later for 24/7.
+  schedule:
+    - cron: '17 */6 * * *'   # 24/7 heartbeat: every 6h at :17 (armed 2026-10-19)
 
 concurrency:
   group: freebuff-cloud
@@ -73,12 +74,13 @@ jobs:
         run: |
           set +e
           mkdir -p out
-          python3 freebuff/run_freebuff.py --task "$FB_TASK" --cwd work --max-minutes "${FB_MAX:-30}" --out-prefix out/freebuff
+          TASK="${FB_TASK:-Reply with exactly: EON-FREEBUFF-OK. Nothing else.}"
+          python3 freebuff/run_freebuff.py --task "$TASK" --cwd work --max-minutes "${FB_MAX:-30}" --out-prefix out/freebuff
           EC=$?
           echo "driver_exit=$EC" | tee -a out/summary.txt
           {
             echo "## freebuff-cloud run"
-            echo "- task: \`$(echo "$FB_TASK" | head -c 300)\`"
+            echo "- task: \`$(echo "$TASK" | head -c 300)\`"
             echo "- driver exit: $EC (0=ran, 4=login required, 3=timeout)"
             echo '```'
             tail -n 150 out/freebuff.txt 2>/dev/null || echo "(no transcript captured)"
@@ -89,4 +91,6 @@ jobs:
         if: always()
         with:
           name: freebuff-out
-          path: out/
+          path: |
+            out/
+            work/proof*.txt
