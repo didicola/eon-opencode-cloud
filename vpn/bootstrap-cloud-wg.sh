@@ -19,23 +19,27 @@
 #   --endpoint <ip-or-host>  public IP/hostname of this VM (auto-detected by default)
 #   --port <udp-port>        WireGuard UDP port (default 51820)
 #   --peer <name>            peer name (default phone)
-#   --dns <ip>               DNS pushed to the phone (default 1.1.1.1)
+#   --dns <ip>               DNS pushed to the phone (default 9.9.9.9)
 #   --iface <name>           override the default network interface (auto-detected)
 #   --split                  split tunnel: only 10.88.0.0/24 goes through the VPN
+#   --no-psk                 disable the optional WireGuard preshared key (PQ hedge)
 #   --no-qr                  do not print the terminal QR
 #   --dry-run                generate keys/configs in a temp dir, change nothing
 #   -h, --help
 #
 # Security: keys are generated on the VM with umask 077; private keys are never
-# printed. The QR contains the phone private key — do not screen-share it.
+# printed. The QR contains the phone private key and PSK — do not screen-share it.
+# The optional PresharedKey is supported by the Android WireGuard app and gives a
+# symmetric post-quantum hedge: an attacker who breaks Curve25519 still needs it.
 set -euo pipefail
 umask 077
 
 PORT=51820
 PEER=phone
 ENDPOINT=""
-DNS=1.1.1.1
+DNS=9.9.9.9
 SPLIT=0
+PSK=1
 QR=1
 DRY=0
 IFACE=""
@@ -56,6 +60,7 @@ while [ $# -gt 0 ]; do
     --dns) DNS="${2:-}"; shift 2 ;;
     --iface) IFACE="${2:-}"; shift 2 ;;
     --split) SPLIT=1; shift ;;
+    --no-psk) PSK=0; shift ;;
     --no-qr) QR=0; shift ;;
     --dry-run) DRY=1; shift ;;
     -h|--help) usage ;;
@@ -76,14 +81,19 @@ if [ "$DRY" -eq 0 ] && [ "$(id -u)" -ne 0 ]; then
   exit 1
 fi
 
-if ! command -v wg >/dev/null 2>&1; then
-  if [ "$DRY" -eq 1 ]; then
+if [ "$DRY" -eq 1 ]; then
+  if ! command -v wg >/dev/null 2>&1; then
     echo "ERROR: wg not installed. Install wireguard-tools for --dry-run." >&2
     exit 1
   fi
+  if ! command -v curl >/dev/null 2>&1; then
+    echo "ERROR: curl not installed. Install curl for --dry-run." >&2
+    exit 1
+  fi
+else
   export DEBIAN_FRONTEND=noninteractive
   apt-get update -y
-  apt-get install -y wireguard wireguard-tools nftables iptables qrencode curl
+  apt-get install -y wireguard wireguard-tools nftables iptables iproute2 qrencode curl
 fi
 
 if [ -z "$ENDPOINT" ]; then
@@ -133,6 +143,15 @@ wg pubkey < "$WORK/keys/$PEER.key" > "$WORK/keys/$PEER.pub"
 chmod 600 "$WORK/keys/server.key" "$WORK/keys/$PEER.key"
 chmod 644 "$WORK/keys/server.pub" "$WORK/keys/$PEER.pub"
 
+# Optional preshared key: a symmetric post-quantum hedge supported by the
+# Android WireGuard app. Same value on both ends; never printed.
+PSK_LINE=""
+if [ "$PSK" -eq 1 ]; then
+  wg genpsk > "$WORK/keys/psk.key"
+  chmod 600 "$WORK/keys/psk.key"
+  PSK_LINE="PresharedKey = $(cat "$WORK/keys/psk.key")"
+fi
+
 if [ "$SPLIT" -eq 1 ]; then
   ALLOWED="$NET"
 else
@@ -151,6 +170,7 @@ PostDown = /usr/local/sbin/eon-cloud-vpn-fw.sh down
 [Peer]
 # $PEER
 PublicKey = $(cat "$WORK/keys/$PEER.pub")
+$PSK_LINE
 AllowedIPs = $PEER_IP/32
 EOF
 chmod 600 "$WORK/out/wgcloud.conf"
@@ -164,6 +184,7 @@ MTU = 1280
 
 [Peer]
 PublicKey = $(cat "$WORK/keys/server.pub")
+$PSK_LINE
 Endpoint = $ENDPOINT:$PORT
 AllowedIPs = $ALLOWED
 PersistentKeepalive = 25
@@ -178,6 +199,7 @@ network: $NET
 server: $SERVER_IP
 peer: $PEER = $PEER_IP
 split_tunnel: $SPLIT
+psk: $PSK
 dns: $DNS
 created: $(date -u +%Y-%m-%dT%H:%M:%SZ)
 server_pub: $(cat "$WORK/keys/server.pub")
