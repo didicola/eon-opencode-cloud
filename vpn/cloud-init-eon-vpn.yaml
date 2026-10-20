@@ -1,0 +1,10 @@
+#cloud-config
+# EON Cloud VPN — optional cloud-init user-data.
+# Paste this into the provider's "user data" / "custom data" field when creating
+# an Ubuntu 22.04/24.04 VM. The VM must have a public IPv4 and UDP 51820 open.
+package_update: true
+packages:
+  - curl
+runcmd:
+  - [ bash, -lc, "curl -fsSL https://raw.githubusercontent.com/didicola/eon-opencode-cloud/main/vpn/bootstrap-cloud-wg.sh -o /tmp/eon-cloud-vpn.sh && bash /tmp/eon-cloud-vpn.sh --no-qr > /var/log/eon-cloud-vpn-install.log 2>&1" ]
+  - [ bash, -lc, "printf '%s\n' 'EON Cloud VPN is installed.' 'Phone config: /root/eon-cloud-vpn/out/phone.conf' 'Show QR: sudo qrencode -t ansiutf8 < /root/eon-cloud-vpn/out/phone.conf' > /etc/motd" ]
