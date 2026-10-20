@@ -78,6 +78,15 @@ systemctl is-active wg-quick@wgcloud
 ss -lunp | grep 51820
 ```
 
+## If it does not connect
+
+- The phone must have **WARP off**; Android allows only one VPN at a time.
+- The cloud provider firewall/security group must allow **UDP 51820** inbound.
+- Some mobile carriers block UDP. Try the same script with `--port 443` (UDP 443) and re-import the new QR.
+- If the VM's public IP changes after a stop/start, re-run with the new `--endpoint` and re-import.
+- On the VM: `sudo journalctl -u wg-quick@wgcloud -n 50 --no-pager`.
+- `sudo wg show wgcloud` should show a recent handshake and increasing transfer counters after the phone connects.
+
 ## Security
 
 - Private keys are generated on the VM with `umask 077`; the phone config is `600`.
