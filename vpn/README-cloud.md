@@ -57,6 +57,14 @@ If auto-detection is wrong:
 sudo bash /tmp/eon-cloud-vpn.sh --endpoint 203.0.113.10
 ```
 
+If you used the optional `cloud-init-eon-vpn.yaml` instead of running the command by hand, the installer ran with `--no-qr`. Show the QR afterward:
+
+```bash
+sudo qrencode -t ansiutf8 < /root/eon-cloud-vpn/out/phone.conf
+```
+
+The installer log is `/var/log/eon-cloud-vpn-install.log`.
+
 ## Connect the phone
 
 1. Open the WireGuard app.
