@@ -87,3 +87,7 @@ dashboard/web UIs; it is not a full VPN. See the local `cloudflare-tunnel.md`.
   anonymity. WARP remains the phone's internet-privacy layer.
 - If a peer key leaks, regenerate that peer's key, remove the old public key
   from `/etc/wireguard/wg0.conf`, and re-import the new config.
+
+## Hosts that already run wg0
+
+If the Ubuntu host already runs a `wg0` interface (for example `10.66.66.1/24` on UDP 51820), use `bootstrap-ubuntu-eonwg.sh`. It creates a separate `eonwg0` interface on `10.77.0.1/24`, UDP 51821, and leaves the existing `wg0` untouched. Installer SHA256: `3b29ed91864ee03e058413f8ea35c4dc79265117c2b254a03376eec43e4b7efb`.
