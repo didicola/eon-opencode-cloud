@@ -57,6 +57,8 @@ If auto-detection is wrong:
 sudo bash /tmp/eon-cloud-vpn.sh --endpoint 203.0.113.10
 ```
 
+Optional: create a DNS **A record** such as `vpn.example.com` pointing at the VM's public IPv4, then use `--endpoint vpn.example.com`. In Cloudflare DNS, set the record to **DNS only (grey cloud)**; a proxied/orange record will not pass WireGuard UDP. If the VM's IP changes, update the A record instead of re-importing the phone config.
+
 If you used the optional `cloud-init-eon-vpn.yaml` instead of running the command by hand, the installer ran with `--no-qr`. Show the QR afterward:
 
 ```bash
