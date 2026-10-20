@@ -1,14 +1,14 @@
-# EON Cloud AGI State — 2026-10-20T11:03Z
+# EON Cloud AGI State
 
-Worker: eon-agi v10 (agi-cloud-v10), persistent DO storage, cron do-alarm + GitHub Actions.
-Cycles: 5571. Passed: 5309. Failed: 262. Score: 95.3%.
-Self-mods: 221. Lessons: 50. Provisions: 32. Goals: 20.
+Updated: 2026-10-20T11:17:57Z
+Worker: agi-cloud-v10, persistent=True, store=do-storage, cron=do-alarm+gh-actions.
+Cycles: 5576. Passed: 5314. Failed: 262. Score: 95.3%.
+Self-mods: 222. Lessons: 50. Provisions: 32. Goals: 20.
 Best prompt: direct. LLM accuracy: 82%.
 
-Domain accuracy: spatial 99%, causal 99%, creative 91%, temporal 86%, math 84%, logic 83%, string 79%, compare 77%.
-
-Last run: 2026-10-20T11:03:24Z.
-Transfer probe: spatial -> revlex, delta 0, base 0, transfer 0, n=5, probed 3, not applied.
+Domains: math=84%(n=107) string=79%(n=174) compare=77%(n=271) logic=83%(n=122) spatial=99%(n=80) temporal=86%(n=71) causal=99%(n=70) creative=91%(n=79).
+Last run: 2026-10-20T11:13:38.051Z.
+Transfer probe: spatial -> revlex delta 0 (applied=False).
 
 Architecture map: https://github.com/didicola/eon-opencode-cloud/blob/main/ARCHITECTURE.md
 Known gaps: termux2 offline; ubuntu SSH/ports firewalled, 443 mTLS half-up; Vercel uses read-only Neon role wk_vercel.
