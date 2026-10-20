@@ -46,6 +46,7 @@ Useful options:
 ```bash
 sudo bash /tmp/eon-cloud-vpn.sh --split              # only 10.88.0.0/24 through the VPN
 sudo bash /tmp/eon-cloud-vpn.sh --peer laptop        # generate a laptop config instead
+sudo bash /tmp/eon-cloud-vpn.sh --no-psk             # disable the preshared-key PQ hedge
 sudo bash /tmp/eon-cloud-vpn.sh --no-qr              # no terminal QR
 sudo bash /tmp/eon-cloud-vpn.sh --dry-run            # generate in a temp dir, change nothing
 ```
@@ -80,7 +81,7 @@ ss -lunp | grep 51820
 ## Security
 
 - Private keys are generated on the VM with `umask 077`; the phone config is `600`.
-- The QR contains the phone private key. Do not screen-share it or post it.
+- The QR contains the phone private key and the preshared key. Do not screen-share it or post it.
 - After importing, you can delete the copy in Downloads and run:
   `sudo shred -u /root/eon-cloud-vpn/out/phone.conf` (keep a backup only if you need to re-import).
 - Do not put Cloudflare WARP in front if the requirement is "Cloudflare cannot see"; WARP terminates at Cloudflare.
@@ -88,9 +89,11 @@ ss -lunp | grep 51820
 
 ## Encryption and PQC
 
-WireGuard already encrypts the tunnel with ChaCha20-Poly1305, Curve25519, and BLAKE2s. That is strong and fast, but it is not post-quantum.
+WireGuard already encrypts the tunnel with ChaCha20-Poly1305, Curve25519, and BLAKE2s. That is strong and fast, but it is not a post-quantum key exchange.
 
-For PQC later, the practical paths are:
+The installer adds a random 32-byte **PresharedKey** by default. The Android WireGuard app supports it. It is mixed into the handshake, so an attacker who breaks Curve25519 still needs the PSK to derive the session key. That is a real symmetric post-quantum hedge, not a full PQ handshake. Keep the phone config secret; the PSK is in it.
+
+If you need a full PQ handshake later, the practical paths are:
 
 - **MASQUE / HTTP/3** with `sing-box` on the VM and the phone, using TLS 1.3 hybrid `X25519MLKEM768` and optional mTLS with the EON CA. This is the cleanest PQC path, but it needs a separate lab and compatibility testing.
 - **strongSwan IKEv2 with ML-KEM**, using Android's built-in VPN client. Android compatibility must be tested on the exact device/ROM before relying on it.
@@ -101,8 +104,8 @@ Do not start with PQC. Get the cloud WireGuard tunnel working and measured first
 ## What was verified today
 
 - `bash -n` syntax: OK.
-- `--dry-run` twice: full-tunnel and split-tunnel configs generated; keys `600`; dirs `700`; no system changes.
-- `eon-world` keyless GPU lane (`gpt-oss-20b` via Pollinations/OVH): HTTP 200, ~29 s, response saved at `~/eon-tmp/eon-vpn/WORLD-GPU-REVIEW-20261020.json`. It confirmed that a VM is the clean zero-cost path and flagged the QR/key handling; its provider free-tier numbers were not used because they conflict with the providers' own pages.
+- `--dry-run` multiple times: full-tunnel, split-tunnel, PSK-on, and PSK-off configs generated; keys `600`; dirs `700`; no system changes.
+- `eon-world` keyless GPU lane (`gpt-oss-20b` via Pollinations/OVH): HTTP 200, ~29 s, response saved at `~/eon-tmp/eon-vpn/WORLD-GPU-REVIEW-20261020.json`. It confirmed that a VM is the clean zero-cost path and flagged the QR/key handling. Its provider free-tier numbers were not used; they were not independently verified.
 - No live tunnel yet: the phone is on mobile data and no cloud VM exists. `phone.conf` is not deployed, and no WireGuard handshake has been claimed.
 
 ## Next action
