@@ -1,13 +1,13 @@
 # EON Cloud AGI State
 
-Updated: 2026-10-20T11:17:57Z
+Updated: 2026-10-20T11:35:30Z
 Worker: agi-cloud-v10, persistent=True, store=do-storage, cron=do-alarm+gh-actions.
-Cycles: 5576. Passed: 5314. Failed: 262. Score: 95.3%.
+Cycles: 5586. Passed: 5324. Failed: 262. Score: 95.3%.
 Self-mods: 222. Lessons: 50. Provisions: 32. Goals: 20.
 Best prompt: direct. LLM accuracy: 82%.
 
 Domains: math=84%(n=107) string=79%(n=174) compare=77%(n=271) logic=83%(n=122) spatial=99%(n=80) temporal=86%(n=71) causal=99%(n=70) creative=91%(n=79).
-Last run: 2026-10-20T11:13:38.051Z.
+Last run: 2026-10-20T11:34:08.089Z.
 Transfer probe: spatial -> revlex delta 0 (applied=False).
 
 Architecture map: https://github.com/didicola/eon-opencode-cloud/blob/main/ARCHITECTURE.md
