@@ -1,10 +1,10 @@
-# Cloud Self-Maintenance Report (2026-10-23)
+# Self-Maintenance Report (2026-10-23)
 
-| Lane | Status |
-|---|---|
-| cloud-brain API (`workers.dev/v1/models`) | UP (3 models returned) |
-| AGI engine (`eon-agi.eon-sovereign.workers.dev/health`) | UP (`ok:true`) |
-| fleet nodes in `out/admin.json` (13 workers) | UP per snapshot |
+| Lane | Endpoint | Status |
+|---|---|---|
+| cloud-brain API | https://cloud-brain.eon-sovereign.workers.dev/v1/models | 503 DOWN |
+| AGI engine | https://eon-agi.eon-sovereign.workers.dev/health | 200 OK |
+| fleet nodes (admin.json) | ghost, ghost-dashboard, ghost-twin, ghost-2..4, alpha, tiny-matrix, tiny-1..5 | 13/13 OK |
 
-- DOWN items: none.
-- Recommended action: no action required; continue routine monitoring.
+**DOWN:** cloud-brain API (503).
+**Recommended action:** restart/redeploy the cloud-brain worker and re-check its health endpoint.
