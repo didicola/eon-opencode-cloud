@@ -1,10 +1,12 @@
-# Self-Maintenance Report (2026-10-20)
+# Self-Maintenance Report (2026-10-23)
 
-| Lane | Status |
-|---|---|
-| cloud-brain API (`/v1/models`) | UP — 3 models listed |
-| AGI engine (`/health`) | UP — score 0.953, cycles 5921/5641 passed |
-| fleet nodes (admin.json) | 10/13 OK; alpha, tiny-4, tiny-5 DOWN (no binding) |
-| recommended.workers.dev/v1/models | DOWN — DNS failure |
+| Lane | Endpoint | Status |
+|---|---|---|
+| cloud-brain API | https://cloud-brain.eon-sovereign.workers.dev/v1/models | DOWN (301 redirect, no follow) |
+| AGI engine | https://eon-agi.eon-sovereign.workers.dev/health | UP (200) |
+| fleet nodes (admin.json) | ghost, ghost-dashboard, ghost-twin, ghost-2..4, alpha, tiny-matrix, tiny-1..5 | UP (13/13) |
 
-**Recommended action:** Rebind or redeploy workers `alpha`, `tiny-4`, `tiny-5` (no binding).
+- cloud-brain API returned 301 Moved Permanently; endpoint may need redirect follow or re-pointing.
+- AGI engine healthy; fleet snapshot shows all workers healthy.
+
+Recommended action: follow the cloud-brain 301 redirect and verify the target endpoint returns 200.
