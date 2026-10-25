@@ -49,6 +49,18 @@ def main():
     c1_sha = hashlib.sha256(raw).hexdigest()
     d = json.loads(raw.decode("utf-8"))
     q = token_from(d)
+    s = d.get("summary", d)
+    m5 = s.get("M5_retention") or d.get("M5_retention") or {}
+    pre = {
+        "learn_acked": bool(m5.get("learn_acked")),
+        "knowledge_increased": bool(m5.get("knowledge_increased")),
+        "immediate_retrievable": bool(m5.get("immediate_retrievable")),
+        "ingest_skipped": bool(m5.get("ingest_skipped")),
+        "immediate_search_total": m5.get("immediate_search_total"),
+        "knowledge_before": m5.get("knowledge_before"),
+        "knowledge_after": m5.get("knowledge_after"),
+    }
+    pre_ok = pre["learn_acked"] and pre["knowledge_increased"] and pre["immediate_retrievable"] and not pre["ingest_skipped"]
     rec = {
         "checked_utc": datetime.now(timezone.utc).isoformat(),
         "c1b_sha256": c1_sha,
@@ -56,12 +68,18 @@ def main():
         "attempts": 0,
         "ok": False,
         "last": None,
+        "m5": pre,
+        "m5_preconditions_ok": pre_ok,
         "source": "edge-brain /kvcheck",
     }
     if not q:
         rec["error"] = "token missing from C1b evidence"
         json.dump(rec, open(OUT, "w", encoding="utf-8"), indent=1)
         print("C1B VALIDITY FAIL: token missing", file=sys.stderr)
+        return 1
+    if not pre_ok:
+        json.dump(rec, open(OUT, "w", encoding="utf-8"), indent=1)
+        print("C1B VALIDITY FAIL: C1 preconditions not met: %s" % json.dumps(pre), file=sys.stderr)
         return 1
     for i in range(8):
         rec["attempts"] = i + 1
@@ -71,7 +89,7 @@ def main():
         print("KVCHECK attempt=%d token_hits=%s item_token_hits=%s items=%s"
               % (i + 1, r.get("token_hits"), r.get("item_token_hits"), r.get("items")), flush=True)
         if hits > 0:
-            rec["ok"] = True
+            rec["ok"] = pre_ok
             break
         time.sleep(5)
     json.dump(rec, open(OUT, "w", encoding="utf-8"), indent=1)
