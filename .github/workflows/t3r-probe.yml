@@ -1,0 +1,41 @@
+name: t3r-probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONUNBUFFERED: "1"
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Stage admin token and check MCP
+        env:
+          MCP_ADMIN_TOKEN: ${{ secrets.MCP_ADMIN_TOKEN }}
+        run: |
+          set -eu
+          test -n "${MCP_ADMIN_TOKEN:-}"
+          mkdir -p "$HOME/eon-tmp"
+          printf '%s' "$MCP_ADMIN_TOKEN" > "$HOME/eon-tmp/.adm"
+          chmod 600 "$HOME/eon-tmp/.adm"
+          python3 - <<'PY'
+          import json, sys
+          sys.path.insert(0, "t3r")
+          import t3r_harness as h
+          s = h.mcp_status()
+          print("MCP_STATUS", json.dumps({k: s.get(k) for k in ("knowledge", "episodes", "_err")}))
+          if s.get("_err"):
+              raise SystemExit("MCP status failed: %s" % s.get("_err"))
+          PY
+      - name: Full route probe (read-only)
+        run: python3 t3r/probe_only.py
+      - name: Upload probe
+        uses: actions/upload-artifact@v4
+        with:
+          name: t3r-cloud-probe
+          path: t3r/evidence/epoch5/t3r-cloud-probe.json
