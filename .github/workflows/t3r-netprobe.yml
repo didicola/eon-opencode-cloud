@@ -1,0 +1,28 @@
+name: t3r-netprobe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Probe public EON endpoints from GitHub runner
+        run: |
+          set -u
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36'
+          for u in \
+            "https://agi-loop.eon-sovereign.workers.dev/health" \
+            "https://artifact-agent.eon-sovereign.workers.dev/" \
+            "https://eon-edge-brain.eon-sovereign.workers.dev/status" \
+            "https://eon-p2p-cloud.eon-sovereign.workers.dev/status" \
+            "https://eon-mcp.eon-sovereign.workers.dev/mcp" \
+            "https://eon-matrix-keeper.eon-sovereign.workers.dev/status"; do
+            body=$(mktemp)
+            code=$(curl -sS -o "$body" -w '%{http_code}' -m 20 -A "$UA" "$u" || echo 000)
+            n=$(wc -c < "$body" | tr -d ' ')
+            echo "$code $n $u"
+            head -c 160 "$body" | tr '\n' ' '; echo
+            rm -f "$body"
+          done
