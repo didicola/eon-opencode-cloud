@@ -1,10 +1,12 @@
-# Cloud Self-Maintenance Report
-ts: 2026-10-23T22:21:21Z (admin.json fleet snapshot)
+# Self-Maintenance Report (2026-10-25)
 
-- cloud-brain API (models): UP — 3 models listed (gpt-6-luna, deepseek-v4-flash-0731, qwen-3.8-max)
-- AGI engine health: UP — eon-agi 200-for-all, t=1792794097651
-- fleet nodes in admin.json: 13 seen, all OK (ghost, ghost-dashboard, ghost-twin, ghost-2..4, alpha, tiny-matrix, tiny-1..5)
-- DOWN items: none
+| Lane | Status |
+|---|---|
+| cloud-brain API (cloud-brain.eon-sovereign.workers.dev) | UP — v2.1-tools |
+| AGI engine (eon-agi.eon-sovereign.workers.dev/health) | UP — eon-200-for-all |
+| recommended.workers.dev/v1/models | DOWN — DNS resolution failed |
+| Fleet nodes (out/admin.json) | 13 nodes, all OK |
 
-recommended:
-- workers: scale up ghost-2/ghost-3 to balance pending load
+**DOWN items:** recommended.workers.dev/v1/models (curl error 6 / DNS failure).
+
+**Recommended action:** Investigate DNS/zone configuration for recommended.workers.dev and re-check the models endpoint.
