@@ -1,0 +1,25 @@
+{
+ "checked_utc": "2026-10-26T15:23:26.821503+00:00",
+ "c1b_sha256": "55cf76bcecca80dcb7f479a756286b0e589786526a876e0ac69ab589dd6517a4",
+ "token": "T3R-20261026T152325Z-e9d15284",
+ "attempts": 1,
+ "ok": true,
+ "last": {
+  "ok": true,
+  "know": 66,
+  "token_hits": 1,
+  "items": 1,
+  "item_token_hits": 0
+ },
+ "m5": {
+  "learn_acked": true,
+  "knowledge_increased": true,
+  "immediate_retrievable": true,
+  "ingest_skipped": false,
+  "immediate_search_total": 1,
+  "knowledge_before": 65,
+  "knowledge_after": 66
+ },
+ "m5_preconditions_ok": true,
+ "source": "edge-brain /kvcheck"
+}

@@ -1,0 +1,4718 @@
+{
+ "summary": {
+  "label": "T3-R C1 BASELINE",
+  "collected_utc": "2026-10-26T15:23:26.763072+00:00",
+  "M1_live_routes": 283,
+  "M2_distinct_bodies": 260,
+  "M3_phantoms": 29,
+  "M3_phantom_list": [
+   "api-anthropic.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-cloudflare.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-google.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-groq.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-huggingface.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-kimi.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-mistral.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-openai.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-openrouter.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "api-togeth-ai.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-auto-learner.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-birth-engine.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-earth-gate.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-edge-orchestrator.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-fleet-syncer.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-learn-all.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-matrix-keeper.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-memory.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-mghost-1.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-mghost-2.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-neural-router.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-sync-round.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "eon-watchdog-1.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "fluid-matrix.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "ghost-store.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "ghost-swarm.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "memory-cache.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "mind.eon-sovereign.workers.dev/__nonexistent_c2_probe__",
+   "sage.eon-sovereign.workers.dev/__nonexistent_c2_probe__"
+  ],
+  "M4_any_shard_peers": false,
+  "M4_shard_peers": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "M4_totalPeers": 0,
+  "M5_retention": {
+   "ok": true,
+   "cycle": 1,
+   "token": "T3R-20261026T152325Z-e9d15284",
+   "token_url": "https://httpbin.org/base64/VDNSLTIwMjYxMDI2VDE1MjMyNVotZTlkMTUyODQgRU9OIHJldGVudGlvbiBwcm9iZS4gVGhlIGV4YWN0IHRva2VuIG11c3QgcmVtYWluIHJldHJpZXZhYmxlIGFmdGVyIGluZ2VzdC4%3D",
+   "learn": {
+    "learned": true,
+    "key": "f9ac8210a83d",
+    "kind": "web",
+    "size": 104,
+    "via": "edge-brain /learn/docs",
+    "ok": true
+   },
+   "learn_acked": true,
+   "ingest_skipped": false,
+   "knowledge_before": 65,
+   "knowledge_after": 66,
+   "knowledge_increased": true,
+   "immediate_search_total": 1,
+   "immediate_retrievable": true,
+   "immediate_result": {
+    "topic": "api-documentation",
+    "content": "T3R-20261026T152325Z-e9d15284 EON retention probe. The exact token must remain retrievable after ingest.",
+    "source": "web",
+    "confidence": 0.6,
+    "ts": 1793028205713,
+    "tags": [
+     "httpbin.org",
+     "api-documentation"
+    ]
+   },
+   "retrievable": null,
+   "rotated": null,
+   "search_query": "T3R-20261026T152325Z-e9d15284"
+  },
+  "weights_hash_expected": "01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f",
+  "weights_hash_reproducible": true,
+  "C1_baseline_present": false,
+  "PASS_BAR": "C2 and C3 retrieve the C1 token; M1/M2/M3 no regression vs C1; WSC-1 weights unchanged; C1 ingest acknowledged + knowledge increased. M4 quarantined; coverage/cost diagnostic only.",
+  "delta_vs_C1": "PENDING - see delta_vs_baseline block",
+  "failures_recorded": 0,
+  "failures": [],
+  "route_count": 500,
+  "route_coverage": 0.566,
+  "cycle": 1,
+  "epoch": "T3-R",
+  "mode": "execute",
+  "harness": "t3r_harness.py",
+  "harness_sha256": "a4826b7e0d0a91f37e1f20cded196a77f83b1f91e7532aa76ca6658fdca93661",
+  "M4_quarantined": true,
+  "M4_quarantine_reason": "QUARANTINED \u2014 eon-p2p-cloud /status totalPeers=0 across all 6 shards",
+  "M5_scoring_note": "C1 learns a unique token; C2/C3 retrieve the same token after >=24h. Immediate C1 search is a sanity check, not retention.",
+  "M5_auth_lane": "eon-mcp admin token via ~/eon-tmp/.adm (mode 600); never printed",
+  "weights_hash_scheme": "WSC-1",
+  "weights_hash_computed": "01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f",
+  "weights_hash_inputs": [
+   {
+    "name": "T1-TRANSFER-FROZEN.md",
+    "sha256": "5ef0537ab3e8a3224a47e475bbabcfa6d28409cec7226e87b13fee4e0f8cfdb5",
+    "bytes": 830
+   },
+   {
+    "name": "T2-SELECTION-FROZEN.md",
+    "sha256": "4c1de8d1be25ef00d475e90bed6f87f6dd6c28f464555b832954eb93c8a757a6",
+    "bytes": 744
+   },
+   {
+    "name": "T3-LONGITUDINAL-FROZEN.md",
+    "sha256": "ecadd9c880d57e93af6e079525ffd901b6a484298626a99e651b95a76f80cd24",
+    "bytes": 732
+   },
+   {
+    "name": "T4-SELFCORRECTION-FROZEN.md",
+    "sha256": "e51f6095006d344f41ed0b2d121badb6d3c7ae22057827dcb112d1dea9986bac",
+    "bytes": 801
+   }
+  ],
+  "weights_hash_method_flag": "OK",
+  "coverage": {
+   "definition_id": "T3-COV-PROPOSED-v1",
+   "proposed_for_owner_approval": true,
+   "status": "PROPOSED - not the frozen definition; owner must approve and pre-register (B4)",
+   "coverage": 0.99,
+   "coverage_count": 99,
+   "inventory_hosts": 100,
+   "covered_host_count": 99,
+   "real_paths": [
+    "/",
+    "/health",
+    "/status",
+    "/mcp"
+   ],
+   "uncovered_hosts": [
+    "artifact-agent.eon-sovereign.workers.dev"
+   ],
+   "per_shard": {
+    "shard0": {
+     "covered_hosts": 17,
+     "inventory_hosts": 17,
+     "coverage": 1.0,
+     "members_sha256": "2fc0d87351ea77c77ef7f1642105bdb8a8e439ca1a8708748821854152e378e9"
+    },
+    "shard1": {
+     "covered_hosts": 17,
+     "inventory_hosts": 17,
+     "coverage": 1.0,
+     "members_sha256": "6badae62411369a0dd1892ed8eb9f9e4bb4bc8d78044e0f1e74ebbc106a867c1"
+    },
+    "shard2": {
+     "covered_hosts": 16,
+     "inventory_hosts": 17,
+     "coverage": 0.941176,
+     "members_sha256": "5d2d0b670ba2c14fad9403ba9ca1bb426d200ecf2ab246f0d4e0a9d440e6dc69"
+    },
+    "shard3": {
+     "covered_hosts": 17,
+     "inventory_hosts": 17,
+     "coverage": 1.0,
+     "members_sha256": "f18efef91a8c2f6eeaae4be1b61d09f8818a919e31ce6dfbea5fee42f5527069"
+    },
+    "shard4": {
+     "covered_hosts": 16,
+     "inventory_hosts": 16,
+     "coverage": 1.0,
+     "members_sha256": "68d8a21b7dca47710641c8f1a747370d6a3dd497b7fdbdf01b234379fb5f8325"
+    },
+    "shard5": {
+     "covered_hosts": 16,
+     "inventory_hosts": 16,
+     "coverage": 1.0,
+     "members_sha256": "8a68376bc53fde410c9fbeb36b741ea8528aa28536984052c1abca0f7da7f4c7"
+    }
+   },
+   "shard_scheme": "COV-SHARD-RR1",
+   "shard_scheme_note": "synthetic hash-ordered round-robin partition; no frozen host->shard mapping exists; overall coverage is partition-independent",
+   "run_label": "T3-R C1 BASELINE",
+   "run_collected_utc": "2026-10-26T15:23:26.763072+00:00",
+   "inputs": {
+    "run_path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch5/t3r-C1b.json",
+    "run_sha256": "2920702f3ef0ad28b81eba0f44234ded5de5bcd0f0ea6531b0779f1c8c3d2ef0",
+    "sha256_of_input": "2920702f3ef0ad28b81eba0f44234ded5de5bcd0f0ea6531b0779f1c8c3d2ef0",
+    "hosts_path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt",
+    "hosts_sha256": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c"
+   }
+  },
+  "coverage_definition_id": "T3-COV-PROPOSED-v1",
+  "coverage_status": "DIAGNOSTIC-ONLY (not a pass criterion)",
+  "delta_vs_baseline": null,
+  "zero_hint_guard": "no --hint channel supplied to this process",
+  "zero_hint_owner_attestation": "PENDING (B10)",
+  "preregistration_path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/T3-R-PREREG-20261025.md",
+  "preregistration_sha256": "556fe509327c65aebddc038c4090644afc9017044064c6d677c12caf177f0c0d",
+  "baseline_path": null,
+  "baseline_sha256": null,
+  "previous_path": null,
+  "previous_sha256": null,
+  "receipts": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch5/t3r-C1b.json.receipts.json",
+  "hosts_path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt",
+  "hosts_sha256": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c",
+  "invocation": {
+   "hosts": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt",
+   "hosts_sha256": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c",
+   "out": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch5/t3r-C1b.json",
+   "cycle": 1,
+   "allow_m5_ingest": true
+  }
+ },
+ "routes": [
+  {
+   "host": "agi-arc3-epb-evaluator.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 156,
+   "hash": "f229893e61c72021",
+   "catchall": false,
+   "len": 84
+  },
+  {
+   "host": "agi-arc3-epb-evaluator.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 126,
+   "hash": "53145cfe89bdd1aa",
+   "catchall": false,
+   "len": 84
+  },
+  {
+   "host": "agi-arc3-epb-evaluator.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 134,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "agi-arc3-epb-evaluator.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 97,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "agi-arc3-epb-evaluator.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 110,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "agi-loop.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 101,
+   "hash": "8504cfafe0b32ca5",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "agi-loop.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 152,
+   "hash": "9091a6eb8d01c970",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "agi-loop.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 157,
+   "hash": "c8d3eae160a892e3",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "agi-loop.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 81,
+   "hash": "c8d3eae160a892e3",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "agi-loop.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 206,
+   "hash": "c8d3eae160a892e3",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "ai-proxy.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 192,
+   "hash": "7e1526c57c352fc0",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "ai-proxy.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 110,
+   "hash": "837c06815a7744cc",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "ai-proxy.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 158,
+   "hash": "e6945e6b551d5b47",
+   "catchall": false,
+   "len": 56
+  },
+  {
+   "host": "ai-proxy.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 195,
+   "hash": "e6945e6b551d5b47",
+   "catchall": false,
+   "len": 56
+  },
+  {
+   "host": "ai-proxy.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 127,
+   "hash": "e6945e6b551d5b47",
+   "catchall": false,
+   "len": 56
+  },
+  {
+   "host": "alpha.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 198,
+   "hash": "7edf1c3a53af1de5",
+   "catchall": false,
+   "len": 67
+  },
+  {
+   "host": "alpha.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 163,
+   "hash": "a166c1ff865d1414",
+   "catchall": false,
+   "len": 67
+  },
+  {
+   "host": "alpha.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 106,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "alpha.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 129,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "alpha.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 182,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "api-anthropic.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 212,
+   "hash": "233e31e5cff6d00f",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "api-anthropic.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 181,
+   "hash": "16f5fb96ed5accca",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "api-anthropic.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 224,
+   "hash": "ada44b33712a3a56",
+   "catchall": false,
+   "len": 94
+  },
+  {
+   "host": "api-anthropic.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 136,
+   "hash": "ada44b33712a3a56",
+   "catchall": false,
+   "len": 94
+  },
+  {
+   "host": "api-anthropic.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 101,
+   "hash": "ada44b33712a3a56",
+   "catchall": false,
+   "len": 94
+  },
+  {
+   "host": "api-cloudflare.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 192,
+   "hash": "e1b7abefd689f6b6",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "api-cloudflare.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 195,
+   "hash": "0ccf17b8524c37f8",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "api-cloudflare.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 149,
+   "hash": "bf82b1af448ca187",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "api-cloudflare.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 79,
+   "hash": "bf82b1af448ca187",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "api-cloudflare.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 147,
+   "hash": "bf82b1af448ca187",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "api-google.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 114,
+   "hash": "23a474d3bbae575b",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "api-google.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 176,
+   "hash": "87b270134e0d854e",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "api-google.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 176,
+   "hash": "541263f367006964",
+   "catchall": false,
+   "len": 91
+  },
+  {
+   "host": "api-google.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 198,
+   "hash": "541263f367006964",
+   "catchall": false,
+   "len": 91
+  },
+  {
+   "host": "api-google.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 151,
+   "hash": "541263f367006964",
+   "catchall": false,
+   "len": 91
+  },
+  {
+   "host": "api-groq.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 214,
+   "hash": "9ec18fff6c48f8be",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "api-groq.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 99,
+   "hash": "30887eb06c271e4b",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "api-groq.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 106,
+   "hash": "3ed8d9f88b61935f",
+   "catchall": false,
+   "len": 89
+  },
+  {
+   "host": "api-groq.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 116,
+   "hash": "3ed8d9f88b61935f",
+   "catchall": false,
+   "len": 89
+  },
+  {
+   "host": "api-groq.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 154,
+   "hash": "3ed8d9f88b61935f",
+   "catchall": false,
+   "len": 89
+  },
+  {
+   "host": "api-huggingface.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 171,
+   "hash": "03dd016a7e9f6a40",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "api-huggingface.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 185,
+   "hash": "0294d7783db56140",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "api-huggingface.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 124,
+   "hash": "8ffa1322b838396f",
+   "catchall": false,
+   "len": 96
+  },
+  {
+   "host": "api-huggingface.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 99,
+   "hash": "8ffa1322b838396f",
+   "catchall": false,
+   "len": 96
+  },
+  {
+   "host": "api-huggingface.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 102,
+   "hash": "8ffa1322b838396f",
+   "catchall": false,
+   "len": 96
+  },
+  {
+   "host": "api-kimi.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 147,
+   "hash": "b4cb1ed557701dcb",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "api-kimi.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 120,
+   "hash": "e7cfe62ec038aeb4",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "api-kimi.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 115,
+   "hash": "597a310798de4a06",
+   "catchall": false,
+   "len": 89
+  },
+  {
+   "host": "api-kimi.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 144,
+   "hash": "597a310798de4a06",
+   "catchall": false,
+   "len": 89
+  },
+  {
+   "host": "api-kimi.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 98,
+   "hash": "597a310798de4a06",
+   "catchall": false,
+   "len": 89
+  },
+  {
+   "host": "api-mistral.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 215,
+   "hash": "679d1d0ca50f0270",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "api-mistral.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 166,
+   "hash": "f279348d5a151c40",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "api-mistral.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 179,
+   "hash": "d900706b61044197",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "api-mistral.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 184,
+   "hash": "d900706b61044197",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "api-mistral.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 97,
+   "hash": "d900706b61044197",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "api-openai.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 129,
+   "hash": "32a9c40116cbf37c",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "api-openai.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 92,
+   "hash": "c314ce4140af9996",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "api-openai.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 157,
+   "hash": "586a984d6939f823",
+   "catchall": false,
+   "len": 91
+  },
+  {
+   "host": "api-openai.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 203,
+   "hash": "586a984d6939f823",
+   "catchall": false,
+   "len": 91
+  },
+  {
+   "host": "api-openai.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 158,
+   "hash": "586a984d6939f823",
+   "catchall": false,
+   "len": 91
+  },
+  {
+   "host": "api-openrouter.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 185,
+   "hash": "b8f45044a6c8f6f5",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "api-openrouter.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 137,
+   "hash": "ec3548e41111ae48",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "api-openrouter.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 151,
+   "hash": "324fbbb365eea70e",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "api-openrouter.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 182,
+   "hash": "324fbbb365eea70e",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "api-openrouter.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 109,
+   "hash": "324fbbb365eea70e",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "api-telegram-eon.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 134,
+   "hash": "768cc07340d08b7f",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "api-telegram-eon.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 176,
+   "hash": "8c7b26f08166b5a0",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "api-telegram-eon.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 155,
+   "hash": "10a52f35d9b18a19",
+   "catchall": false,
+   "len": 40
+  },
+  {
+   "host": "api-telegram-eon.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 151,
+   "hash": "10a52f35d9b18a19",
+   "catchall": false,
+   "len": 40
+  },
+  {
+   "host": "api-telegram-eon.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 163,
+   "hash": "10a52f35d9b18a19",
+   "catchall": false,
+   "len": 40
+  },
+  {
+   "host": "api-togeth-ai.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 228,
+   "hash": "876ad0b599a977b4",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "api-togeth-ai.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 198,
+   "hash": "87aa1befc32cd1bc",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "api-togeth-ai.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 100,
+   "hash": "2c1ea85a51134e3e",
+   "catchall": false,
+   "len": 94
+  },
+  {
+   "host": "api-togeth-ai.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 115,
+   "hash": "2c1ea85a51134e3e",
+   "catchall": false,
+   "len": 94
+  },
+  {
+   "host": "api-togeth-ai.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 103,
+   "hash": "2c1ea85a51134e3e",
+   "catchall": false,
+   "len": 94
+  },
+  {
+   "host": "artifact-agent.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 404,
+   "ms": 222,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "artifact-agent.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 199,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "artifact-agent.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 159,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "artifact-agent.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 114,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "artifact-agent.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 131,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "auto-heal.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 620,
+   "hash": "139b71e53298ac5a",
+   "catchall": false,
+   "len": 2366
+  },
+  {
+   "host": "auto-heal.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 96,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "auto-heal.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 243,
+   "hash": "f896c5890e6a8a0d",
+   "catchall": false,
+   "len": 1991
+  },
+  {
+   "host": "auto-heal.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 106,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "auto-heal.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 111,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-brain.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 152,
+   "hash": "4dae65bcb53f7610",
+   "catchall": false,
+   "len": 90
+  },
+  {
+   "host": "cloud-brain.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 155,
+   "hash": "1ffdee04dd9b722d",
+   "catchall": false,
+   "len": 90
+  },
+  {
+   "host": "cloud-brain.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 194,
+   "hash": "cd4e23bba1716825",
+   "catchall": false,
+   "len": 33
+  },
+  {
+   "host": "cloud-brain.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 106,
+   "hash": "cd4e23bba1716825",
+   "catchall": false,
+   "len": 33
+  },
+  {
+   "host": "cloud-brain.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 125,
+   "hash": "cd4e23bba1716825",
+   "catchall": false,
+   "len": 33
+  },
+  {
+   "host": "cloud-db.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 626,
+   "hash": "c89ff508d3d68ce2",
+   "catchall": false,
+   "len": 967
+  },
+  {
+   "host": "cloud-db.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 192,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-db.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 98,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-db.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 151,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-db.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 100,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-dns.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 547,
+   "hash": "172371830344f559",
+   "catchall": false,
+   "len": 1136
+  },
+  {
+   "host": "cloud-dns.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 153,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-dns.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 109,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-dns.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 91,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-dns.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 87,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-email.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 522,
+   "hash": "6289d18d6f3beea2",
+   "catchall": false,
+   "len": 1203
+  },
+  {
+   "host": "cloud-email.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 111,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-email.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 142,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-email.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 120,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-email.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 150,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-gitea.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 381,
+   "hash": "1040f1b62a3072b5",
+   "catchall": false,
+   "len": 1063
+  },
+  {
+   "host": "cloud-gitea.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 89,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-gitea.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 198,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-gitea.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 107,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-gitea.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 150,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-hub.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 436,
+   "hash": "9747688f0c4daf47",
+   "catchall": false,
+   "len": 71
+  },
+  {
+   "host": "cloud-hub.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 114,
+   "hash": "e49960029196e8e7",
+   "catchall": false,
+   "len": 71
+  },
+  {
+   "host": "cloud-hub.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 96,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-hub.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 98,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-hub.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 91,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-icnn.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 686,
+   "hash": "36d55a3379aca586",
+   "catchall": false,
+   "len": 1933
+  },
+  {
+   "host": "cloud-icnn.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 114,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-icnn.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 145,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-icnn.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 149,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-icnn.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 97,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-model-repo.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 386,
+   "hash": "9e491326c3d642c8",
+   "catchall": false,
+   "len": 986
+  },
+  {
+   "host": "cloud-model-repo.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 111,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-model-repo.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 164,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-model-repo.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 113,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-model-repo.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 120,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-redis.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 304,
+   "hash": "967f9e436b3a06ac",
+   "catchall": false,
+   "len": 963
+  },
+  {
+   "host": "cloud-redis.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 162,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-redis.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 100,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-redis.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 194,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-redis.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 168,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-systemd.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 749,
+   "hash": "44e377a5c3b2b6f2",
+   "catchall": false,
+   "len": 3087
+  },
+  {
+   "host": "cloud-systemd.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 95,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-systemd.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 96,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-systemd.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 96,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "cloud-systemd.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 97,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "container-runtime.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 119,
+   "hash": "7a091c97dd670179",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "container-runtime.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 95,
+   "hash": "2b2e91b8ccd673f2",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "container-runtime.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 145,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "container-runtime.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 186,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "container-runtime.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 184,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "container-runtime-v2.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 371,
+   "hash": "8ba4d6c0c2ccd275",
+   "catchall": false,
+   "len": 885
+  },
+  {
+   "host": "container-runtime-v2.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 206,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "container-runtime-v2.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 148,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "container-runtime-v2.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 152,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "container-runtime-v2.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 112,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "distros.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 157,
+   "hash": "7680bd1927aab553",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "distros.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 156,
+   "hash": "2edc4f3b0a7f1dd6",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "distros.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 120,
+   "hash": "c4774aea03dce0be",
+   "catchall": false,
+   "len": 26
+  },
+  {
+   "host": "distros.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 105,
+   "hash": "c4774aea03dce0be",
+   "catchall": false,
+   "len": 26
+  },
+  {
+   "host": "distros.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 136,
+   "hash": "c4774aea03dce0be",
+   "catchall": false,
+   "len": 26
+  },
+  {
+   "host": "eon-agi.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 108,
+   "hash": "da65a81ef544649d",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "eon-agi.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 153,
+   "hash": "097a9882b6f2a143",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "eon-agi.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 929,
+   "hash": "64b767a8378c9ccf",
+   "catchall": false,
+   "len": 323
+  },
+  {
+   "host": "eon-agi.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 296,
+   "hash": "64b767a8378c9ccf",
+   "catchall": false,
+   "len": 323
+  },
+  {
+   "host": "eon-agi.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 461,
+   "hash": "64b767a8378c9ccf",
+   "catchall": false,
+   "len": 323
+  },
+  {
+   "host": "eon-ai.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 188,
+   "hash": "c7ed9bec0d477661",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "eon-ai.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 166,
+   "hash": "b9d2c75aefed4849",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "eon-ai.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 93,
+   "hash": "e915fa1f6f5f5c9c",
+   "catchall": false,
+   "len": 1978
+  },
+  {
+   "host": "eon-ai.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 92,
+   "hash": "5569cd19f4aab764",
+   "catchall": false,
+   "len": 262
+  },
+  {
+   "host": "eon-ai.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 334,
+   "hash": "5569cd19f4aab764",
+   "catchall": false,
+   "len": 262
+  },
+  {
+   "host": "eon-ai-chat.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 145,
+   "hash": "c6552cc86ea22d82",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "eon-ai-chat.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 108,
+   "hash": "b5d7d9915af366fe",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "eon-ai-chat.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 109,
+   "hash": "4ce7bcf6e148d504",
+   "catchall": false,
+   "len": 2
+  },
+  {
+   "host": "eon-ai-chat.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 198,
+   "hash": "4ce7bcf6e148d504",
+   "catchall": false,
+   "len": 2
+  },
+  {
+   "host": "eon-ai-chat.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 152,
+   "hash": "4ce7bcf6e148d504",
+   "catchall": false,
+   "len": 2
+  },
+  {
+   "host": "eon-android-bridge.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 170,
+   "hash": "66c03a0416569852",
+   "catchall": false,
+   "len": 80
+  },
+  {
+   "host": "eon-android-bridge.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 128,
+   "hash": "9ef68fb4871c6b98",
+   "catchall": false,
+   "len": 80
+  },
+  {
+   "host": "eon-android-bridge.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 119,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-android-bridge.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 105,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-android-bridge.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 113,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-auto-learner.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 139,
+   "hash": "eae36f0db155d0f4",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-auto-learner.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 150,
+   "hash": "30f7868d33f258fc",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-auto-learner.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 103,
+   "hash": "cf3c77ad55046781",
+   "catchall": false,
+   "len": 196
+  },
+  {
+   "host": "eon-auto-learner.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 90,
+   "hash": "cf3c77ad55046781",
+   "catchall": false,
+   "len": 196
+  },
+  {
+   "host": "eon-auto-learner.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 194,
+   "hash": "cf3c77ad55046781",
+   "catchall": false,
+   "len": 196
+  },
+  {
+   "host": "eon-birth-engine.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 153,
+   "hash": "ca407e39487ec82e",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-birth-engine.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 143,
+   "hash": "bbdca065b94fc5b2",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-birth-engine.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 500,
+   "ms": 135,
+   "hash": "9e3de6524e9079b3",
+   "catchall": false,
+   "len": 224
+  },
+  {
+   "host": "eon-birth-engine.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 151,
+   "hash": "2d680680960c3cbb",
+   "catchall": false,
+   "len": 55
+  },
+  {
+   "host": "eon-birth-engine.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 123,
+   "hash": "2d680680960c3cbb",
+   "catchall": false,
+   "len": 55
+  },
+  {
+   "host": "eon-cloud-backup-alpha.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 434,
+   "hash": "665920598f1b659a",
+   "catchall": false,
+   "len": 8866
+  },
+  {
+   "host": "eon-cloud-backup-alpha.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 716,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-backup-alpha.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 1263,
+   "hash": "942d07c35d422432",
+   "catchall": false,
+   "len": 1168
+  },
+  {
+   "host": "eon-cloud-backup-alpha.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 574,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-backup-alpha.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 611,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-backup-bravo.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 367,
+   "hash": "28a1c43b86e7d711",
+   "catchall": false,
+   "len": 8866
+  },
+  {
+   "host": "eon-cloud-backup-bravo.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 603,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-backup-bravo.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 1146,
+   "hash": "fcc087f3236ec803",
+   "catchall": false,
+   "len": 1168
+  },
+  {
+   "host": "eon-cloud-backup-bravo.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 451,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-backup-bravo.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 490,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-sentinel.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 314,
+   "hash": "3516cad05f2b70ee",
+   "catchall": false,
+   "len": 8862
+  },
+  {
+   "host": "eon-cloud-sentinel.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 446,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-sentinel.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 690,
+   "hash": "150ea5275960ac7a",
+   "catchall": false,
+   "len": 1164
+  },
+  {
+   "host": "eon-cloud-sentinel.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 501,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-cloud-sentinel.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 522,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-dark-matter.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 112,
+   "hash": "648e975a71b5e7cd",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "eon-dark-matter.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 122,
+   "hash": "dd9f112e73d1487b",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "eon-dark-matter.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 88,
+   "hash": "7246b6c8a976a6d2",
+   "catchall": false,
+   "len": 258
+  },
+  {
+   "host": "eon-dark-matter.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 165,
+   "hash": "18140b5439e20f92",
+   "catchall": false,
+   "len": 332
+  },
+  {
+   "host": "eon-dark-matter.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 183,
+   "hash": "18140b5439e20f92",
+   "catchall": false,
+   "len": 332
+  },
+  {
+   "host": "eon-dashboard.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 108,
+   "hash": "cf5ad1eaafb0f9dd",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-dashboard.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 149,
+   "hash": "cfc89c9350acd660",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-dashboard.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 92,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "eon-dashboard.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 98,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "eon-dashboard.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 137,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "eon-docker-mcp.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 134,
+   "hash": "b210a0ca193dc4f3",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-docker-mcp.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 90,
+   "hash": "e4d679277b3f2106",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-docker-mcp.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 148,
+   "hash": "e68751dab3b8f3d2",
+   "catchall": false,
+   "len": 35
+  },
+  {
+   "host": "eon-docker-mcp.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 101,
+   "hash": "0b02a0ecf609bb20",
+   "catchall": false,
+   "len": 32
+  },
+  {
+   "host": "eon-docker-mcp.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 101,
+   "hash": "0b02a0ecf609bb20",
+   "catchall": false,
+   "len": 32
+  },
+  {
+   "host": "eon-e2b-alternative.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 208,
+   "hash": "17c81e3db7e5ebc4",
+   "catchall": false,
+   "len": 81
+  },
+  {
+   "host": "eon-e2b-alternative.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 94,
+   "hash": "47279b4d902cf8d8",
+   "catchall": false,
+   "len": 81
+  },
+  {
+   "host": "eon-e2b-alternative.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 126,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-e2b-alternative.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 108,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-e2b-alternative.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 143,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-earth-gate.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 140,
+   "hash": "a87d3fe0c6275027",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-earth-gate.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 109,
+   "hash": "88f75a500ac55405",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-earth-gate.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 200,
+   "hash": "0c96337587a6d6e3",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "eon-earth-gate.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 138,
+   "hash": "0c96337587a6d6e3",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "eon-earth-gate.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 186,
+   "hash": "0c96337587a6d6e3",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "eon-edge-ai.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 102,
+   "hash": "f46d0163b2f8e0a5",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "eon-edge-ai.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 88,
+   "hash": "f6ba9818bf14ddf1",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "eon-edge-ai.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 145,
+   "hash": "51febc6ec06ec39c",
+   "catchall": false,
+   "len": 28
+  },
+  {
+   "host": "eon-edge-ai.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 185,
+   "hash": "51febc6ec06ec39c",
+   "catchall": false,
+   "len": 28
+  },
+  {
+   "host": "eon-edge-ai.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 145,
+   "hash": "51febc6ec06ec39c",
+   "catchall": false,
+   "len": 28
+  },
+  {
+   "host": "eon-edge-brain.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 149,
+   "hash": "33b0eba0939c0c48",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-edge-brain.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 148,
+   "hash": "58d4bb04a0aa9e64",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-edge-brain.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 500,
+   "hash": "6f4e6c717d98ddc8",
+   "catchall": false,
+   "len": 244
+  },
+  {
+   "host": "eon-edge-brain.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 114,
+   "hash": "d9c191d79c3bfa2e",
+   "catchall": false,
+   "len": 485
+  },
+  {
+   "host": "eon-edge-brain.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 192,
+   "hash": "d9c191d79c3bfa2e",
+   "catchall": false,
+   "len": 485
+  },
+  {
+   "host": "eon-edge-cache.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 118,
+   "hash": "2c62d60019ec8f3b",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-edge-cache.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 204,
+   "ms": 95,
+   "hash": "EMPTY",
+   "catchall": false,
+   "len": 0
+  },
+  {
+   "host": "eon-edge-cache.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 204,
+   "ms": 129,
+   "hash": "EMPTY",
+   "catchall": false,
+   "len": 0
+  },
+  {
+   "host": "eon-edge-cache.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 204,
+   "ms": 182,
+   "hash": "EMPTY",
+   "catchall": false,
+   "len": 0
+  },
+  {
+   "host": "eon-edge-cache.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 204,
+   "ms": 191,
+   "hash": "EMPTY",
+   "catchall": false,
+   "len": 0
+  },
+  {
+   "host": "eon-edge-orchestrator.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 122,
+   "hash": "2e1dadd61cd0b156",
+   "catchall": false,
+   "len": 83
+  },
+  {
+   "host": "eon-edge-orchestrator.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 172,
+   "hash": "2f6062ae3389d63f",
+   "catchall": false,
+   "len": 83
+  },
+  {
+   "host": "eon-edge-orchestrator.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 169,
+   "hash": "a5b06f298586b612",
+   "catchall": false,
+   "len": 45
+  },
+  {
+   "host": "eon-edge-orchestrator.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 120,
+   "hash": "a5b06f298586b612",
+   "catchall": false,
+   "len": 45
+  },
+  {
+   "host": "eon-edge-orchestrator.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 104,
+   "hash": "a5b06f298586b612",
+   "catchall": false,
+   "len": 45
+  },
+  {
+   "host": "eon-edge-services.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 113,
+   "hash": "029e6690d74ffa41",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "eon-edge-services.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 103,
+   "hash": "275bc747ed8fe8c1",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "eon-edge-services.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 121,
+   "hash": "f666a14dff58950b",
+   "catchall": false,
+   "len": 318
+  },
+  {
+   "host": "eon-edge-services.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 232,
+   "hash": "323984fbbac63e99",
+   "catchall": false,
+   "len": 317
+  },
+  {
+   "host": "eon-edge-services.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 145,
+   "hash": "323984fbbac63e99",
+   "catchall": false,
+   "len": 317
+  },
+  {
+   "host": "eon-fleet-hub.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 422,
+   "hash": "8e21b53a66a29e59",
+   "catchall": false,
+   "len": 8857
+  },
+  {
+   "host": "eon-fleet-hub.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 491,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-fleet-hub.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 704,
+   "hash": "af5d7375da506286",
+   "catchall": false,
+   "len": 1159
+  },
+  {
+   "host": "eon-fleet-hub.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 537,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-fleet-hub.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 539,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-fleet-hub-v3.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 118,
+   "hash": "5e9aa63dd1747998",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-fleet-hub-v3.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 103,
+   "hash": "998b8f3a2591b4bf",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-fleet-hub-v3.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 176,
+   "hash": "b938205ebee52916",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "eon-fleet-hub-v3.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 153,
+   "hash": "c7f2f6ea8ab45c93",
+   "catchall": false,
+   "len": 130
+  },
+  {
+   "host": "eon-fleet-hub-v3.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 100,
+   "hash": "c7f2f6ea8ab45c93",
+   "catchall": false,
+   "len": 130
+  },
+  {
+   "host": "eon-fleet-syncer.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 205,
+   "hash": "bad19b8cb4d488cc",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-fleet-syncer.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 125,
+   "hash": "e94c6c8d0f24ca5a",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-fleet-syncer.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 147,
+   "hash": "53a2a37deee1beba",
+   "catchall": false,
+   "len": 40
+  },
+  {
+   "host": "eon-fleet-syncer.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 154,
+   "hash": "53a2a37deee1beba",
+   "catchall": false,
+   "len": 40
+  },
+  {
+   "host": "eon-fleet-syncer.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 98,
+   "hash": "53a2a37deee1beba",
+   "catchall": false,
+   "len": 40
+  },
+  {
+   "host": "eon-health-monitor.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 111,
+   "hash": "e5e2873c6325254c",
+   "catchall": false,
+   "len": 80
+  },
+  {
+   "host": "eon-health-monitor.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 89,
+   "hash": "b81d4e1e23370ca3",
+   "catchall": false,
+   "len": 80
+  },
+  {
+   "host": "eon-health-monitor.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 98,
+   "hash": "d77b82ee8c86e335",
+   "catchall": false,
+   "len": 103
+  },
+  {
+   "host": "eon-health-monitor.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 124,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-health-monitor.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 122,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-hub.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 352,
+   "hash": "13683f837f4571d3",
+   "catchall": false,
+   "len": 8851
+  },
+  {
+   "host": "eon-hub.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 525,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-hub.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 576,
+   "hash": "1fa1de327a86c517",
+   "catchall": false,
+   "len": 1153
+  },
+  {
+   "host": "eon-hub.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 595,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-hub.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 503,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-lab.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 128,
+   "hash": "a44710ca2b8239af",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "eon-lab.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 95,
+   "hash": "d30ec12432134fab",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "eon-lab.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 135,
+   "hash": "1b2f0a99da05e0ac",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "eon-lab.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 95,
+   "hash": "1b2f0a99da05e0ac",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "eon-lab.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 147,
+   "hash": "1b2f0a99da05e0ac",
+   "catchall": false,
+   "len": 95
+  },
+  {
+   "host": "eon-learn-all.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 176,
+   "hash": "53d8c1349486006e",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-learn-all.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 99,
+   "hash": "a32ccba06b53dd11",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-learn-all.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 94,
+   "hash": "955e6beed7d0b730",
+   "catchall": false,
+   "len": 109
+  },
+  {
+   "host": "eon-learn-all.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 144,
+   "hash": "955e6beed7d0b730",
+   "catchall": false,
+   "len": 109
+  },
+  {
+   "host": "eon-learn-all.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 83,
+   "hash": "955e6beed7d0b730",
+   "catchall": false,
+   "len": 109
+  },
+  {
+   "host": "eon-live-learner-edge.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 151,
+   "hash": "16ab3b12309020f1",
+   "catchall": false,
+   "len": 83
+  },
+  {
+   "host": "eon-live-learner-edge.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 90,
+   "hash": "a80d96277a142355",
+   "catchall": false,
+   "len": 83
+  },
+  {
+   "host": "eon-live-learner-edge.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 500,
+   "ms": 105,
+   "hash": "0537751749498075",
+   "catchall": false,
+   "len": 81
+  },
+  {
+   "host": "eon-live-learner-edge.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 500,
+   "ms": 140,
+   "hash": "0537751749498075",
+   "catchall": false,
+   "len": 81
+  },
+  {
+   "host": "eon-live-learner-edge.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 500,
+   "ms": 119,
+   "hash": "0537751749498075",
+   "catchall": false,
+   "len": 81
+  },
+  {
+   "host": "eon-matrix-keeper.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 175,
+   "hash": "96894f242542b453",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "eon-matrix-keeper.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 124,
+   "hash": "3cf6f89ff295aecc",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "eon-matrix-keeper.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 413,
+   "hash": "3a65952e3658f8f6",
+   "catchall": false,
+   "len": 17156
+  },
+  {
+   "host": "eon-matrix-keeper.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 164,
+   "hash": "013bc53e433b9a34",
+   "catchall": false,
+   "len": 114
+  },
+  {
+   "host": "eon-matrix-keeper.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 148,
+   "hash": "013bc53e433b9a34",
+   "catchall": false,
+   "len": 114
+  },
+  {
+   "host": "eon-mcp.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 119,
+   "hash": "f2416c673c618ef5",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "eon-mcp.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 109,
+   "hash": "1be99f1cca4ee752",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "eon-mcp.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 405,
+   "ms": 95,
+   "hash": "be4fb6a21c324378",
+   "catchall": false,
+   "len": 18
+  },
+  {
+   "host": "eon-mcp.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 405,
+   "ms": 99,
+   "hash": "be4fb6a21c324378",
+   "catchall": false,
+   "len": 18
+  },
+  {
+   "host": "eon-mcp.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 405,
+   "ms": 112,
+   "hash": "be4fb6a21c324378",
+   "catchall": false,
+   "len": 18
+  },
+  {
+   "host": "eon-memory.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 154,
+   "hash": "638527448479c498",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "eon-memory.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 104,
+   "hash": "32762518d6e48931",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "eon-memory.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 118,
+   "hash": "e0ece081547aca59",
+   "catchall": false,
+   "len": 111
+  },
+  {
+   "host": "eon-memory.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 135,
+   "hash": "e0ece081547aca59",
+   "catchall": false,
+   "len": 111
+  },
+  {
+   "host": "eon-memory.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 107,
+   "hash": "e0ece081547aca59",
+   "catchall": false,
+   "len": 111
+  },
+  {
+   "host": "eon-mghost-1.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 113,
+   "hash": "45ecf4a8c696edd8",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "eon-mghost-1.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 154,
+   "hash": "72ee7f53af0005c5",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "eon-mghost-1.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 124,
+   "hash": "818f8375d5991130",
+   "catchall": false,
+   "len": 103
+  },
+  {
+   "host": "eon-mghost-1.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 133,
+   "hash": "818f8375d5991130",
+   "catchall": false,
+   "len": 103
+  },
+  {
+   "host": "eon-mghost-1.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 122,
+   "hash": "818f8375d5991130",
+   "catchall": false,
+   "len": 103
+  },
+  {
+   "host": "eon-mghost-2.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 176,
+   "hash": "1e5f83a00ac4cc7c",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "eon-mghost-2.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 171,
+   "hash": "aa7c90214f0ec676",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "eon-mghost-2.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 196,
+   "hash": "3ff460f8c748e11d",
+   "catchall": false,
+   "len": 103
+  },
+  {
+   "host": "eon-mghost-2.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 164,
+   "hash": "3ff460f8c748e11d",
+   "catchall": false,
+   "len": 103
+  },
+  {
+   "host": "eon-mghost-2.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 121,
+   "hash": "3ff460f8c748e11d",
+   "catchall": false,
+   "len": 103
+  },
+  {
+   "host": "eon-neural-eu.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 116,
+   "hash": "f2f73101eafa823e",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-neural-eu.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 163,
+   "hash": "eafc037dfe19a56b",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-neural-eu.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 160,
+   "hash": "ae6e3799624540f5",
+   "catchall": false,
+   "len": 161
+  },
+  {
+   "host": "eon-neural-eu.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 119,
+   "hash": "df8d33ed215a2e99",
+   "catchall": false,
+   "len": 26
+  },
+  {
+   "host": "eon-neural-eu.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 147,
+   "hash": "df8d33ed215a2e99",
+   "catchall": false,
+   "len": 26
+  },
+  {
+   "host": "eon-neural-router.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 132,
+   "hash": "b35f14d80e4a2033",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "eon-neural-router.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 96,
+   "hash": "2008c81e05b8dd0f",
+   "catchall": false,
+   "len": 79
+  },
+  {
+   "host": "eon-neural-router.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 101,
+   "hash": "b295401c145ab7dd",
+   "catchall": false,
+   "len": 98
+  },
+  {
+   "host": "eon-neural-router.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 104,
+   "hash": "b295401c145ab7dd",
+   "catchall": false,
+   "len": 98
+  },
+  {
+   "host": "eon-neural-router.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 124,
+   "hash": "b295401c145ab7dd",
+   "catchall": false,
+   "len": 98
+  },
+  {
+   "host": "eon-neural-web.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 124,
+   "hash": "8d9fdde2999ffa9b",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-neural-web.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 127,
+   "hash": "3c640e68cd33bb95",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-neural-web.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 192,
+   "hash": "db9a8808bb24b754",
+   "catchall": false,
+   "len": 159
+  },
+  {
+   "host": "eon-neural-web.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 191,
+   "hash": "df8d33ed215a2e99",
+   "catchall": false,
+   "len": 26
+  },
+  {
+   "host": "eon-neural-web.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 102,
+   "hash": "df8d33ed215a2e99",
+   "catchall": false,
+   "len": 26
+  },
+  {
+   "host": "eon-openai-relay.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 169,
+   "hash": "a356087cd530a3c2",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-openai-relay.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 103,
+   "hash": "a5d1c698ef51b342",
+   "catchall": false,
+   "len": 78
+  },
+  {
+   "host": "eon-openai-relay.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 112,
+   "hash": "e68751dab3b8f3d2",
+   "catchall": false,
+   "len": 35
+  },
+  {
+   "host": "eon-openai-relay.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 91,
+   "hash": "e68751dab3b8f3d2",
+   "catchall": false,
+   "len": 35
+  },
+  {
+   "host": "eon-openai-relay.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 129,
+   "hash": "e68751dab3b8f3d2",
+   "catchall": false,
+   "len": 35
+  },
+  {
+   "host": "eon-p2p-cloud.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 372,
+   "hash": "a9f73162ace2da33",
+   "catchall": false,
+   "len": 8857
+  },
+  {
+   "host": "eon-p2p-cloud.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 442,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-p2p-cloud.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 655,
+   "hash": "29eb5984b6191503",
+   "catchall": false,
+   "len": 1159
+  },
+  {
+   "host": "eon-p2p-cloud.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 513,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-p2p-cloud.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 450,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-pow-shard.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 134,
+   "hash": "3e2961951492d701",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-pow-shard.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 103,
+   "hash": "e9e5941b31cbd7f6",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "eon-pow-shard.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 151,
+   "hash": "e9d83f01c9aff03a",
+   "catchall": false,
+   "len": 12
+  },
+  {
+   "host": "eon-pow-shard.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 148,
+   "hash": "e9d83f01c9aff03a",
+   "catchall": false,
+   "len": 12
+  },
+  {
+   "host": "eon-pow-shard.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 139,
+   "hash": "e9d83f01c9aff03a",
+   "catchall": false,
+   "len": 12
+  },
+  {
+   "host": "eon-skill-mesh.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 174,
+   "hash": "ebaef105da01820f",
+   "catchall": false,
+   "len": 550
+  },
+  {
+   "host": "eon-skill-mesh.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 298,
+   "hash": "ebaef105da01820f",
+   "catchall": false,
+   "len": 550
+  },
+  {
+   "host": "eon-skill-mesh.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 109,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-skill-mesh.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 126,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-skill-mesh.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 110,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-sovereign-core.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 441,
+   "hash": "adcf09da806c0f68",
+   "catchall": false,
+   "len": 8862
+  },
+  {
+   "host": "eon-sovereign-core.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 521,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-sovereign-core.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 670,
+   "hash": "7fccbf6d0fd6a3dd",
+   "catchall": false,
+   "len": 1164
+  },
+  {
+   "host": "eon-sovereign-core.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 487,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-sovereign-core.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 478,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "eon-sync-round.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 331,
+   "hash": "772321db6d976bf6",
+   "catchall": false,
+   "len": 361
+  },
+  {
+   "host": "eon-sync-round.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 225,
+   "hash": "1454c64a46f5e5b4",
+   "catchall": false,
+   "len": 361
+  },
+  {
+   "host": "eon-sync-round.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 99,
+   "hash": "ec7b5f91789f0c90",
+   "catchall": false,
+   "len": 361
+  },
+  {
+   "host": "eon-sync-round.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 98,
+   "hash": "6ce2211112732deb",
+   "catchall": false,
+   "len": 361
+  },
+  {
+   "host": "eon-sync-round.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 237,
+   "hash": "e5f31317169d4439",
+   "catchall": false,
+   "len": 361
+  },
+  {
+   "host": "eon-termux-mcp.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 174,
+   "hash": "38611ec91645230b",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-termux-mcp.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 144,
+   "hash": "a897516f203bf8cb",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-termux-mcp.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 198,
+   "hash": "e68751dab3b8f3d2",
+   "catchall": false,
+   "len": 35
+  },
+  {
+   "host": "eon-termux-mcp.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 227,
+   "hash": "e68751dab3b8f3d2",
+   "catchall": false,
+   "len": 35
+  },
+  {
+   "host": "eon-termux-mcp.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 146,
+   "hash": "e68751dab3b8f3d2",
+   "catchall": false,
+   "len": 35
+  },
+  {
+   "host": "eon-trig-matrix.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 148,
+   "hash": "102c36237117696e",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "eon-trig-matrix.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 182,
+   "hash": "b97b6b2144e6609b",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "eon-trig-matrix.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 207,
+   "hash": "393c2b2678ae25fd",
+   "catchall": false,
+   "len": 982
+  },
+  {
+   "host": "eon-trig-matrix.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 102,
+   "hash": "7eeaa76e24571546",
+   "catchall": false,
+   "len": 199
+  },
+  {
+   "host": "eon-trig-matrix.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 145,
+   "hash": "7eeaa76e24571546",
+   "catchall": false,
+   "len": 199
+  },
+  {
+   "host": "eon-ubuntu-alternative.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 190,
+   "hash": "2761188f03e71d31",
+   "catchall": false,
+   "len": 84
+  },
+  {
+   "host": "eon-ubuntu-alternative.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 168,
+   "hash": "f4a28fb940c6feec",
+   "catchall": false,
+   "len": 84
+  },
+  {
+   "host": "eon-ubuntu-alternative.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 113,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-ubuntu-alternative.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 154,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-ubuntu-alternative.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 141,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "eon-vram.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 126,
+   "hash": "1e97e8aaf73257f5",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "eon-vram.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 124,
+   "hash": "cefe630dc94411f5",
+   "catchall": false,
+   "len": 70
+  },
+  {
+   "host": "eon-vram.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 323,
+   "hash": "5757f0dc84da7b63",
+   "catchall": false,
+   "len": 402
+  },
+  {
+   "host": "eon-vram.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 266,
+   "hash": "f449fba9bdff8585",
+   "catchall": false,
+   "len": 251
+  },
+  {
+   "host": "eon-vram.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 527,
+   "hash": "f449fba9bdff8585",
+   "catchall": false,
+   "len": 251
+  },
+  {
+   "host": "eon-watchdog-1.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 114,
+   "hash": "3915f5d75cd2e6ef",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-watchdog-1.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 97,
+   "hash": "8afa5779fc1026a8",
+   "catchall": false,
+   "len": 76
+  },
+  {
+   "host": "eon-watchdog-1.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 192,
+   "hash": "a6a5b373d94fd4d7",
+   "catchall": false,
+   "len": 369
+  },
+  {
+   "host": "eon-watchdog-1.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 148,
+   "hash": "a6a5b373d94fd4d7",
+   "catchall": false,
+   "len": 369
+  },
+  {
+   "host": "eon-watchdog-1.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 93,
+   "hash": "a6a5b373d94fd4d7",
+   "catchall": false,
+   "len": 369
+  },
+  {
+   "host": "fluid-matrix.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 236,
+   "hash": "6eae639be9624d6a",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "fluid-matrix.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 155,
+   "hash": "1c80c05929439f66",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "fluid-matrix.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 92,
+   "hash": "85d3a096a4b33e12",
+   "catchall": false,
+   "len": 93
+  },
+  {
+   "host": "fluid-matrix.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 105,
+   "hash": "85d3a096a4b33e12",
+   "catchall": false,
+   "len": 93
+  },
+  {
+   "host": "fluid-matrix.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 101,
+   "hash": "85d3a096a4b33e12",
+   "catchall": false,
+   "len": 93
+  },
+  {
+   "host": "ghost.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 165,
+   "hash": "4a0b6759ab109e5f",
+   "catchall": false,
+   "len": 67
+  },
+  {
+   "host": "ghost.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 113,
+   "hash": "1d401eb62909f394",
+   "catchall": false,
+   "len": 67
+  },
+  {
+   "host": "ghost.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 117,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 149,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 167,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-2.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 142,
+   "hash": "f9d8d0f5c2339847",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "ghost-2.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 118,
+   "hash": "af186d6da0340bdb",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "ghost-2.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 101,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-2.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 105,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-2.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 129,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-3.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 150,
+   "hash": "6ad7f0220965388b",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "ghost-3.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 150,
+   "hash": "7eba4c86f9d38ed7",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "ghost-3.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 167,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-3.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 96,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-3.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 103,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-4.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 111,
+   "hash": "e7eebaa441b0e6c8",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "ghost-4.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 186,
+   "hash": "308d56e12982b5bd",
+   "catchall": false,
+   "len": 69
+  },
+  {
+   "host": "ghost-4.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 187,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-4.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 115,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-4.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 112,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-dashboard.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 171,
+   "hash": "9fdfc13f1b575209",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "ghost-dashboard.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 157,
+   "hash": "53b47a36133c7f85",
+   "catchall": false,
+   "len": 77
+  },
+  {
+   "host": "ghost-dashboard.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 101,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-dashboard.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 125,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-dashboard.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 99,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-store.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 119,
+   "hash": "cb67b15941cd5e55",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "ghost-store.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 131,
+   "hash": "c89855922fafeb3a",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "ghost-store.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 115,
+   "hash": "91370831ce5e27f6",
+   "catchall": false,
+   "len": 118
+  },
+  {
+   "host": "ghost-store.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 95,
+   "hash": "91370831ce5e27f6",
+   "catchall": false,
+   "len": 118
+  },
+  {
+   "host": "ghost-store.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 82,
+   "hash": "91370831ce5e27f6",
+   "catchall": false,
+   "len": 118
+  },
+  {
+   "host": "ghost-swarm.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 250,
+   "hash": "34eb6dd8389b15cb",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "ghost-swarm.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 162,
+   "hash": "bfc3334ddcd9d763",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "ghost-swarm.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 154,
+   "hash": "6d8a7947d5677861",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-swarm.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 95,
+   "hash": "6d8a7947d5677861",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-swarm.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 145,
+   "hash": "6d8a7947d5677861",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-twin.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 177,
+   "hash": "5570bd3e260da77d",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "ghost-twin.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 102,
+   "hash": "1167cfd6bb1fa094",
+   "catchall": false,
+   "len": 72
+  },
+  {
+   "host": "ghost-twin.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 103,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-twin.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 115,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "ghost-twin.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 120,
+   "hash": "b7b5628dbe4f2979",
+   "catchall": false,
+   "len": 92
+  },
+  {
+   "host": "gpu-inference.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 139,
+   "hash": "824ef49fa045f29c",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "gpu-inference.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 116,
+   "hash": "1ac8d1a2ac8ea6a7",
+   "catchall": false,
+   "len": 75
+  },
+  {
+   "host": "gpu-inference.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 112,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "gpu-inference.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 117,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "gpu-inference.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 95,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "home-cloud-relay.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 531,
+   "hash": "b38825f7800dec85",
+   "catchall": false,
+   "len": 8860
+  },
+  {
+   "host": "home-cloud-relay.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 528,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "home-cloud-relay.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 690,
+   "hash": "d75825ca47cadf15",
+   "catchall": false,
+   "len": 1162
+  },
+  {
+   "host": "home-cloud-relay.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 493,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "home-cloud-relay.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 593,
+   "hash": "388de1cbfcc44a6e",
+   "catchall": true,
+   "len": 48
+  },
+  {
+   "host": "knowledge-v2.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 734,
+   "hash": "0cd8cfc3b9ff25a3",
+   "catchall": false,
+   "len": 49780
+  },
+  {
+   "host": "knowledge-v2.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 95,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "knowledge-v2.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 170,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "knowledge-v2.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 175,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "knowledge-v2.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 183,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "live-tunnel.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 127,
+   "hash": "7c7edc290c9cdcc5",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "live-tunnel.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 165,
+   "hash": "11892ba740757ebe",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "live-tunnel.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 157,
+   "hash": "95ca2915aad78d88",
+   "catchall": false,
+   "len": 118
+  },
+  {
+   "host": "live-tunnel.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 104,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "live-tunnel.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 95,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "memory-cache.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 145,
+   "hash": "ea07ebb23957308a",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "memory-cache.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 99,
+   "hash": "e542f63da5dcf7b9",
+   "catchall": false,
+   "len": 74
+  },
+  {
+   "host": "memory-cache.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 107,
+   "hash": "0b1ec84a8fbc3223",
+   "catchall": false,
+   "len": 93
+  },
+  {
+   "host": "memory-cache.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 173,
+   "hash": "0b1ec84a8fbc3223",
+   "catchall": false,
+   "len": 93
+  },
+  {
+   "host": "memory-cache.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 112,
+   "hash": "0b1ec84a8fbc3223",
+   "catchall": false,
+   "len": 93
+  },
+  {
+   "host": "mind.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 108,
+   "hash": "ecd5f6e31b255e9b",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "mind.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 124,
+   "hash": "a3f99bfb1ff1fbc1",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "mind.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 91,
+   "hash": "8829da32a0e7016d",
+   "catchall": false,
+   "len": 85
+  },
+  {
+   "host": "mind.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 182,
+   "hash": "8829da32a0e7016d",
+   "catchall": false,
+   "len": 85
+  },
+  {
+   "host": "mind.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 109,
+   "hash": "8829da32a0e7016d",
+   "catchall": false,
+   "len": 85
+  },
+  {
+   "host": "neural-swarm.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 306,
+   "hash": "70741e752fef78ce",
+   "catchall": false,
+   "len": 1222
+  },
+  {
+   "host": "neural-swarm.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 404,
+   "ms": 92,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "neural-swarm.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 185,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "neural-swarm.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 156,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "neural-swarm.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 138,
+   "hash": "51d0a9e3bd9ffc25",
+   "catchall": false,
+   "len": 21
+  },
+  {
+   "host": "sage.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 134,
+   "hash": "dd4807a3556e05cb",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "sage.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 99,
+   "hash": "ff195d770945839c",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "sage.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 200,
+   "ms": 151,
+   "hash": "4f140677f8db8880",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "sage.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 200,
+   "ms": 98,
+   "hash": "39667ffc2f3fde41",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "sage.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 200,
+   "ms": 86,
+   "hash": "ee566a864480028b",
+   "catchall": false,
+   "len": 66
+  },
+  {
+   "host": "tiny-1.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 154,
+   "hash": "61aba7e30926d9bd",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-1.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 134,
+   "hash": "66b0f2639fea967f",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-1.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 93,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-1.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 149,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-1.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 101,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-2.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 206,
+   "hash": "fa8bb8c25ec7d6e0",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-2.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 93,
+   "hash": "9002b52798989399",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-2.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 98,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-2.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 108,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-2.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 91,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-3.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 115,
+   "hash": "038cf82e8baecdfb",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-3.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 91,
+   "hash": "3b86bf8b97e9ea47",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-3.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 205,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-3.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 90,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-3.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 96,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-4.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 117,
+   "hash": "a0ee53e28b7283bc",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-4.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 136,
+   "hash": "61c29a86b0fda11e",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-4.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 98,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-4.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 167,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-4.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 129,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-5.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 218,
+   "hash": "1c2f10d9d971403f",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-5.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 213,
+   "hash": "bdfa7bb1ecc852f5",
+   "catchall": false,
+   "len": 68
+  },
+  {
+   "host": "tiny-5.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 178,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-5.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 92,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-5.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 199,
+   "hash": "826673f5a6fc66cf",
+   "catchall": false,
+   "len": 57
+  },
+  {
+   "host": "tiny-matrix.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 209,
+   "hash": "e1b0b99a764cb5f5",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "tiny-matrix.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 192,
+   "hash": "2a96d42180c56f03",
+   "catchall": false,
+   "len": 73
+  },
+  {
+   "host": "tiny-matrix.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 401,
+   "ms": 145,
+   "hash": "5a6945d5f044c1da",
+   "catchall": false,
+   "len": 54
+  },
+  {
+   "host": "tiny-matrix.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 401,
+   "ms": 169,
+   "hash": "5a6945d5f044c1da",
+   "catchall": false,
+   "len": 54
+  },
+  {
+   "host": "tiny-matrix.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 401,
+   "ms": 109,
+   "hash": "5a6945d5f044c1da",
+   "catchall": false,
+   "len": 54
+  },
+  {
+   "host": "tv-matrix.eon-sovereign.workers.dev",
+   "path": "/",
+   "code": 200,
+   "ms": 217,
+   "hash": "4a67cad4b36a12f9",
+   "catchall": false,
+   "len": 71
+  },
+  {
+   "host": "tv-matrix.eon-sovereign.workers.dev",
+   "path": "/health",
+   "code": 200,
+   "ms": 151,
+   "hash": "e3e53921aac9123b",
+   "catchall": false,
+   "len": 71
+  },
+  {
+   "host": "tv-matrix.eon-sovereign.workers.dev",
+   "path": "/status",
+   "code": 404,
+   "ms": 95,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "tv-matrix.eon-sovereign.workers.dev",
+   "path": "/mcp",
+   "code": 404,
+   "ms": 95,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  },
+  {
+   "host": "tv-matrix.eon-sovereign.workers.dev",
+   "path": "/__nonexistent_c2_probe__",
+   "code": 404,
+   "ms": 102,
+   "hash": "e3ebaa16dd9d9b9f",
+   "catchall": false,
+   "len": 9
+  }
+ ]
+}
