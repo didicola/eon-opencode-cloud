@@ -1,0 +1,41 @@
+{
+ "generated_utc": "2026-10-27T15:32:55.282893+00:00",
+ "tool": "t3_c3_harness.py",
+ "tool_sha256": "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d",
+ "inputs": [
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/T3-R-PREREG-20261025.md",
+   "sha256": "556fe509327c65aebddc038c4090644afc9017044064c6d677c12caf177f0c0d",
+   "bytes": 7376
+  },
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt",
+   "sha256": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c",
+   "bytes": 3932
+  },
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch5/t3r-C1b.json",
+   "sha256": "55cf76bcecca80dcb7f479a756286b0e589786526a876e0ac69ab589dd6517a4",
+   "bytes": 99972
+  },
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch5/t3r-C1b.json",
+   "sha256": "55cf76bcecca80dcb7f479a756286b0e589786526a876e0ac69ab589dd6517a4",
+   "bytes": 99972
+  }
+ ],
+ "outputs": [
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch5/t3r-C2.json",
+   "sha256": "78f18945a83d7d766513c0acb304eba0140da565fd7776ca81403552b20508d7",
+   "bytes": 102148
+  }
+ ],
+ "epoch": "T3-R",
+ "cycle": 2,
+ "harness_sha256": "a4826b7e0d0a91f37e1f20cded196a77f83b1f91e7532aa76ca6658fdca93661",
+ "preregistration_sha256": "556fe509327c65aebddc038c4090644afc9017044064c6d677c12caf177f0c0d",
+ "M4_quarantined": true,
+ "M5_auth_lane": "eon-mcp admin token via ~/eon-tmp/.adm (mode 600); never printed",
+ "zero_hint_owner_attestation": "PENDING (B10)"
+}
