@@ -198,40 +198,105 @@ Catalog relations are paid-only (API 403, upgrade required). The MCP OAuth scope
 
 
 def build_agi():
-    st, h = http_json("https://eon-agi.eon-sovereign.workers.dev/health")
-    if st != 200:
+    st_self, self_state = http_json("https://eon-agi.eon-sovereign.workers.dev/self")
+    st_state, state = http_json("https://eon-agi.eon-sovereign.workers.dev/state")
+    st_driver, driver = http_json("https://eon-agi.eon-sovereign.workers.dev/driver")
+    if st_state != 200 or not isinstance(state, dict):
         return f"""# EON Cloud AGI State
 
-Live state unavailable: HTTP {st}. No stale numbers are written; retry later."""
-    cycles = h.get("cycles", 0)
-    passed = h.get("passed", 0)
-    failed = h.get("failed", max(0, cycles - passed))
-    score = h.get("score", "?")
+Live state unavailable: HTTP {st_state}. No stale numbers are written; retry later."""
+    if st_self != 200 or not isinstance(self_state, dict):
+        self_state = {}
+    if st_driver != 200 or not isinstance(driver, dict):
+        driver = {}
+
+    h = dict(state)
+    h.update(self_state)
+    cycles = state.get("cycles", h.get("cycles", 0))
+    passed = state.get("passed", h.get("passed", 0))
+    failed = state.get("failed", h.get("failed", max(0, cycles - passed)))
+    score = self_state.get("score", h.get("score", (passed / cycles if cycles else "?")))
     try:
         score_pct = f"{float(score) * 100:.1f}%"
     except Exception:
         score_pct = str(score)
-    transfer = h.get("transfer") or {}
+
+    lessons = self_state.get("lessons_count")
+    if lessons is None:
+        lessons = len(state.get("lessons") or [])
+    goals = state.get("goals") if isinstance(state.get("goals"), list) else []
+    if not goals:
+        goals = self_state.get("goals") if isinstance(self_state.get("goals"), list) else []
+    provisions = state.get("provision_goals") if isinstance(state.get("provision_goals"), list) else []
+    if not provisions:
+        provisions = self_state.get("provisions") if isinstance(self_state.get("provisions"), list) else []
+
+    llm = state.get("llm") or {}
+    try:
+        llm_pct = f"{100.0 * float(llm.get('correct', 0)) / float(llm.get('tried', 1)):.1f}%"
+    except Exception:
+        llm_pct = "n/a"
+
+    domains = state.get("domains") or {}
+    parts = []
+    if isinstance(domains, dict):
+        for name in ("math", "logic", "string", "compare", "alphasort",
+                     "temporal", "causal", "spatial", "creative"):
+            d = domains.get(name)
+            if not isinstance(d, dict):
+                continue
+            n = d.get("n", 0)
+            c = d.get("correct", 0)
+            pct = f"{100.0 * c / n:.1f}%" if n else "n/a"
+            parts.append(f"{name} {c}/{n} ({pct})")
+    domain_line = "; ".join(parts) if parts else "?"
+
+    transfer = state.get("transfer") or self_state.get("transfer") or {}
     transfer_line = "none"
     if transfer:
         transfer_line = (
             f"{transfer.get('from','?')} -> {transfer.get('to','?')} "
             f"delta {transfer.get('delta','?')} "
-            f"(applied={transfer.get('transfer_applied','?')})"
+            f"(base {transfer.get('base_acc','?')} / transfer {transfer.get('transfer_acc','?')})"
         )
+
+    driver_line = "unknown"
+    if driver:
+        # /driver returns the alarm's *next due* timestamp, which is volatile by design.
+        # Rendering it would make this card change on every refresh (and trigger a
+        # needless knowledge write), so we render only the stable armed boolean.
+        driver_line = "armed" if driver.get("armed") else "not armed"
+
+    last_run = state.get("last_run") or "?"
+    stale_line = ""
+    try:
+        import datetime as _dt
+        lr = _dt.datetime.fromisoformat(str(last_run).replace("Z", "+00:00"))
+        age = _dt.datetime.now(_dt.timezone.utc) - lr
+        if age.total_seconds() > 86400:
+            # Deliberately no live age here: a ticking age would make this card
+            # change on every refresh and trigger a pointless knowledge write.
+            stale_line = (
+                f"State: **STALE** — no advancement observed since {last_run}."
+            )
+    except Exception:
+        stale_line = ""
+
     return f"""# EON Cloud AGI State
 
-Worker: {h.get('service','eon-agi')}, persistent={h.get('persistent','?')}, store={h.get('store','?')}, cron={h.get('cron','?')}.
+Worker: {h.get('service','eon-agi')} ({h.get('version','?')}); store=do-storage.
 Cycles: {cycles}. Passed: {passed}. Failed: {failed}. Score: {score_pct}.
-Self-mods: {h.get('mods','?')}. Lessons: {h.get('lessons','?')}. Provisions: {h.get('provisions','?')}. Goals: {h.get('goals','?')}.
-Best prompt: {h.get('best_prompt','?')}. LLM accuracy: {h.get('llm_accuracy','?')}.
+Self-mods: {h.get('mods','?')}. Lessons: {lessons}. Provisions: {len(provisions)}. Goals: {len(goals)}.
+Best prompt: {h.get('best_prompt','?')}. LLM accuracy: {llm_pct}.
 
-Domains: {h.get('domain_stats','?')}.
-Last run: {h.get('last_run','?')}.
+Domains: {domain_line}.
+Last run: {last_run}.
 Transfer probe: {transfer_line}.
+Driver: {driver_line}.
+{stale_line}
 
 Architecture map: https://github.com/{REPO}/blob/{BRANCH}/ARCHITECTURE.md
-Known gaps: termux2 offline; ubuntu SSH/ports firewalled, 443 mTLS half-up; Vercel uses read-only Neon role wk_vercel.
+Known gaps: AGI state stale (last_run 2026-10-14; live 1580 vs 2026-10-22 7051); termux2 .3 last up 2026-10-21, LAN unverified 2026-10-27; ubuntu .72 phone-unreachable; Vercel read-only. /health is a 200-for-all stub; this card uses /self + /state + /driver.
 No secrets in this card."""
 
 

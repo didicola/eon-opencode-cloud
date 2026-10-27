@@ -9,9 +9,9 @@ Live status page: **https://eon-arch.betteruptime.com**
 ```mermaid
 flowchart TD
   subgraph Nodes["Nodes"]
-    T1["termux1 phone<br/>192.168.1.33 · orchestrator"]
-    T2["termux2 twin<br/>192.168.1.2 · offline"]
-    UB["ubuntu .72<br/>GPU / training"]
+    T1["termux1 phone<br/>192.168.1.5 (last LAN-verified 2026-10-21)<br/>2026-10-27: mobile data + VPN · no LAN"]
+    T2["termux2 twin<br/>192.168.1.3 (up 2026-10-21)<br/>2026-10-27: unreachable from t1"]
+    UB["ubuntu .72<br/>GPU / training<br/>443 only · phone-unreachable"]
   end
 
   subgraph Edge["Edge / Public"]
@@ -23,7 +23,7 @@ flowchart TD
     W["eon-watchdog-1<br/>*/1"]
     G["ghost<br/>*/10"]
     AA["artifact-agent<br/>hourly probe"]
-    AGI["eon-agi"]
+    AGI["eon-agi<br/>agi-cloud-v10 · DO"]
     CB["cloud-brain"]
     GPU["gpu-inference"]
     VR["eon-vram<br/>VRAM diary"]
@@ -32,6 +32,7 @@ flowchart TD
   subgraph Data["Data / State"]
     NEON[("Neon eon-fleet<br/>heartbeats · lanes · tasks")]
     KV[("Cloudflare KV")]
+    DO[("Durable Object storage<br/>AgiAlarm")]
     D1[("D1 eon-distro / flet")]
     AI["Workers AI"]
   end
@@ -42,7 +43,7 @@ flowchart TD
   end
 
   subgraph CI["GitHub"]
-    GH["didicola/eon-opencode-cloud<br/>Actions / BBH v2"]
+    GH["didicola/eon-opencode-cloud<br/>Actions / BBH v2 / knowledge refresh"]
     GH2["didicola/eon200-watch<br/>guardian"]
   end
 
@@ -61,15 +62,16 @@ flowchart TD
   W --> KV
   G --> KV
   AA --> AI
-  AGI --> KV
+  AGI --> DO
+  AGI -.->|legacy| KV
   CB --> AI
   GPU --> AI
   K --> D1
   GH -->|deploy / cron| K
   GH -->|deploy / cron| AA
   GH2 -->|config truth| K
-  T2 -.->|when online| NEON
-  UB -.->|when online| NEON
+  T2 -.->|when reachable| NEON
+  UB -.->|when reachable| NEON
 ```
 
 ## Services and monitors
@@ -82,6 +84,7 @@ flowchart TD
 | EON artifact agent | worker health | https://artifact-agent.eon-sovereign.workers.dev/healthz | monitor `5100728` |
 | EON VRAM diary | diary read | https://eon-vram.eon-sovereign.workers.dev/read?addr=0xa0007000 | monitor `5100729` |
 | EON termux1 phone | 15m heartbeat | Neon `eon.heartbeats` + Better Stack | heartbeat `513053` |
+| EON AGI (internal) | self-improvement loop | https://eon-agi.eon-sovereign.workers.dev/self · `/state` · `/driver` | — (no monitor: `/health` is a stub) |
 
 - Monitor cadence: **60 seconds**, email + push alerts.
 - Heartbeat: **period 900s (15m)**, **grace 2700s (45m)**.
@@ -91,20 +94,24 @@ flowchart TD
 
 - **Neon `eon-fleet`** (`nameless-dawn-68995682`, aws-us-east-2): `eon.heartbeats`, `eon.lanes`, task queue.
 - **Cloudflare D1**: `eon-distro` (Linux images), `flet` (fleet registry / heartbeats).
-- **Cloudflare KV**: worker state, ghost memory, lane stats.
+- **Cloudflare KV**: worker state, ghost memory, lane stats; legacy AGI state path.
+- **Durable Object `AgiAlarm`**: live AGI state (`store=do-storage`), experience stream, alarm driver.
 - **Workers AI**: model lane used by artifact-agent, cloud-brain, gpu-inference.
 
 ## Known gaps (honest)
 
-- **Catalog relations**: paid-only; this Mermaid map replaces them.
-- **termux2** (`192.168.1.2`): no route / moved as of 2026-10-20.
-- **ubuntu** (`192.168.1.72`): LAN up; SSH/ports firewalled; 443 mTLS half-up; heartbeat timer staged.
+- **AGI state stale**: `/self` reports `1580` cycles, `95.1%` score, `62` self-mods, `50` lessons; `/state` reports `last_run=2026-10-14T16:34:06.680Z`; `/driver` is armed but no advance is observed. The `2026-10-22` restore reached `7051` cycles. No production repair performed from this phone; owner-gated.
+- **AGI `/health` is a 200-for-all stub**: `EON-AGI-STATE.md` must be built from `/self` + `/state` + `/driver`, never `/health`.
+- **termux2** (`192.168.1.3`): up and reachable `2026-10-21`; on `2026-10-27` t1 had no WLAN (mobile data + VPN), so LAN reachability is unverified.
+- **ubuntu** (`192.168.1.72`): `443` mTLS half-up and phone-reachable `2026-10-14`; phone-unreachable on `2026-10-27`.
 - **Vercel host**: read-only Neon role `wk_vercel`; cannot deploy from this phone.
 - **Better Stack MCP**: OAuth is read-only; writes use a local API token stored `600`, never committed.
+- **VRAM diary**: `/read` returns HTTP `500` (“Exceeded allowed rows read in Durable Objects free tier”) as of `2026-10-27`; diaries are local (`CONT-xxxx LOCAL`) until the quota window recovers.
 
 ## Update procedure
 
 1. Monitors/heartbeat/status page: Better Stack API from termux1 (`~/eon-tmp/.bstok`, mode `600`).
 2. Phone heartbeat: `~/eon-tmp/heartbeat-run.sh` (Android JobScheduler, every 15m); ping URL in a `600` curl config.
 3. Architecture map: edit this file and commit to `didicola/eon-opencode-cloud` (`main`).
-4. Never commit tokens, ping URLs, or session cookies.
+4. AGI card: `scripts/refresh-eon-knowledge-ci.py` builds it from `/self` + `/state` + `/driver`; it intentionally omits the volatile alarm timestamp so the card does not churn and trigger needless `brain_learn` writes.
+5. Never commit tokens, ping URLs, or session cookies.
