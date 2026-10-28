@@ -1,0 +1,103 @@
+name: t3r-epoch6
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Four chances/day. The runner itself waits for the 24h+120s windows.
+    - cron: "17 */6 * * *"
+
+concurrency:
+  group: t3r-epoch6
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Refresh to latest main
+        run: |
+          set -eu
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Verify frozen inputs
+        run: |
+          set -eu
+          test "$(sha256sum t3r/t3r_harness.py | awk '{print $1}')" = "a4826b7e0d0a91f37e1f20cded196a77f83b1f91e7532aa76ca6658fdca93661"
+          test "$(sha256sum t3r/t3_c3_harness.py | awk '{print $1}')" = "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d"
+          test "$(sha256sum t3r/coverage_instrument.py | awk '{print $1}')" = "98a190c1a8312e949a0396193f53b51c8f56467aeadd2aeaf279c7d855676344"
+          test "$(sha256sum t3r/inventory/epoch4-hosts-20261023.txt | awk '{print $1}')" = "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c"
+          test "$(sha256sum t3r/epoch6/T3-R-EPOCH6-PREREG-20261028.md | awk '{print $1}')" = "e85c6f142107ce52195f27857d0f94a89c68049df115cee1122bf5104c9f7bbe"
+          test "$(sha256sum t3r/epoch6/verify.py | awk '{print $1}')" = "edbfc3ff8d93159a890ac2625c0ed98180dcaf5296581df9480ac1d40cc7e818"
+          test "$(sha256sum t3r/epoch6/run_cycle.py | awk '{print $1}')" = "6c983862ab2e4018b064e77d7cd59b31ce9f8c03748a5a6aa2e3d9a493a72a0a"
+
+      - name: Stage admin token (never printed)
+        env:
+          MCP_ADMIN_TOKEN: ${{ secrets.MCP_ADMIN_TOKEN }}
+        run: |
+          set -eu
+          test -n "${MCP_ADMIN_TOKEN:-}"
+          mkdir -p "$HOME/eon-tmp"
+          printf '%s' "$MCP_ADMIN_TOKEN" > "$HOME/eon-tmp/.adm"
+          chmod 600 "$HOME/eon-tmp/.adm"
+          test "$(stat -c '%a' "$HOME/eon-tmp/.adm")" = "600"
+
+      - name: Run due epoch-6 cycle
+        id: run
+        run: |
+          set +e
+          python3 t3r/epoch6/run_cycle.py
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit evidence
+        if: always()
+        env:
+          MCP_ADMIN_TOKEN: ${{ secrets.MCP_ADMIN_TOKEN }}
+        run: |
+          set -e
+          python3 - <<'PY'
+          import os, pathlib, sys
+          tok = os.environ.get("MCP_ADMIN_TOKEN", "")
+          if not tok:
+              print("SECRET CHECK SKIPPED: token absent")
+              sys.exit(0)
+          root = pathlib.Path("t3r/evidence/epoch6")
+          if root.exists():
+              needle = tok.encode()
+              for p in root.rglob("*"):
+                  if p.is_file() and needle in p.read_bytes():
+                      print("ERROR: admin token found in evidence: %s" % p)
+                      sys.exit(1)
+          print("evidence secret scan clean")
+          PY
+          git config user.name "eon-t3r-epoch6-runner"
+          git config user.email "eon-t3r-epoch6-runner@users.noreply.github.com"
+          git add -A t3r/evidence/epoch6
+          if git diff --cached --quiet; then
+            echo "no evidence changes"
+          else
+            git commit -m "t3r-epoch6: cloud cycle evidence $(date -u +%FT%TZ)"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Surface failures
+        if: always()
+        run: |
+          rc="${{ steps.run.outputs.rc }}"
+          echo "run_rc=${rc:-none}"
+          if [ -n "$rc" ] && [ "$rc" != "0" ]; then exit 1; fi
