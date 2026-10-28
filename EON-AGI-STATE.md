@@ -13,5 +13,5 @@ Driver: armed.
 
 
 Architecture map: https://github.com/didicola/eon-opencode-cloud/blob/main/ARCHITECTURE.md
-Known gaps: AGI state stale (last_run 2026-10-14; live 1580 vs 2026-10-22 7051); termux2 .3 last up 2026-10-21, LAN unverified 2026-10-27; ubuntu .72 phone-unreachable; Vercel read-only. /health is a 200-for-all stub; this card uses /self + /state + /driver.
+Known gaps: termux2 .3 last up 2026-10-21, LAN unverified 2026-10-27; ubuntu .72 phone-unreachable; Vercel read-only. /health is a 200-for-all stub; this card uses /self + /state + /driver.
 No secrets in this card.
