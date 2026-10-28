@@ -1,8 +1,10 @@
 # T3-R EPOCH 6 — RETENTION SUCCESSOR — PRE-REGISTRATION — 2026-10-28
 
-Status: **FROZEN BEFORE C1 COLLECTION.** This is a new pre-registered epoch.
-It does not rewrite the epoch-5 pre-registration, the epoch-5 evidence, or the
-epoch-5 verdict. Epoch 5 remains **C3 MECHANICAL FAIL / T3-R NO PASS**.
+Status: **FROZEN BEFORE C1 COLLECTION — AMENDMENT 1.** This is a new
+pre-registered epoch. It does not rewrite the epoch-5 pre-registration, the
+epoch-5 evidence, or the epoch-5 verdict. Epoch 5 remains **C3 MECHANICAL FAIL /
+T3-R NO PASS**. Amendment 1 was made after a C1 attempt that wrote no evidence;
+no valid C1 collection exists yet.
 
 ## Owner authorization
 
@@ -15,6 +17,42 @@ that answer as authorization to pre-register and run epoch 6.
 This is not a retry of epoch-5 C3 and not a retune. Epoch 5 is closed as
 **FAIL**; epoch 6 is a fresh C1/C2/C3 collection under the unchanged numerical
 bar.
+
+## Amendment 1 — C1 durability poll (2026-10-28T16:55Z)
+
+C1 attempt 1 (`40728339951`, learn at `2026-10-28T16:44:49Z`) wrote **no
+evidence**. The harness saw `learned:true` but its immediate `brain_status`
+read returned `knowledge 69→69`, so it refused to write a C1 artifact and
+returned 1. There is no `t3r-C1.json` from that attempt; C2/C3 were not
+attempted.
+
+A read-only durability check after the attempt found the token
+`T3R-20261028T164449Z-8f58f126` in the edge-brain store:
+
+- `/status`: `knowledge=70`;
+- `/kvcheck?q=T3R-20261028T164449Z-8f58f126`: `know=70`, `items=6`,
+  `token_hits=1`, `item_token_hits=1`.
+
+The write was durable; the immediate count read was stale (warm isolate). The
+attempt's token is **not used** as the epoch-6 C1 baseline because that attempt
+wrote no harness evidence or route summary. It remains an extra durable entry;
+a fresh C1 token is generated.
+
+Amendment 1 changes only the C1 read timing and adds a durability
+precondition:
+
+- Epoch 6 uses `t3r/epoch6/t3r_harness.py`, a copy of the frozen T3-R harness
+  with a bounded **20 s post-learn status poll** before the C1 after-read.
+  Every poll is a read-only `brain_status`; the harness still requires
+  `K_after > K_before`.
+- The epoch-6 runner additionally requires a read-only `/kvcheck` confirmation
+  that the fresh C1 token is durable (`token_hits > 0` or
+  `item_token_hits > 0`) before C2 is allowed.
+- The route probe, paths, timeouts, scoring, M5 stimulus, WSC-1, and pass bar
+  are unchanged. This is not a pass-bar retune.
+- The epoch-5 harness and epoch-5 evidence are untouched.
+
+New instrument hashes are recorded in “Frozen instruments” below.
 
 ## Why a new epoch is required
 
@@ -61,9 +99,11 @@ At **C1** the harness:
 6. performs an immediate `knowledge_search(token)` as a **sanity check only**.
 
 C1 is valid only if `learned:true`, `K1_after > K1_before`, and the immediate
-search returns the exact token. A C1 that writes no evidence is not a
-collection and may be retried operationally; a completed C1 that fails these
-conditions is recorded **invalid** and stops the epoch (no automatic retry).
+search returns the exact token. The epoch-6 runner additionally requires a
+read-only `/kvcheck` confirmation that the C1 token is durable before C2 is
+allowed (Amendment 1). A C1 that writes no evidence is not a collection and
+may be retried operationally; a completed C1 that fails these conditions is
+recorded **invalid** and stops the epoch (no automatic retry).
 
 At **C2** (≥24 h + 120 s after C1) and **C3** (≥24 h + 120 s after C2), the
 harness is read-only:
@@ -133,12 +173,12 @@ The old `0e97aa1c…` constant remains a historical B5 mismatch, not used.
 
 | instrument | sha256 |
 |---|---|
-| `t3r/t3r_harness.py` | `a4826b7e0d0a91f37e1f20cded196a77f83b1f91e7532aa76ca6658fdca93661` |
+| `t3r/epoch6/t3r_harness.py` | `7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66` |
 | `t3r/t3_c3_harness.py` | `2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d` |
 | `t3r/coverage_instrument.py` | `98a190c1a8312e949a0396193f53b51c8f56467aeadd2aeaf279c7d855676344` |
 | `t3r/inventory/epoch4-hosts-20261023.txt` | `40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c` |
-| `t3r/epoch6/verify.py` | `edbfc3ff8d93159a890ac2625c0ed98180dcaf5296581df9480ac1d40cc7e818` |
-| `t3r/epoch6/run_cycle.py` | `6c983862ab2e4018b064e77d7cd59b31ce9f8c03748a5a6aa2e3d9a493a72a0a` |
+| `t3r/epoch6/verify.py` | `fb73ea8d3ff9f8599da3cfa9858542fb10d62e99fd6a1291fb3d5faf3b20b0b6` |
+| `t3r/epoch6/run_cycle.py` | `1a211ad89ecd7191f24a5dd78b495495962b80cd887af433bcc09d9cc9896cde` |
 
 - Evidence directory: `t3r/evidence/epoch6/`
 - C1: `t3r-C1.json` + receipts; C2: `t3r-C2.json` + receipts; C3:
@@ -146,7 +186,7 @@ The old `0e97aa1c…` constant remains a historical B5 mismatch, not used.
 - C1/C2 validity artifacts: `t3r-C1-validity.json`,
   `t3r-C2-validity.json`.
 - C3 verifier output: `t3r-C3-verify.json`.
-- C1 execution must pass `--expect-seal a4826b7e…`; the harness refuses a
+- C1 execution must pass `--expect-seal 7bfbdcd6…`; the harness refuses a
   mismatched self-hash.
 - Final evidence write happens before receipts; receipts cover the delivered
   evidence exactly.
@@ -174,8 +214,8 @@ guard instead.
 
 ## Cycle schedule
 
-- C1: first successful `t3r-epoch6` dispatch after this pre-registration is
-  committed; target on/after `2026-10-28T16:45:00Z`.
+- C1: first successful `t3r-epoch6` dispatch after AMENDMENT 1 is committed;
+  target on/after `2026-10-28T17:10:00Z`.
 - C2: only ≥24 h + 120 s after C1 `collected_utc`; read-only retention check.
 - C3: only ≥24 h + 120 s after C2 `collected_utc`; read-only retention check.
 

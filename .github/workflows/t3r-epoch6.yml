@@ -35,13 +35,13 @@ jobs:
       - name: Verify frozen inputs
         run: |
           set -eu
-          test "$(sha256sum t3r/t3r_harness.py | awk '{print $1}')" = "a4826b7e0d0a91f37e1f20cded196a77f83b1f91e7532aa76ca6658fdca93661"
+          test "$(sha256sum t3r/epoch6/t3r_harness.py | awk '{print $1}')" = "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66"
           test "$(sha256sum t3r/t3_c3_harness.py | awk '{print $1}')" = "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d"
           test "$(sha256sum t3r/coverage_instrument.py | awk '{print $1}')" = "98a190c1a8312e949a0396193f53b51c8f56467aeadd2aeaf279c7d855676344"
           test "$(sha256sum t3r/inventory/epoch4-hosts-20261023.txt | awk '{print $1}')" = "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c"
-          test "$(sha256sum t3r/epoch6/T3-R-EPOCH6-PREREG-20261028.md | awk '{print $1}')" = "e85c6f142107ce52195f27857d0f94a89c68049df115cee1122bf5104c9f7bbe"
-          test "$(sha256sum t3r/epoch6/verify.py | awk '{print $1}')" = "edbfc3ff8d93159a890ac2625c0ed98180dcaf5296581df9480ac1d40cc7e818"
-          test "$(sha256sum t3r/epoch6/run_cycle.py | awk '{print $1}')" = "6c983862ab2e4018b064e77d7cd59b31ce9f8c03748a5a6aa2e3d9a493a72a0a"
+          test "$(sha256sum t3r/epoch6/T3-R-EPOCH6-PREREG-20261028.md | awk '{print $1}')" = "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6"
+          test "$(sha256sum t3r/epoch6/verify.py | awk '{print $1}')" = "fb73ea8d3ff9f8599da3cfa9858542fb10d62e99fd6a1291fb3d5faf3b20b0b6"
+          test "$(sha256sum t3r/epoch6/run_cycle.py | awk '{print $1}')" = "1a211ad89ecd7191f24a5dd78b495495962b80cd887af433bcc09d9cc9896cde"
 
       - name: Stage admin token (never printed)
         env:

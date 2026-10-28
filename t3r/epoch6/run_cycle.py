@@ -15,12 +15,14 @@ import json
 import os
 import subprocess
 import sys
+import urllib.parse
+import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 T3R = os.path.dirname(HERE)
 REPO = os.path.dirname(T3R)
 EVID = os.path.join(T3R, "evidence", "epoch6")
-HARNESS = os.path.join(T3R, "t3r_harness.py")
+HARNESS = os.path.join(HERE, "t3r_harness.py")
 PREREG = os.path.join(HERE, "T3-R-EPOCH6-PREREG-20261028.md")
 VERIFY = os.path.join(HERE, "verify.py")
 HOSTS = os.path.join(T3R, "inventory", "epoch4-hosts-20261023.txt")
@@ -33,8 +35,9 @@ V1 = os.path.join(EVID, "t3r-C1-validity.json")
 V2 = os.path.join(EVID, "t3r-C2-validity.json")
 V3 = os.path.join(EVID, "t3r-C3-verify.json")
 
-EXPECT = "a4826b7e0d0a91f37e1f20cded196a77f83b1f91e7532aa76ca6658fdca93661"
+EXPECT = "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66"
 WAIT = 24 * 3600 + 120
+EDGE_KVCHECK = "https://eon-edge-brain.eon-sovereign.workers.dev/kvcheck?q="
 NOT_BEFORE = dt.datetime(2026, 10, 28, 16, 30, tzinfo=dt.timezone.utc)
 
 
@@ -108,15 +111,46 @@ def run(cycle, out, receipts, previous=None):
     return subprocess.call(args, cwd=REPO)
 
 
+def kvcheck(token):
+    """Read-only durable-store confirmation for the C1 token.
+
+    The edge-brain can serve a stale count immediately after learn; /kvcheck
+    reads the durable item.  This is a C1 validity precondition, not a pass
+    criterion change.
+    """
+    if not token:
+        return {"ok": False, "error": "no token"}
+    url = EDGE_KVCHECK + urllib.parse.quote(str(token), safe="")
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            data = json.loads(r.read().decode("utf-8", "replace"))
+        return {
+            "ok": True,
+            "know": data.get("know"),
+            "items": data.get("items"),
+            "token_hits": data.get("token_hits"),
+            "item_token_hits": data.get("item_token_hits"),
+        }
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
 def c1_validity():
     if not os.path.exists(C1):
         return None
     sha = sha_file(C1)
     existing = load(V1)
-    if existing and existing.get("c1_sha256") == sha:
+    if existing and existing.get("c1_sha256") == sha and "kvcheck" in existing:
         return existing
     s = summary(C1)
     r = (s or {}).get("M5_retention", {})
+    kv = kvcheck(r.get("token"))
+    kv_durable = bool(
+        kv.get("ok")
+        and (int(kv.get("token_hits") or 0) > 0
+             or int(kv.get("item_token_hits") or 0) > 0)
+    )
     checks = {
         "learn_acked": r.get("learn_acked") is True,
         "knowledge_increased": r.get("knowledge_increased") is True,
@@ -124,12 +158,14 @@ def c1_validity():
         "ingest_not_skipped": r.get("ingest_skipped") is False,
         "token_present": bool(r.get("token")),
         "allow_m5_ingest": (s or {}).get("invocation", {}).get("allow_m5_ingest") is True,
+        "durable_kvcheck": kv_durable,
     }
     out = {
         "checked_utc": now_utc().isoformat(),
         "c1_sha256": sha,
         "token": r.get("token"),
         "m5": r,
+        "kvcheck": kv,
         "checks": checks,
         "ok": all(checks.values()),
     }

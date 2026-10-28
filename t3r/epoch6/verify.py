@@ -36,7 +36,7 @@ DEFAULT_V2 = os.path.join(EVID, "t3r-C2-validity.json")
 DEFAULT_PREREG = os.path.join(HERE, "T3-R-EPOCH6-PREREG-20261028.md")
 DEFAULT_HOSTS = os.path.join(T3R, "inventory", "epoch4-hosts-20261023.txt")
 
-EXPECTED_HARNESS = "a4826b7e0d0a91f37e1f20cded196a77f83b1f91e7532aa76ca6658fdca93661"
+EXPECTED_HARNESS = "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66"
 EXPECTED_TOOL = "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d"
 EXPECTED_HOSTS = "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c"
 EXPECTED_WSC = "01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f"
@@ -184,6 +184,11 @@ def main():
         "ok=%s c1_sha256=%s" % (v1.get("ok"), v1.get("c1_sha256")))
     add(checks, "C1_validity_hash", v1.get("c1_sha256") == sha_file(args.c1),
         "%s vs %s" % (v1.get("c1_sha256"), sha_file(args.c1)))
+    kv = v1.get("kvcheck") or {}
+    add(checks, "C1_durable_kvcheck",
+        kv.get("ok") is True and (int(kv.get("token_hits") or 0) > 0
+                                   or int(kv.get("item_token_hits") or 0) > 0),
+        "kvcheck=%s" % kv)
     add(checks, "C2_validity_ok", v2.get("ok") is True,
         "ok=%s c2_sha256=%s" % (v2.get("ok"), v2.get("c2_sha256")))
     add(checks, "C2_validity_hash", v2.get("c2_sha256") == sha_file(args.c2),
