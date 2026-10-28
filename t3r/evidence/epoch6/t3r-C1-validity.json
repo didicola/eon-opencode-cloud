@@ -1,0 +1,57 @@
+{
+ "checked_utc": "2026-10-28T16:53:52.435435+00:00",
+ "c1_sha256": "a881e3414ab6cb3cfc279cedaffe785574277a1f9f9e91aedcf4fd8e1e71828c",
+ "token": "T3R-20261028T165351Z-0cbccf25",
+ "m5": {
+  "ok": true,
+  "cycle": 1,
+  "token": "T3R-20261028T165351Z-0cbccf25",
+  "token_url": "https://httpbin.org/base64/VDNSLTIwMjYxMDI4VDE2NTM1MVotMGNiY2NmMjUgRU9OIHJldGVudGlvbiBwcm9iZS4gVGhlIGV4YWN0IHRva2VuIG11c3QgcmVtYWluIHJldHJpZXZhYmxlIGFmdGVyIGluZ2VzdC4%3D",
+  "learn": {
+   "learned": true,
+   "key": "860d6666eb51",
+   "kind": "web",
+   "size": 104,
+   "via": "edge-brain /learn/docs",
+   "ok": true
+  },
+  "learn_acked": true,
+  "ingest_skipped": false,
+  "knowledge_before": 70,
+  "knowledge_after": 71,
+  "knowledge_increased": true,
+  "immediate_search_total": 1,
+  "immediate_retrievable": true,
+  "immediate_result": {
+   "topic": "api-documentation",
+   "content": "T3R-20261028T165351Z-0cbccf25 EON retention probe. The exact token must remain retrievable after ingest.",
+   "source": "web",
+   "confidence": 0.6,
+   "ts": 1793206431536,
+   "tags": [
+    "httpbin.org",
+    "api-documentation"
+   ]
+  },
+  "retrievable": null,
+  "rotated": null,
+  "search_query": "T3R-20261028T165351Z-0cbccf25"
+ },
+ "kvcheck": {
+  "ok": true,
+  "know": 71,
+  "items": 6,
+  "token_hits": 1,
+  "item_token_hits": 0
+ },
+ "checks": {
+  "learn_acked": true,
+  "knowledge_increased": true,
+  "immediate_retrievable": true,
+  "ingest_not_skipped": true,
+  "token_present": true,
+  "allow_m5_ingest": true,
+  "durable_kvcheck": true
+ },
+ "ok": true
+}

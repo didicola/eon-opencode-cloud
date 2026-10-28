@@ -1,0 +1,31 @@
+{
+ "generated_utc": "2026-10-28T16:53:52.296551+00:00",
+ "tool": "t3_c3_harness.py",
+ "tool_sha256": "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d",
+ "inputs": [
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/epoch6/T3-R-EPOCH6-PREREG-20261028.md",
+   "sha256": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6",
+   "bytes": 12107
+  },
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt",
+   "sha256": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c",
+   "bytes": 3932
+  }
+ ],
+ "outputs": [
+  {
+   "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch6/t3r-C1.json",
+   "sha256": "a881e3414ab6cb3cfc279cedaffe785574277a1f9f9e91aedcf4fd8e1e71828c",
+   "bytes": 100055
+  }
+ ],
+ "epoch": "T3-R",
+ "cycle": 1,
+ "harness_sha256": "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66",
+ "preregistration_sha256": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6",
+ "M4_quarantined": true,
+ "M5_auth_lane": "eon-mcp admin token via ~/eon-tmp/.adm (mode 600); never printed",
+ "zero_hint_owner_attestation": "PENDING (B10)"
+}
