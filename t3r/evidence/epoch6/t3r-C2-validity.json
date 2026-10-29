@@ -1,0 +1,46 @@
+{
+ "checked_utc": "2026-10-29T22:50:16.158472+00:00",
+ "c2_sha256": "b99e6f91543900e18142e6c9062abec8d797c3c75992e077a62c04781f1f087c",
+ "token": "T3R-20261028T165351Z-0cbccf25",
+ "m5": {
+  "ok": true,
+  "cycle": 2,
+  "token": "T3R-20261028T165351Z-0cbccf25",
+  "search_query": "T3R-20261028T165351Z-0cbccf25",
+  "learn_acked": true,
+  "ingest_skipped": true,
+  "retrievable": true,
+  "search_total": 1,
+  "search_result": {
+   "topic": "api-documentation",
+   "content": "T3R-20261028T165351Z-0cbccf25 EON retention probe. The exact token must remain retrievable after ingest.",
+   "source": "web",
+   "confidence": 0.6,
+   "ts": 1793206431536,
+   "tags": [
+    "httpbin.org",
+    "api-documentation"
+   ]
+  },
+  "knowledge_before": 73,
+  "knowledge_after": 73,
+  "baseline_knowledge_after": 71,
+  "knowledge_nondecreasing": true,
+  "rotated": true
+ },
+ "checks": {
+  "token_matches_C1": true,
+  "retention_ok": true,
+  "retrievable": true,
+  "search_total": true,
+  "ingest_skipped": true,
+  "search_query": true,
+  "knowledge_non_decreasing": true,
+  "knowledge_vs_C1": true,
+  "M1_no_regression": true,
+  "M2_no_regression": true,
+  "M3_no_regression": true,
+  "failures_zero": true
+ },
+ "ok": true
+}
