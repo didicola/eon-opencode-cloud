@@ -1,0 +1,396 @@
+{
+ "ok": true,
+ "epoch": "T3-R-EPOCH6",
+ "gate_pass_mechanical": true,
+ "gate_status": "PASS",
+ "gate_pass_overall": null,
+ "b10_zero_hint_attestation": "UNSIGNED",
+ "c1_collected_utc": "2026-10-28T16:53:52.290068+00:00",
+ "c2_collected_utc": "2026-10-29T22:50:16.134406+00:00",
+ "c3_collected_utc": "2026-10-31T05:50:36.470092+00:00",
+ "summary": {
+  "token": "T3R-20261028T165351Z-0cbccf25",
+  "C1": {
+   "M1": 283,
+   "M2": 260,
+   "M3": 29,
+   "knowledge_before": 70,
+   "knowledge_after": 71
+  },
+  "C2": {
+   "M1": 283,
+   "M2": 260,
+   "M3": 29,
+   "failures_recorded": 0,
+   "knowledge_before": 73,
+   "knowledge_after": 73
+  },
+  "C3": {
+   "M1": 283,
+   "M2": 260,
+   "M3": 29,
+   "failures_recorded": 0,
+   "knowledge_before": 75,
+   "knowledge_after": 75
+  },
+  "WSC": "01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f"
+ },
+ "checks": [
+  {
+   "check": "cycles",
+   "ok": true,
+   "detail": "got [1, 2, 3]"
+  },
+  {
+   "check": "epoch_label",
+   "ok": true,
+   "detail": [
+    "T3-R",
+    "T3-R",
+    "T3-R"
+   ]
+  },
+  {
+   "check": "C1_harness",
+   "ok": true,
+   "detail": "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66 vs 7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66"
+  },
+  {
+   "check": "C1_prereg",
+   "ok": true,
+   "detail": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6 vs 1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6"
+  },
+  {
+   "check": "C1_hosts",
+   "ok": true,
+   "detail": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c vs 40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c"
+  },
+  {
+   "check": "C1_zero_hint",
+   "ok": true,
+   "detail": "no --hint channel supplied to this process"
+  },
+  {
+   "check": "C1_M4_quarantined",
+   "ok": true,
+   "detail": "quarantined=True totalPeers=0"
+  },
+  {
+   "check": "C1_WSC",
+   "ok": true,
+   "detail": "01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f vs 01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f"
+  },
+  {
+   "check": "C1_WSC_reproducible",
+   "ok": true,
+   "detail": "reproducible=True flag=OK"
+  },
+  {
+   "check": "C2_harness",
+   "ok": true,
+   "detail": "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66 vs 7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66"
+  },
+  {
+   "check": "C2_prereg",
+   "ok": true,
+   "detail": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6 vs 1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6"
+  },
+  {
+   "check": "C2_hosts",
+   "ok": true,
+   "detail": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c vs 40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c"
+  },
+  {
+   "check": "C2_zero_hint",
+   "ok": true,
+   "detail": "no --hint channel supplied to this process"
+  },
+  {
+   "check": "C2_M4_quarantined",
+   "ok": true,
+   "detail": "quarantined=True totalPeers=0"
+  },
+  {
+   "check": "C2_WSC",
+   "ok": true,
+   "detail": "01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f vs 01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f"
+  },
+  {
+   "check": "C2_WSC_reproducible",
+   "ok": true,
+   "detail": "reproducible=True flag=OK"
+  },
+  {
+   "check": "C3_harness",
+   "ok": true,
+   "detail": "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66 vs 7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66"
+  },
+  {
+   "check": "C3_prereg",
+   "ok": true,
+   "detail": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6 vs 1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6"
+  },
+  {
+   "check": "C3_hosts",
+   "ok": true,
+   "detail": "40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c vs 40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c"
+  },
+  {
+   "check": "C3_zero_hint",
+   "ok": true,
+   "detail": "no --hint channel supplied to this process"
+  },
+  {
+   "check": "C3_M4_quarantined",
+   "ok": true,
+   "detail": "quarantined=True totalPeers=0"
+  },
+  {
+   "check": "C3_WSC",
+   "ok": true,
+   "detail": "01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f vs 01f7432e488702b191347cf9a6b0625a922c96c1ee917db553f199c5aaf5869f"
+  },
+  {
+   "check": "C3_WSC_reproducible",
+   "ok": true,
+   "detail": "reproducible=True flag=OK"
+  },
+  {
+   "check": "C1_validity_ok",
+   "ok": true,
+   "detail": "ok=True c1_sha256=a881e3414ab6cb3cfc279cedaffe785574277a1f9f9e91aedcf4fd8e1e71828c"
+  },
+  {
+   "check": "C1_validity_hash",
+   "ok": true,
+   "detail": "a881e3414ab6cb3cfc279cedaffe785574277a1f9f9e91aedcf4fd8e1e71828c vs a881e3414ab6cb3cfc279cedaffe785574277a1f9f9e91aedcf4fd8e1e71828c"
+  },
+  {
+   "check": "C1_durable_kvcheck",
+   "ok": true,
+   "detail": "kvcheck={'ok': True, 'know': 71, 'items': 6, 'token_hits': 1, 'item_token_hits': 0}"
+  },
+  {
+   "check": "C2_validity_ok",
+   "ok": true,
+   "detail": "ok=True c2_sha256=b99e6f91543900e18142e6c9062abec8d797c3c75992e077a62c04781f1f087c"
+  },
+  {
+   "check": "C2_validity_hash",
+   "ok": true,
+   "detail": "b99e6f91543900e18142e6c9062abec8d797c3c75992e077a62c04781f1f087c vs b99e6f91543900e18142e6c9062abec8d797c3c75992e077a62c04781f1f087c"
+  },
+  {
+   "check": "C1_allow_ingest",
+   "ok": true,
+   "detail": "invocation={'hosts': '/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt', 'hosts_sha256': '40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c', 'out': '/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch6/t3r-C1.json', 'cycle': 1, 'allow_m5_ingest': True}"
+  },
+  {
+   "check": "C2_no_ingest",
+   "ok": true,
+   "detail": "invocation={'hosts': '/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt', 'hosts_sha256': '40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c', 'out': '/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch6/t3r-C2.json', 'cycle': 2, 'allow_m5_ingest': False}"
+  },
+  {
+   "check": "C3_no_ingest",
+   "ok": true,
+   "detail": "invocation={'hosts': '/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/inventory/epoch4-hosts-20261023.txt', 'hosts_sha256': '40dab1c02fcf1fe883972ec7e617aae0de8983372d716463faeb30ea01dd358c', 'out': '/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch6/t3r-C3.json', 'cycle': 3, 'allow_m5_ingest': False}"
+  },
+  {
+   "check": "C1_learn_acked",
+   "ok": true,
+   "detail": "learn_acked=True learned={'learned': True, 'key': '860d6666eb51', 'kind': 'web', 'size': 104, 'via': 'edge-brain /learn/docs', 'ok': True}"
+  },
+  {
+   "check": "C1_knowledge_increased",
+   "ok": true,
+   "detail": "before=70 after=71"
+  },
+  {
+   "check": "C1_immediate_retrievable",
+   "ok": true,
+   "detail": "immediate=True total=1"
+  },
+  {
+   "check": "C1_token_present",
+   "ok": true,
+   "detail": "token=T3R-20261028T165351Z-0cbccf25"
+  },
+  {
+   "check": "C2_token_matches_C1",
+   "ok": true,
+   "detail": "T3R-20261028T165351Z-0cbccf25 vs T3R-20261028T165351Z-0cbccf25"
+  },
+  {
+   "check": "C2_retention_ok",
+   "ok": true,
+   "detail": "ok=True"
+  },
+  {
+   "check": "C2_retrievable",
+   "ok": true,
+   "detail": "retrievable=True"
+  },
+  {
+   "check": "C2_search_total",
+   "ok": true,
+   "detail": "search_total=1"
+  },
+  {
+   "check": "C2_ingest_skipped",
+   "ok": true,
+   "detail": "ingest_skipped=True"
+  },
+  {
+   "check": "C2_search_query",
+   "ok": true,
+   "detail": "T3R-20261028T165351Z-0cbccf25 vs T3R-20261028T165351Z-0cbccf25"
+  },
+  {
+   "check": "C2_knowledge_non_decreasing",
+   "ok": true,
+   "detail": "before=73 after=73"
+  },
+  {
+   "check": "C2_knowledge_vs_C1",
+   "ok": true,
+   "detail": "before=73 C1_after=71"
+  },
+  {
+   "check": "C3_token_matches_C1",
+   "ok": true,
+   "detail": "T3R-20261028T165351Z-0cbccf25 vs T3R-20261028T165351Z-0cbccf25"
+  },
+  {
+   "check": "C3_retention_ok",
+   "ok": true,
+   "detail": "ok=True"
+  },
+  {
+   "check": "C3_retrievable",
+   "ok": true,
+   "detail": "retrievable=True"
+  },
+  {
+   "check": "C3_search_total",
+   "ok": true,
+   "detail": "search_total=1"
+  },
+  {
+   "check": "C3_ingest_skipped",
+   "ok": true,
+   "detail": "ingest_skipped=True"
+  },
+  {
+   "check": "C3_search_query",
+   "ok": true,
+   "detail": "T3R-20261028T165351Z-0cbccf25 vs T3R-20261028T165351Z-0cbccf25"
+  },
+  {
+   "check": "C3_knowledge_non_decreasing",
+   "ok": true,
+   "detail": "before=75 after=75"
+  },
+  {
+   "check": "C3_knowledge_vs_C1",
+   "ok": true,
+   "detail": "before=75 C1_after=71"
+  },
+  {
+   "check": "C2_window",
+   "ok": true,
+   "detail": "C2=2026-10-29T22:50:16.134406+00:00 due=2026-10-29T16:55:52.290068+00:00"
+  },
+  {
+   "check": "C3_window",
+   "ok": true,
+   "detail": "C3=2026-10-31T05:50:36.470092+00:00 due=2026-10-30T22:52:16.134406+00:00"
+  },
+  {
+   "check": "C2_M1_no_regression",
+   "ok": true,
+   "detail": "283 vs C1=283"
+  },
+  {
+   "check": "C2_M2_no_regression",
+   "ok": true,
+   "detail": "260 vs C1=260"
+  },
+  {
+   "check": "C2_M3_no_regression",
+   "ok": true,
+   "detail": "29 vs C1=29"
+  },
+  {
+   "check": "C2_failures_zero",
+   "ok": true,
+   "detail": "failures_recorded=0 failures=[]"
+  },
+  {
+   "check": "C3_M1_no_regression",
+   "ok": true,
+   "detail": "283 vs C1=283"
+  },
+  {
+   "check": "C3_M2_no_regression",
+   "ok": true,
+   "detail": "260 vs C1=260"
+  },
+  {
+   "check": "C3_M3_no_regression",
+   "ok": true,
+   "detail": "29 vs C1=29"
+  },
+  {
+   "check": "C3_failures_zero",
+   "ok": true,
+   "detail": "failures_recorded=0 failures=[]"
+  },
+  {
+   "check": "C1_receipt",
+   "ok": true,
+   "detail": {
+    "tool_sha256": "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d",
+    "harness_sha256": "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66",
+    "preregistration_sha256": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6",
+    "output": {
+     "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch6/t3r-C1.json",
+     "sha256": "a881e3414ab6cb3cfc279cedaffe785574277a1f9f9e91aedcf4fd8e1e71828c",
+     "bytes": 100055
+    },
+    "missing_or_bad_inputs": []
+   }
+  },
+  {
+   "check": "C2_receipt",
+   "ok": true,
+   "detail": {
+    "tool_sha256": "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d",
+    "harness_sha256": "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66",
+    "preregistration_sha256": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6",
+    "output": {
+     "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch6/t3r-C2.json",
+     "sha256": "b99e6f91543900e18142e6c9062abec8d797c3c75992e077a62c04781f1f087c",
+     "bytes": 102223
+    },
+    "missing_or_bad_inputs": []
+   }
+  },
+  {
+   "check": "C3_receipt",
+   "ok": true,
+   "detail": {
+    "tool_sha256": "2be911896c2fcdf1a627dbbe7d3c828998da1aa4dee950ce1f3e2dfcd066876d",
+    "harness_sha256": "7bfbdcd6686cf23d0f0dc483975be2e22c22019b28f4787726d5ecca18993d66",
+    "preregistration_sha256": "1629d7d9f2e7cf1cf55b1c3892511e2494fceabd5c4a26ce41a5594c81457cf6",
+    "output": {
+     "path": "/home/runner/work/eon-opencode-cloud/eon-opencode-cloud/t3r/evidence/epoch6/t3r-C3.json",
+     "sha256": "13919f082c707497a521ec7df7b7cbf3b48380bfebeddcec9df391118953e865",
+     "bytes": 102171
+    },
+    "missing_or_bad_inputs": []
+   }
+  }
+ ],
+ "note": "Mechanical T3-R epoch-6 check only. B10 zero-hint owner attestation and final owner sign-off remain; no pass is claimed here. The epoch-5 verifier's exact knowledge-equality check is not carried forward; the frozen bar requires non-regression.",
+ "verifier_sha256": "fb73ea8d3ff9f8599da3cfa9858542fb10d62e99fd6a1291fb3d5faf3b20b0b6"
+}
