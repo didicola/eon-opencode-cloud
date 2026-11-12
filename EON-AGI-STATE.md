@@ -1,13 +1,13 @@
 # EON Cloud AGI State
 
-Updated: 2026-11-12T15:06:25Z
+Updated: 2026-11-12T23:33:40Z
 Worker: agi-cloud-v10 (v10); store=do-storage.
-Cycles: 21046. Passed: 20192. Failed: 854. Score: 95.9%.
-Self-mods: 840. Lessons: 50. Provisions: 32. Goals: 20.
+Cycles: 21296. Passed: 20438. Failed: 858. Score: 96.0%.
+Self-mods: 850. Lessons: 50. Provisions: 32. Goals: 20.
 Best prompt: direct. LLM accuracy: 76.5%.
 
-Domains: math 945/1003 (94.2%); logic 828/1004 (82.5%); string 1203/1266 (95.0%); compare 2694/2787 (96.7%); alphasort 890/903 (98.6%); temporal 870/897 (97.0%); causal 878/884 (99.3%); spatial 899/900 (99.9%); creative 884/908 (97.4%).
-Last run: 2026-11-12T14:59:23.036Z.
+Domains: math 959/1017 (94.3%); logic 838/1018 (82.3%); string 1212/1275 (95.1%); compare 2704/2797 (96.7%); alphasort 905/918 (98.6%); temporal 884/911 (97.0%); causal 891/897 (99.3%); spatial 906/907 (99.9%); creative 892/916 (97.4%).
+Last run: 2026-11-12T23:33:30.018Z.
 Transfer probe: spatial -> revwordz delta 0 (base 0 / transfer 0).
 Driver: armed.
 
