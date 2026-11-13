@@ -1,10 +1,21 @@
-# Cloud Self-Maintenance Report (2026-11-05)
+# Cloud Self-Maintenance Report
 
-| Lane | Endpoint | Status |
+**Status:** OK — all lanes healthy.
+**Generated:** 2026-11-13T16:28Z
+
+| Lane | Status | Details |
 |---|---|---|
-| cloud-brain API | https://recommended.workers.dev/v1/models | UP (3 models: gpt-6-luna, deepseek-v4-flash-0731, qwen-3.8-max) |
-| AGI engine | https://eon-agi.eon-sovereign.workers.dev/health | UP (eon-200-for-all) |
-| fleet nodes | out/admin.json | 13 nodes, all OK |
+| cloud-brain API | UP | 3 models served (gpt-6-luna, deepseek-v4-flash-0731, qwen-3.8-max) |
+| AGI engine | UP | eon-agi 200-for-all, t=1794587290620 |
+| ghost | UP | memory=0, pending=0 |
+| ghost-dashboard | UP | memory=0, pending=0 |
+| ghost-twin | UP | memory=0, pending=0 |
+| ghost-2 | UP | memory=0, pending=0 |
+| ghost-3 | UP | memory=0, pending=0 |
+| ghost-4 | UP | memory=0, pending=0 |
+| alpha | UP | memory=0, pending=0 |
+| tiny-matrix | UP | lessons=0, cells=[] |
+| tiny-1..tiny-5 | UP | lessons=0 |
 
-- DOWN items: none
-- Recommended action: no action required; all lanes healthy.
+**DOWN items:** none.
+**Recommended action:** none required — continue normal operation.
